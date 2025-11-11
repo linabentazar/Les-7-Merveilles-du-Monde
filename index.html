@@ -120,9 +120,69 @@
 
         .btn-primary:hover {
             background-color: #c49564;
-            transform: translateY(-2px);
+            transform: translateY(-2px);     /* déplace le bouton de 2px vers le haut pour un effet de soulèvement */
+
         }
-     
+	 
+      /* ========== SECTIONS COMMUNES ========== */
+        
+        .section {
+            /* style de base pour toutes les sections de contenu */
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 6rem 3rem;
+        }
+
+        .section-title {
+            /* titre de chaque section */
+            font-size: 40px;
+            text-align: center;
+            margin-bottom: 16px;
+            color: #1a4d2e;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .section-subtitle {
+            /* Sous-titre de section */
+            text-align: center;
+            color: #666;
+            margin-bottom: 64px;
+            font-size: 17.6px;
+        }
+
+/* ========== SECTION MERVEILLES ========== */
+        
+        .merveilles-categories {
+            /* conteneur des boutons de catégories (Antiques/Modernes/Naturelles) */
+            display: flex;
+            /* aligner les boutons horizontalement */
+            gap: 32px;
+            /* espace entre chaque bouton */
+            margin-bottom: 48px;
+            /* espace avant la grille de cartes */
+            justify-content: center;
+        }
+
+        .category-btn {
+            /* Style des boutons de catégorie */
+            padding: 12.8px 32px;
+            background-color: #fff;
+            border: 1px solid #d4a574; /* Bordure dorée de 1px */
+            color: #2c2c2c;
+            cursor: pointer; /* change le curseur en main au survol pour indiquer que c'est cliquable */
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 13.6px;
+        }
+
+        .category-btn:hover, .category-btn.active {
+            /* état au survol OU quand le bouton a la classe "active" */
+            background-color: #d4a574;
+            color: white;
+        }
+	 
  </style>
 </head>
 
@@ -158,6 +218,28 @@
             <!-- bouton pour inviter l'utilisateur à scroller vers les merveilles -->
         </div>
     </section>
+
+	 <!-- ========== SECTION MERVEILLES ========== -->
+    <section class="section" id="merveilles">
+        <!-- Section principale présentant les 7 merveilles, id="merveilles" pour navigation -->
+        
+        <h2 class="section-title">Explorez les Merveilles</h2>
+		
+        <p class="section-subtitle">Des monuments antiques aux splendeurs naturelles</p>
+        
+        <div class="merveilles-categories">
+            
+            <button class="category-btn active">Antiques</button> <!-- <button> élément interactif, class "active" indique que c'est la catégorie affichée par défaut -->
+            
+            <button class="category-btn">Modernes</button>
+            <!-- Bouton pour filtrer les merveilles modernes (fonctionnalité à développer en JS) -->
+            
+            <button class="category-btn">Naturelles</button>
+            <!-- Bouton pour filtrer les merveilles naturelles -->
+        </div>
+
+		
+	</section>
 
 
 
