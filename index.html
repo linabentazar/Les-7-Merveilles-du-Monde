@@ -69,7 +69,55 @@
         .nav-links a:hover {
             color: #d4a574; /* Couleur au survol */
         }
- 
+
+     /* ========= Bannière principale (hero section) ========== */
+        
+        .hero {
+            height: 85vh;
+            /* Hauteur de 85% de la hauteur de la fenêtre (vh = viewport height) */
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                        url('https://images.unsplash.com/photo-1545562083-c583d014b4f2?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&q=80&w=833');
+            /* photo pour la banniere principale */
+            
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content h1 {
+            /* style du titre principal de la bannière */
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            font-weight: 300;
+            letter-spacing: 3px;
+        }
+
+        .hero-content p {
+            /* style du sous-titre de la bannière */
+            font-size: 1.3rem;
+            margin-bottom: 2.5rem;
+            /* grande marge en bas avant le bouton */
+            font-weight: 300;
+        }
+
+        .btn-primary {
+            /* style du cta */
+            background-color: #d4a574;
+            color: white;
+            padding: 1rem 3rem;
+            text-decoration: none;
+            border-radius: 2px;
+            display: inline-block;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+        }
+
+        .btn-primary:hover {
+            background-color: #c49564;
+            transform: translateY(-2px);
+        }
+     
  </style>
 </head>
 
@@ -92,6 +140,19 @@
             </ul>
         </nav>
     </header>
+
+    <!-- ========== Bannière d'accueil (hero section) ========== -->
+    <section class="hero" id="accueil">
+        
+        <div class="hero-content">
+            
+            <h1>Les 7 Merveilles du Monde</h1>
+            <p>Découvrez les trésors les plus extraordinaires de notre planète</p>
+			
+            <a href="#merveilles" class="btn-primary">Commencer l'exploration</a>
+            <!-- bouton pour inviter l'utilisateur à scroller vers les merveilles -->
+        </div>
+    </section>
 
 
 
