@@ -31,4 +31,96 @@
             /* couleur de fond blanc cassé légèrement beige pour un aspect plus doux qu'un blanc pur */
         }
 
+      /* ========== HEADER & NAVIGATION ========== */
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0 2 px 10 px rgba (0,0,0,0.05);
+            /* ombre portée subtile : décalage vertical 2px, flou 10px, noir à 5% d'opacité (pr créer un effet d'élévation) */
+            position: sticky;
+            /* pour que l'élément reste fixé en haut lors du scroll (comme fixed mais après avoir scrollé jusqu'à lui) */
+            top: 0;
+            /* distance du haut de la fenêtre où le header reste collé */
+            z-index: 1000;
+            /* Index de superposition élevé pour que le header reste au-dessus de tous les autres éléments */
+        }
+     
+      nav {
+            max-width: 1400 px;
+            /* largeur maximale de 1400px pour pas étirer excessivement sur très grands écrans */
+            margin: 0 auto;
+            /* centre horizontalement le conteneur */
+            padding: 1.5 rem 3 rem;
+            /* espacement interne : 1.5rem (24px) haut/bas, 3rem (48px) gauche/droite */
+            display: flex;
+            /* Active Flexbox : permet d'aligner facilement les éléments enfants */
+            justify-content: space-between;
+            /* Répartit l'espace entre le logo et le menu (un à gauche, un à droite) */
+            align-items: center;
+        }
+
+       .logo {
+            font-size: 1.5 rem;
+            font-weight: bold;
+            color: #1a4d2e;
+            /* vert forêt foncé (couleur principale du site) */
+            text-transform: uppercase;
+            letter-spacing: 2 px;
+            /* espace de 2px entre chaque lettre pour un effet plus aéré et élégant */
+        }
+
+       .nav-links {
+            display: flex;
+            /* flexbox pour aligner les liens horizontalement */
+            gap: 2.5 rem;
+            /* espace de 2.5rem (40px) entre chaque lien */
+            list-style: none;
+            /* pour supprimer les puces de liste par défaut */
+        }
+
+        .nav-links a {
+            /* style des liens de navigation */
+            text-decoration: none;
+            /* pour supprimer le soulignement par défaut des liens */
+            color: #2c2c2c;
+            /* gris foncé cohérent avec le texte principal */
+            font-size: 0.95 rem;
+            transition: color 0.3 s;
+            /* (pour le hover) */
+            text-transform: uppercase;
+            letter-spacing: 1 px;
+            font-size: 0.85 rem;
+        }
+
+        .nav-links a:hover {
+            color: #d4a574;
+            /* change la couleur en doré lors du survol */
+        }
+        
+ 
+ </style>
+</head>
+
+    
+<body>
+  
+    <!-- ======== HEADER & NAVIGATION ======== -->
+    <header>
+        <nav>
+            <div class="logo">7 Merveilles</div>
+    
+            <ul class="nav-links">
+                
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#merveilles">Merveilles</a></li>
+                <li><a href="#blog">Actualités</a></li>
+                <li><a href="#experiences">Expériences</a></li>
+                <li><a href="#conseils">Conseils</a></li>
+              
+            </ul>
+        </nav>
+    </header>
+
+
+
 
