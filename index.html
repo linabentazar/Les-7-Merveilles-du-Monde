@@ -182,6 +182,78 @@
             background-color: #d4a574;
             color: white;
         }
+		
+	 .merveilles-grid {
+            /* grille contenant les cartes de merveilles */
+            display: grid;
+            /* pour créer une disposition en grille */
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            /* colonnes qui s'adaptent automatiquement donc grille responsive */
+            gap: 32px;
+            margin-bottom: 64px;
+        }
+
+        .merveille-card {
+            background: white;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+
+        .merveille-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .merveille-image {
+            height: 300px;
+            background-color: #1a4d2e;
+            /* Couleur de fond vert (placeholder en attendant vraies images) */
+            position: relative;
+            overflow: hidden;
+        }
+
+        .merveille-image::after {
+            /* Pseudo-élément créant un dégradé sombre en bas de l'image */
+            content: '';
+            /* vide ici car purement décoratif */
+            position: absolute;
+            /* Positionné par rapport à .merveille-image (qui a position: relative) */
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
+        }
+
+        .merveille-content {
+            padding: 32px;
+        }
+
+        .merveille-content h3 {
+            /* Titre de la merveille */
+            font-size: 24px;
+            margin-bottom: 8px;
+            color: #1a4d2e;
+        }
+
+        .merveille-location {
+            /* badge de localisation (pays) */
+            color: #d4a574;
+            font-size: 14.4px;
+            margin-bottom: 16px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .merveille-content p {
+            color: #666;
+            font-size: 15.2px;
+            line-height: 1.8;
+        }
+
+
+
 	 
  </style>
 </head>
