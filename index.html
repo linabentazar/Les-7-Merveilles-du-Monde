@@ -638,61 +638,44 @@
     </section>
 
  <!-- ========== JAVASCRIPT ========== -->
-    <script>        
-        // ===== SMOOTH SCROLL (Défilement fluide) =====
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            // querySelectorAll sélectionne TOUS les liens <a> dont l'attribut href commence par "#"
-            // [href^="#"] est un sélecteur CSS d'attribut : ^ signifie "commence par"
-            // forEach boucle sur chaque lien trouvé
+   <script>        
+    // ===== SMOOTH SCROLL (Défilement fluide) =====
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    // ===== BOUTONS DE CATÉGORIES (Filtrage des merveilles) =====
+    const categoryBtns = document.querySelectorAll('.category-btn');
+    const merveilleCards = document.querySelectorAll('.merveille-card');  // ← LIGNE MANQUANTE !
+    
+    categoryBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // 1. Changer le bouton actif visuellement
+            categoryBtns.forEach(b => b.classList.remove('active'));
+            this.classList.add('active');
             
-            anchor.addEventListener('click', function (e) {
-                // addEventListener ajoute un écouteur d'événement "click" sur chaque lien
-                // La fonction anonyme se déclenche quand on clique
+            // 2. Récupérer la catégorie sélectionnée
+            const selectedCategory = this.getAttribute('data-category');  // ← LIGNE MANQUANTE !
+            
+            // 3. Filtrer les cartes
+            merveilleCards.forEach(card => {  // ← BOUCLE MANQUANTE !
+                const cardCategory = card.getAttribute('data-category');
                 
-                e.preventDefault();
-                // preventDefault() empêche le comportement par défaut du lien (saut instantané vers l'ancre)
-                
-                const target = document.querySelector(this.getAttribute('href'));
-                // Récupère l'élément cible :
-                // - this.getAttribute('href') obtient la valeur du href (ex: "#merveilles")
-                // - document.querySelector() trouve l'élément avec cet ID
-                
-                if (target) {
-                    // Vérifie que la cible existe (sécurité)
-                    
-                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                    // scrollIntoView() fait défiler jusqu'à l'élément
-                    // behavior: 'smooth' crée une animation fluide au lieu d'un saut brutal
-                    // block: 'start' aligne le haut de l'élément avec le haut de la fenêtre
+                if (cardCategory === selectedCategory) {
+                    card.style.display = 'block';  // Affiche si correspond
+                } else {
+                    card.style.display = 'none';   // Cache sinon
                 }
             });
         });
-
-        // ===== BOUTONS DE CATÉGORIES =====
-        const categoryBtns = document.querySelectorAll('.category-btn');
-        // Sélectionne tous les boutons de catégorie (Antiques/Modernes/Naturelles)
-        
-        categoryBtns.forEach(btn => {
-            // Boucle sur chaque bouton
-            
-            btn.addEventListener('click', function() {
-                // Ajoute un écouteur de clic sur chaque bouton
-                
-                categoryBtns.forEach(b => b.classList.remove('active'));
-                // Supprime la classe 'active' de TOUS les boutons (désactive visuellement tous les boutons)
-                // classList.remove() retire une classe CSS
-                
-                this.classList.add('active');
-                // pour ajouter la classe 'active' uniquement au bouton cliqué
-                // 'this' fait référence au bouton qui a été cliqué
-                // et pour l'effet visuel, seul le bouton cliqué apparaît actif (doré)
-                
-                // NOTE : Ici on gère juste le changement visuel
-                // Le filtrage réel des merveilles par catégorie devrait être ajouté
-                // (nécessiterait de cacher/afficher les cartes en fonction du bouton actif)
-            });
-        });
-    </script>
+    });
+</script>
 </body>
 </html>
 
