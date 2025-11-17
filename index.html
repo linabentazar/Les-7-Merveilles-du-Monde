@@ -227,11 +227,96 @@
         }
 
  /* ========== IMAGES SPÉCIFIQUES POUR CHAQUE MERVEILLE ========== */
-
-	  .merveille-image.pyramide {
+        /* Ajoute ici l'URL de l'image pour chaque merveille */
+        
+        /* MERVEILLES ANTIQUES */
+        .merveille-image.pyramide {
             background-image: url('https://images.unsplash.com/photo-1628503218283-6ddeac69dfea?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
             
         }
+        
+        .merveille-image.jardins {
+            background-image: url('https://blog.vacancesweb.be/wp-content/uploads/2024/12/tr6pi281084_A_photorealistic_depiction_of_the_Hanging_Gardens_o_1218ee6a-6da2-4bf4-880a-951d3895e041-768x430.jpg');
+        }
+        
+        .merveille-image.zeus {
+            background-image: url('https://media-cdn.sygictraveldata.com/media/800x600/612664395a40232133447d33247d383337373334343130');
+        }
+        
+        .merveille-image.artemis {
+            background-image: url('https://th.bing.com/th/id/R.a91baac762688782d77a16e560bbf72a?rik=0Ndj4NTe08NtUg&riu=http%3a%2f%2fpetitcoeurdu10.p.e.pic.centerblog.net%2f11_I722N.jpg&ehk=l3VF%2b1Q9NtV2dfWZXJgsc5cUiJB3mEUGrKVLysZy6XI%3d&risl=&pid=ImgRaw&r=0');
+        }
+        
+        .merveille-image.mausolee {
+            background-image: url('https://lesavoirperdudesanciens.com/wp-content/uploads/2018/11/Mausoleum-of-Halicarnassus.jpg');
+        }
+        
+        .merveille-image.colosse {
+            background-image: url('https://img.freepik.com/premium-photo/colossus-rhodes_839182-20550.jpg');
+        }
+        
+        .merveille-image.phare {
+            background-image: url('https://dailygeekshow.com/wp-content/uploads/2023/06/une-phare-alexandrie-1024x576.jpg');
+        }
+        
+        /* MERVEILLES MODERNES */
+        .merveille-image.muraille {
+            background-image: url('TON_URL_IMAGE_MURAILLE.jpg');
+        }
+        
+        .merveille-image.petra {
+            background-image: url('TON_URL_IMAGE_PETRA.jpg');
+        }
+        
+        .merveille-image.christ {
+            background-image: url('TON_URL_IMAGE_CHRIST.jpg');
+        }
+        
+        .merveille-image.machu {
+            background-image: url('TON_URL_IMAGE_MACHU.jpg');
+        }
+        
+        .merveille-image.chichen {
+            background-image: url('TON_URL_IMAGE_CHICHEN.jpg');
+        }
+        
+        .merveille-image.colisee {
+            background-image: url('TON_URL_IMAGE_COLISEE.jpg');
+        }
+        
+        .merveille-image.taj {
+            background-image: url('TON_URL_IMAGE_TAJ.jpg');
+        }
+        
+        /* MERVEILLES NATURELLES */
+        .merveille-image.canyon {
+            background-image: url('TON_URL_IMAGE_CANYON.jpg');
+        }
+        
+        .merveille-image.corail {
+            background-image: url('TON_URL_IMAGE_CORAIL.jpg');
+        }
+        
+        .merveille-image.everest {
+            background-image: url('TON_URL_IMAGE_EVEREST.jpg');
+        }
+        
+        .merveille-image.victoria {
+            background-image: url('TON_URL_IMAGE_VICTORIA.jpg');
+        }
+        
+        .merveille-image.aurores {
+            background-image: url('TON_URL_IMAGE_AURORES.jpg');
+        }
+        
+        .merveille-image.halong {
+            background-image: url('TON_URL_IMAGE_HALONG.jpg');
+        }
+        
+        .merveille-image.yellowstone {
+            background-image: url('TON_URL_IMAGE_YELLOWSTONE.jpg');
+        }
+
 	 
         .merveille-content {
             padding: 32px;
@@ -298,27 +383,318 @@
         </div>
     </section>
 
+	
+
 	 <!-- ========== SECTION MERVEILLES ========== -->
     <section class="section" id="merveilles">
         <!-- Section principale présentant les 7 merveilles, id="merveilles" pour navigation -->
         
-        <h2 class="section-title"><b>Explorez les Merveilles</b></h2>
-		
+        <h2 class="section-title">Explorez les Merveilles</h2>
+        <!-- <h2> titre de niveau 2, sous-titre de section (hiérarchie importante pour SEO et accessibilité) -->
+        
         <p class="section-subtitle">Des monuments antiques aux splendeurs naturelles</p>
+        <!-- Sous-titre descriptif de la section -->
         
         <div class="merveilles-categories">
+            <!-- Conteneur des boutons de filtrage par catégorie -->
             
-            <button class="category-btn active">Antiques</button> <!-- <button> élément interactif, class "active" indique que c'est la catégorie affichée par défaut -->
+            <button class="category-btn active" data-category="antiques">Antiques</button>
+            <!-- <button> avec attribut data-category="antiques" pour identifier la catégorie à filtrer -->
             
-            <button class="category-btn">Modernes</button>
-            <!-- Bouton pour filtrer les merveilles modernes (fonctionnalité à développer en JS) -->
+            <button class="category-btn" data-category="modernes">Modernes</button>
+            <!-- Bouton pour filtrer les merveilles modernes -->
             
-            <button class="category-btn">Naturelles</button>
+            <button class="category-btn" data-category="naturelles">Naturelles</button>
             <!-- Bouton pour filtrer les merveilles naturelles -->
         </div>
-
 		
-	</section>
+<!--REPRENDRE ICI DEMAIN §§§§§§ -- >
+
+
+        <div class="merveilles-grid">
+		
+            <!-- Conteneur Grid qui affiche les cartes de merveilles en grille responsive -->
+            
+         <!-- ========== MERVEILLES ANTIQUES ========== -->
+            
+            <!-- CARTE 1 : Grande Pyramide -->
+            <div class="merveille-card" data-category="antiques">
+                <!-- carte avec attribut data-category="antiques" pour le filtrage -->
+                
+                <div class="merveille-image pyramide"></div>
+                <!-- placeholder pour l'image, classe "pyramide" pour cibler cette carte spécifiquement en CSS -->
+                
+                <div class="merveille-content">                    
+                    <h3>Grande Pyramide de Gizeh</h3>                    
+                    <p class="merveille-location">Égypte</p>                    
+                    <p>La seule des sept merveilles du monde antique encore debout. Construite vers 2560 av. J.-C., elle témoigne du génie architectural des anciens Égyptiens.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 2 : Jardins suspendus -->
+            <div class="merveille-card" data-category="antiques">
+                <div class="merveille-image jardins"></div>
+                <div class="merveille-content">
+                    <h3>Jardins suspendus de Babylone</h3>
+                    <p class="merveille-location">Irak (antique)</p>
+                    <p>Jardins légendaires construits au VIe siècle av. J.-C., symbole d'une prouesse architecturale et botanique exceptionnelle de l'antiquité.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 3 : Statue de Zeus -->
+            <div class="merveille-card" data-category="antiques">
+                <div class="merveille-image zeus"></div>
+                <div class="merveille-content">
+                    <h3>Statue de Zeus à Olympie</h3>
+                    <p class="merveille-location">Grèce</p>
+                    <p>Chef-d'œuvre sculpté par Phidias vers 436 av. J.-C., cette statue chryséléphantine représentait le roi des dieux grecs dans toute sa majesté.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 4 : Temple d'Artémis -->
+            <div class="merveille-card" data-category="antiques">
+                <div class="merveille-image artemis"></div>
+                <div class="merveille-content">
+                    <h3>Temple d'Artémis à Éphèse</h3>
+                    <p class="merveille-location">Turquie</p>
+                    <p>Sanctuaire dédié à la déesse Artémis, ce temple grec fut reconstruit trois fois et considéré comme l'un des plus grands de l'Antiquité.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 5 : Mausolée -->
+            <div class="merveille-card" data-category="antiques">
+                <div class="merveille-image mausolee"></div>
+                <div class="merveille-content">
+                    <h3>Mausolée d'Halicarnasse</h3>
+                    <p class="merveille-location">Turquie</p>
+                    <p>Monument funéraire édifié entre 353 et 350 av. J.-C., célèbre pour sa taille monumentale et ses sculptures exceptionnelles.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 6 : Colosse de Rhodes -->
+            <div class="merveille-card" data-category="antiques">
+                <div class="merveille-image colosse"></div>
+                <div class="merveille-content">
+                    <h3>Colosse de Rhodes</h3>
+                    <p class="merveille-location">Grèce</p>
+                    <p>Statue gigantesque du dieu Hélios, haute de 30 mètres, érigée entre 292 et 280 av. J.-C. pour célébrer la victoire de Rhodes.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 7 : Phare d'Alexandrie -->
+            <div class="merveille-card" data-category="antiques">
+                <div class="merveille-image phare"></div>
+                <div class="merveille-content">
+                    <h3>Phare d'Alexandrie</h3>
+                    <p class="merveille-location">Égypte</p>
+                    <p>Tour construite au IIIe siècle av. J.-C., haute de 135 mètres, guidant les marins vers le port d'Alexandrie pendant près de 1500 ans.</p>
+                </div>
+            </div>
+
+            <!-- ========== MERVEILLES MODERNES ========== -->
+            
+            <!-- CARTE 8 : Grande Muraille -->
+            <div class="merveille-card" data-category="modernes" style="display: none;">
+                <div class="merveille-image muraille"></div>
+                <div class="merveille-content">
+                    <h3>Grande Muraille de Chine</h3>
+                    <p class="merveille-location">Chine</p>
+                    <p>Fortification longue de plus de 20 000 km, construite entre le IIIe siècle av. J.-C. et le XVIIe siècle pour protéger la Chine des invasions.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 9 : Pétra -->
+            <div class="merveille-card" data-category="modernes" style="display: none;">
+                <div class="merveille-image petra"></div>
+                <div class="merveille-content">
+                    <h3>Pétra</h3>
+                    <p class="merveille-location">Jordanie</p>
+                    <p>Cité antique nabatéenne sculptée dans la roche rose, capitale prospère entre le IVe siècle av. J.-C. et le IIe siècle apr. J.-C.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 10 : Christ Rédempteur -->
+            <div class="merveille-card" data-category="modernes" style="display: none;">
+                <div class="merveille-image christ"></div>
+                <div class="merveille-content">
+                    <h3>Christ Rédempteur</h3>
+                    <p class="merveille-location">Brésil</p>
+                    <p>Statue monumentale de 38 mètres surplombant Rio de Janeiro, inaugurée en 1931, symbole emblématique du Brésil.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 11 : Machu Picchu -->
+            <div class="merveille-card" data-category="modernes" style="display: none;">
+                <div class="merveille-image machu"></div>
+                <div class="merveille-content">
+                    <h3>Machu Picchu</h3>
+                    <p class="merveille-location">Pérou</p>
+                    <p>Cité inca perchée à 2430 mètres d'altitude, construite au XVe siècle, redécouverte en 1911, chef-d'œuvre d'architecture andine.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 12 : Chichén Itzá -->
+            <div class="merveille-card" data-category="modernes" style="display: none;">
+                <div class="merveille-image chichen"></div>
+                <div class="merveille-content">
+                    <h3>Chichén Itzá</h3>
+                    <p class="merveille-location">Mexique</p>
+                    <p>Cité maya majeure avec sa pyramide de Kukulcán, centre politique et économique entre le Xe et le XIIIe siècle.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 13 : Colisée -->
+            <div class="merveille-card" data-category="modernes" style="display: none;">
+                <div class="merveille-image colisee"></div>
+                <div class="merveille-content">
+                    <h3>Colisée de Rome</h3>
+                    <p class="merveille-location">Italie</p>
+                    <p>Amphithéâtre romain construit entre 70 et 80 apr. J.-C., pouvant accueillir 50 000 spectateurs pour les combats de gladiateurs.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 14 : Taj Mahal -->
+            <div class="merveille-card" data-category="modernes" style="display: none;">
+                <div class="merveille-image taj"></div>
+                <div class="merveille-content">
+                    <h3>Taj Mahal</h3>
+                    <p class="merveille-location">Inde</p>
+                    <p>Mausolée de marbre blanc construit entre 1631 et 1653 par l'empereur moghol Shah Jahan en mémoire de son épouse Mumtaz Mahal.</p>
+                </div>
+            </div>
+
+            <!-- ========== MERVEILLES NATURELLES ========== -->
+            
+            <!-- CARTE 15 : Grand Canyon -->
+            <div class="merveille-card" data-category="naturelles" style="display: none;">
+                <div class="merveille-image canyon"></div>
+                <div class="merveille-content">
+                    <h3>Grand Canyon</h3>
+                    <p class="merveille-location">États-Unis</p>
+                    <p>Gorge spectaculaire creusée par le fleuve Colorado, longue de 450 km et profonde de 1600 m, façonnée pendant 6 millions d'années.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 16 : Grande Barrière de Corail -->
+            <div class="merveille-card" data-category="naturelles" style="display: none;">
+                <div class="merveille-image corail"></div>
+                <div class="merveille-content">
+                    <h3>Grande Barrière de Corail</h3>
+                    <p class="merveille-location">Australie</p>
+                    <p>Plus grand récif corallien du monde, s'étendant sur 2300 km, abritant une biodiversité marine exceptionnelle avec 400 espèces de coraux.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 17 : Mont Everest -->
+            <div class="merveille-card" data-category="naturelles" style="display: none;">
+                <div class="merveille-image everest"></div>
+                <div class="merveille-content">
+                    <h3>Mont Everest</h3>
+                    <p class="merveille-location">Népal / Tibet</p>
+                    <p>Plus haut sommet du monde culminant à 8849 mètres, dans la chaîne de l'Himalaya, défi ultime pour les alpinistes depuis 1953.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 18 : Chutes Victoria -->
+            <div class="merveille-card" data-category="naturelles" style="display: none;">
+                <div class="merveille-image victoria"></div>
+                <div class="merveille-content">
+                    <h3>Chutes Victoria</h3>
+                    <p class="merveille-location">Zambie / Zimbabwe</p>
+                    <p>Cascade spectaculaire du fleuve Zambèze, large de 1708 mètres avec une chute de 108 mètres, surnommée "la fumée qui gronde".</p>
+                </div>
+            </div>
+
+            <!-- CARTE 19 : Aurores Boréales -->
+            <div class="merveille-card" data-category="naturelles" style="display: none;">
+                <div class="merveille-image aurores"></div>
+                <div class="merveille-content">
+                    <h3>Aurores Boréales</h3>
+                    <p class="merveille-location">Régions polaires</p>
+                    <p>Phénomène lumineux naturel causé par l'interaction des vents solaires avec la magnétosphère terrestre, créant des voiles colorés dans le ciel.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 20 : Baie d'Halong -->
+            <div class="merveille-card" data-category="naturelles" style="display: none;">
+                <div class="merveille-image halong"></div>
+                <div class="merveille-content">
+                    <h3>Baie d'Halong</h3>
+                    <p class="merveille-location">Vietnam</p>
+                    <p>Paysage maritime féerique avec plus de 1600 îles karstiques émergeant des eaux émeraude, façonnées par l'érosion pendant 500 millions d'années.</p>
+                </div>
+            </div>
+
+            <!-- CARTE 21 : Parc de Yellowstone -->
+            <div class="merveille-card" data-category="naturelles" style="display: none;">
+                <div class="merveille-image yellowstone"></div>
+                <div class="merveille-content">
+                    <h3>Parc de Yellowstone</h3>
+                    <p class="merveille-location">États-Unis</p>
+                    <p>Premier parc national au monde créé en 1872, célèbre pour ses geysers dont Old Faithful, ses sources chaudes colorées et sa faune sauvage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ <!-- ========== JAVASCRIPT ========== -->
+    <script>        
+        // ===== SMOOTH SCROLL (Défilement fluide) =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            // querySelectorAll sélectionne TOUS les liens <a> dont l'attribut href commence par "#"
+            // [href^="#"] est un sélecteur CSS d'attribut : ^ signifie "commence par"
+            // forEach boucle sur chaque lien trouvé
+            
+            anchor.addEventListener('click', function (e) {
+                // addEventListener ajoute un écouteur d'événement "click" sur chaque lien
+                // La fonction anonyme se déclenche quand on clique
+                
+                e.preventDefault();
+                // preventDefault() empêche le comportement par défaut du lien (saut instantané vers l'ancre)
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                // Récupère l'élément cible :
+                // - this.getAttribute('href') obtient la valeur du href (ex: "#merveilles")
+                // - document.querySelector() trouve l'élément avec cet ID
+                
+                if (target) {
+                    // Vérifie que la cible existe (sécurité)
+                    
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // scrollIntoView() fait défiler jusqu'à l'élément
+                    // behavior: 'smooth' crée une animation fluide au lieu d'un saut brutal
+                    // block: 'start' aligne le haut de l'élément avec le haut de la fenêtre
+                }
+            });
+        });
+
+        // ===== BOUTONS DE CATÉGORIES =====
+        const categoryBtns = document.querySelectorAll('.category-btn');
+        // Sélectionne tous les boutons de catégorie (Antiques/Modernes/Naturelles)
+        
+        categoryBtns.forEach(btn => {
+            // Boucle sur chaque bouton
+            
+            btn.addEventListener('click', function() {
+                // Ajoute un écouteur de clic sur chaque bouton
+                
+                categoryBtns.forEach(b => b.classList.remove('active'));
+                // Supprime la classe 'active' de TOUS les boutons (désactive visuellement tous les boutons)
+                // classList.remove() retire une classe CSS
+                
+                this.classList.add('active');
+                // pour ajouter la classe 'active' uniquement au bouton cliqué
+                // 'this' fait référence au bouton qui a été cliqué
+                // et pour l'effet visuel, seul le bouton cliqué apparaît actif (doré)
+                
+                // NOTE : Ici on gère juste le changement visuel
+                // Le filtrage réel des merveilles par catégorie devrait être ajouté
+                // (nécessiterait de cacher/afficher les cartes en fonction du bouton actif)
+            });
+        });
+    </script>
+</body>
+</html>
 
 
 
