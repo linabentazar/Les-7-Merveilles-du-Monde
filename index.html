@@ -344,7 +344,44 @@
             line-height: 1.8;
         }
 
+/* Style pour le bouton Voir plus */
+details {
+    margin-top: 12px;
+}
 
+summary {
+    color: #d4a574;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    padding: 8px 0;
+    transition: color 0.3s;
+}
+
+summary:hover {
+    color: #1a4d2e;
+}
+
+/* Supprime la flèche par défaut sur tous les navigateurs */
+summary::-webkit-details-marker {
+    display: none;
+}
+
+/* Ajoute une icône + avant "Voir plus" */
+summary::before {
+    content: '+ ';
+    margin-right: 5px;
+}
+
+/* Change l'icône en - quand c'est ouvert */
+details[open] summary::before {
+    content: '− ';
+}
+
+/* Espace le contenu déplié */
+details p {
+    margin-top: 12px;
+}
 
 	 
  </style>
