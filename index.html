@@ -45,11 +45,30 @@
             justify-content: space-between;
         }
 
-        .logo {
-            font-size: 24px;
-            font-weight: bold;
-            color: #1a4d2e;
-        }
+       .logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 60px;
+    /* Ajuste entre 50px et 80px selon ce qui te convient visuellement */
+    width: auto;
+    /* Garde les proportions du logo carré */
+    transition: transform 0.3s;
+    /* Animation douce au survol */
+}
+
+.logo img:hover {
+    transform: scale(1.05);
+    /* Légère augmentation de taille au survol (5%) */
+}
 
         /* Navigation */
         .nav-links {
@@ -393,7 +412,12 @@ details p {
     <!-- ======== HEADER & NAVIGATION ======== -->
     <header>
         <nav>
-            <div class="logo">7 Merveilles</div>
+			
+            <div class="logo">
+    <a href="#accueil">
+        <img src="monlogo.png" alt="Logo 7 Merveilles du Monde">
+    </a>
+			</div>
     
             <ul class="nav-links">
                 
