@@ -461,6 +461,59 @@ details p {
         .btn-secondary:hover {
             color: #1a4d2e;
         }
+
+/* ========== SECTION EXPÉRIENCES ========== */
+        
+        .experiences-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            /* 2 colonnes de taille égale (1fr = 1 fraction) */
+            gap: 32px;
+        }
+
+        .experience-card {
+            position: relative;
+            /* pour positionner l'overlay en absolute */
+            height: 400px;
+            overflow: hidden;
+            /* Cache le débordement lors du zoom */
+            cursor: pointer;
+        }
+
+        .experience-bg {
+            height: 100%;
+            background: linear-gradient(45deg, #1a4d2e, #2d5f3e);
+            transition: transform 0.3s;
+        }
+
+        .experience-card:hover .experience-bg {
+            /* modifie le fond au survol de la carte,  */
+            transform: scale(1.05);
+            /* effet d'agrandissement subtil */
+        }
+
+        .experience-overlay {
+            /* Superposition contenant le texte sur l'image */
+            position: absolute;
+            /* Positionné par rapport à .experience-card */
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 40px;
+            background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            color: white;
+        }
+
+        .experience-overlay h3 {
+            font-size: 28.8px;
+            margin-bottom: 8px;
+        }
+
+        .experience-overlay p {
+            font-size: 15.2px;
+            opacity: 0.9;
+            /* légèrement transparent (90% opaque) pour hiérarchie visuelle */
+        }
 	 
  </style>
 </head>
@@ -1063,6 +1116,60 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
         </div>
     </section>
 
+<!-- ========== SECTION EXPÉRIENCES & VOYAGES ========== -->
+    <section class="section" id="experiences">
+        <!-- section présentant les itinéraires de voyage thématiques -->
+        
+        <h2 class="section-title">Expériences & Voyages</h2>
+        
+        <p class="section-subtitle">Itinéraires thématiques sur mesure</p>
+        
+        <div class="experiences-grid">
+            <!-- colonnes pour les cartes d'expérience -->
+            
+            <!-- EXPÉRIENCE 1 -->
+            <div class="experience-card">                
+                <div class="experience-bg"></div>
+                <!-- Fond coloré (placeholder pour image) qui zoom au hover -->
+                
+                <div class="experience-overlay">
+                    <!-- superposition sombre en bas contenant le texte -->
+                    
+                    <h3>Circuit des Merveilles Antiques</h3>
+                    
+                    <p>15 jours - Égypte, Grèce, Turquie • Sur les traces des civilisations anciennes</p>
+                </div>
+            </div>
+
+            <!-- EXPÉRIENCE 2 -->
+            <div class="experience-card">
+                <div class="experience-bg"></div>
+                <div class="experience-overlay">
+                    <h3>Odyssée des Merveilles Modernes</h3>
+                    <p>21 jours - Monde entier • Du Taj Mahal au Christ Rédempteur</p>
+                </div>
+            </div>
+
+            <!-- EXPÉRIENCE 3 -->
+            <div class="experience-card">
+                <div class="experience-bg"></div>
+                <div class="experience-overlay">
+                    <h3>Splendeurs Naturelles</h3>
+                    <p>18 jours - Amérique du Sud • Chutes d'Iguazú, Amazonie, Patagonie</p>
+                </div>
+            </div>
+
+            <!-- EXPÉRIENCE 4 -->
+            <div class="experience-card">
+                <div class="experience-bg"></div>
+                <div class="experience-overlay">
+                    <h3>Voyage Photographique</h3>
+                    <p>12 jours - Asie • Temples d'Angkor, Grande Muraille, Mont Fuji</p>
+                </div>
+            </div>
+        </div>
+        <!-- Fin de la grille expériences -->
+    </section>
 
 	
  <!-- ========== JAVASCRIPT ========== -->
