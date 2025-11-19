@@ -398,7 +398,69 @@ details[open] summary::before {
 details p {
     margin-top: 12px;
 }
+	 
+ /* ========== SECTION BLOG ========== */
+        
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            /* même principe que merveilles-grid mais avec colonnes minimum 320px */
+            gap: 40px;
+        }
 
+        .blog-card {
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .blog-image {
+            height: 250px;
+            background: linear-gradient(135deg, #1a4d2e, #d4a574);
+        }
+
+        .blog-content {
+            padding: 2rem;
+        }
+
+        .blog-date {
+            color: #d4a574;
+            font-size: 13.6px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+
+        .blog-content h3 {
+            font-size: 20.8px;
+            margin-bottom: 16px;
+            color: #1a4d2e;
+        }
+
+        .blog-content p {
+            color: #666;
+            margin-bottom: 24px;
+            line-height: 1.8;
+        }
+
+        .btn-secondary {
+            /* Bouton secondaire "Lire la suite" */
+            color: #d4a574;
+            text-decoration: none;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 13.6px;
+            transition: color 0.3s;
+        }
+
+        .btn-secondary:hover {
+            color: #1a4d2e;
+        }
 	 
  </style>
 </head>
@@ -949,6 +1011,60 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
         </div>
     </section>
 
+ <!-- ========== SECTION BLOG / ACTUALITÉS ========== -->
+    <section class="section" id="blog" style="background-color: white;">
+		
+        <h2 class="section-title">Actualités & Découvertes</h2>
+        
+        <p class="section-subtitle">Les dernières nouvelles du patrimoine mondial</p>
+        
+        <div class="blog-grid">
+            <!-- conteneur Grid pour les articles de blog -->
+            
+            <!-- ARTICLE 1 -->
+            <div class="blog-card">
+                <!-- "carte" d'article individuelle -->
+                
+                <div class="blog-image"></div>
+                <!-- le placeholder pour l'image d'illustration de l'article -->
+                
+                <div class="blog-content">                    
+                    <p class="blog-date">15 Octobre 2025</p>
+                    
+                    <h3>Nouvelle découverte archéologique à Gizeh</h3>                    
+                    <p>Des archéologues ont mis au jour une chambre cachée dans la Grande Pyramide grâce aux technologies de détection par muons.</p>
+                    
+                    <a href="#" class="btn-secondary">Lire la suite →</a>
+                    <!-- Lien vers l'article complet avec flèche Unicode (→) pour indiquer l'action -->
+                </div>
+            </div>
+
+            <!-- ARTICLE 2 -->
+            <div class="blog-card">
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <p class="blog-date">08 Octobre 2025</p>
+                    <h3>Restauration du Taj Mahal : un chantier colossal</h3>
+                    <p>Les travaux de préservation du monument emblématique indien mobilisent des experts du monde entier pour sauvegarder ce joyau architectural.</p>
+                    <a href="#" class="btn-secondary">Lire la suite →</a>
+                </div>
+            </div>
+
+            <!-- ARTICLE 3 -->
+            <div class="blog-card">
+                <div class="blog-image"></div>
+                <div class="blog-content">
+                    <p class="blog-date">01 Octobre 2025</p>
+                    <h3>Les merveilles naturelles menacées par le climat</h3>
+                    <p>Un rapport scientifique alerte sur les impacts du changement climatique sur les sites naturels exceptionnels de notre planète.</p>
+                    <a href="#" class="btn-secondary">Lire la suite →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+	
  <!-- ========== JAVASCRIPT ========== -->
    <script>        
     // ===== SMOOTH SCROLL (Défilement fluide) =====
