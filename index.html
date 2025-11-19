@@ -420,9 +420,28 @@ details p {
 
         .blog-image {
             height: 250px;
-            background: linear-gradient(135deg, #1a4d2e, #d4a574);
+            background-color: #1a4d2e;
         }
+ /* ========== IMAGES SPÉCIFIQUES POUR CHAQUE ARTICLE ========== */
+        
+        /* ART 1 */
+        .blog-image.gizeh {
+            background-image: url('https://images.unsplash.com/photo-1705628080778-f86b2f90a114?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            
+        }
+        
+		/* ART 2 */
 
+        .blog-image.taj {
+            background-image: url('https://images.unsplash.com/photo-1587135941948-670b381f08ce?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+        
+		/* ART 3 */
+
+        .blog-image.climat {
+            background-image: url('https://images.unsplash.com/photo-1601401483380-bbfa54b9ba42?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+	 
         .blog-content {
             padding: 2rem;
         }
@@ -1125,7 +1144,7 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
             <div class="blog-card">
                 <!-- "carte" d'article individuelle -->
                 
-                <div class="blog-image"></div>
+                <div class="blog-image gizeh"></div>
                 <!-- le placeholder pour l'image d'illustration de l'article -->
                 
                 <div class="blog-content">                    
@@ -1141,7 +1160,7 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
 
             <!-- ARTICLE 2 -->
             <div class="blog-card">
-                <div class="blog-image"></div>
+                <div class="blog-image taj"></div>
                 <div class="blog-content">
                     <p class="blog-date">08 Octobre 2025</p>
                     <h3>Restauration du Taj Mahal : un chantier colossal</h3>
@@ -1152,7 +1171,7 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
 
             <!-- ARTICLE 3 -->
             <div class="blog-card">
-                <div class="blog-image"></div>
+                <div class="blog-image climat"></div>
                 <div class="blog-content">
                     <p class="blog-date">01 Octobre 2025</p>
                     <h3>Les merveilles naturelles menacées par le climat</h3>
