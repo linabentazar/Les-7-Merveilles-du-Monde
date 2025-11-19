@@ -501,9 +501,36 @@ details p {
 
         .experience-bg {
             height: 100%;
-            background: linear-gradient(45deg, #1a4d2e, #2d5f3e);
+            background-color: #1a4d2e;
             transition: transform 0.3s;
         }
+
+	 /* ========== IMAGES SPÉCIFIQUES POUR CHAQUE CIRCUIT ========== */
+        
+        /*  1 */
+        .experience-bg.circuit {
+            background-image: url('https://plus.unsplash.com/premium_photo-1661963036970-f03ed5b3ea00?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            
+        }
+        
+		/*  2 */
+
+        .experience-bg.odyssee {
+            background-image: url('https://images.unsplash.com/photo-1594387295585-34ba732932c8?q=80&w=1030&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+        
+		/* 3 */
+
+        .experience-bg.splendeurs {
+            background-image: url('https://plus.unsplash.com/premium_photo-1694475710456-682ba042cb7b?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+	
+		/* 4 */
+
+        .experience-bg.photo {
+            background-image: url('https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+        }
+		
 
         .experience-card:hover .experience-bg {
             /* modifie le fond au survol de la carte,  */
@@ -1252,9 +1279,7 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
             
             <!-- EXPÉRIENCE 1 -->
             <div class="experience-card">                
-                <div class="experience-bg"></div>
-                <!-- Fond coloré (placeholder pour image) qui zoom au hover -->
-                
+                <div class="experience-bg circuit"></div>                
                 <div class="experience-overlay">
                     <!-- superposition sombre en bas contenant le texte -->
                     
@@ -1266,7 +1291,7 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
 
             <!-- EXPÉRIENCE 2 -->
             <div class="experience-card">
-                <div class="experience-bg"></div>
+                <div class="experience-bg odyssee"></div>
                 <div class="experience-overlay">
                     <h3>Odyssée des Merveilles Modernes</h3>
                     <p>21 jours - Monde entier • Du Taj Mahal au Christ Rédempteur</p>
@@ -1275,7 +1300,7 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
 
             <!-- EXPÉRIENCE 3 -->
             <div class="experience-card">
-                <div class="experience-bg"></div>
+                <div class="experience-bg splendeurs"></div>
                 <div class="experience-overlay">
                     <h3>Splendeurs Naturelles</h3>
                     <p>18 jours - Amérique du Sud • Chutes d'Iguazú, Amazonie, Patagonie</p>
@@ -1284,7 +1309,7 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
 
             <!-- EXPÉRIENCE 4 -->
             <div class="experience-card">
-                <div class="experience-bg"></div>
+                <div class="experience-bg photo"></div>
                 <div class="experience-overlay">
                     <h3>Voyage Photographique</h3>
                     <p>12 jours - Asie • Temples d'Angkor, Grande Muraille, Mont Fuji</p>
