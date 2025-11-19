@@ -514,6 +514,53 @@ details p {
             opacity: 0.9;
             /* légèrement transparent (90% opaque) pour hiérarchie visuelle */
         }
+
+/* ========== SECTION CONSEILS ========== */
+        
+        .conseils-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            /* colonnes adaptatives, minimum 280px */
+            gap: 32px;
+        }
+
+        .conseil-card {
+            background: white;
+            padding: 40px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .conseil-icon {
+            /* cercle de l'emoji/ icône */
+            width: 60px;
+            height: 60px;
+            background-color: #d4a574;
+            border-radius: 50%;
+            /* 50% crée un cercle parfait */
+            margin: 0 auto 24px;
+            /* Centre horizontalement (auto) et ajoute espace en bas */
+            display: flex;
+            /* Flexbox pour centrer l'emoji */
+            align-items: center;
+            justify-content: center;
+            font-size: 28.8px;
+            color: white;
+            /* Couleur blanche (même si emojis sont colorés par défaut) */
+        }
+
+        .conseil-card h3 {
+            font-size: 19.2px;
+            margin-bottom: 16px;
+            color: #1a4d2e;
+        }
+
+        .conseil-card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+
 	 
  </style>
 </head>
@@ -1168,8 +1215,68 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
                 </div>
             </div>
         </div>
-        <!-- Fin de la grille expériences -->
     </section>
+
+<!-- ========== SECTION CONSEILS  ========= -->
+    <section class="section" id="conseils" style="background-color: white;">
+        
+        <h2 class="section-title">Conseils Pratiques</h2>
+        
+        <p class="section-subtitle">Préparez votre voyage en toute sérénité</p>
+        
+        <div class="conseils-grid">
+            
+            <!-- CONSEIL 1 : Période -->
+            <div class="conseil-card">
+                
+                <div class="conseil-icon">📅</div>
+                <!-- cercle doré avec un emoji calendrier -->
+                <h3>Meilleure Période</h3>
+                <p>Chaque merveille a sa saison idéale. Consultez nos guides par destination pour éviter les foules et profiter des meilleures conditions climatiques.</p>
+            </div>
+
+            <!-- CONSEIL 2 : Réservations -->
+            <div class="conseil-card">
+                <div class="conseil-icon">🎫</div>
+                <!-- c'est l'emoji ticket -->
+                <h3>Réservations</h3>
+                <p>Réservez vos billets en ligne plusieurs semaines à l'avance. Certains sites limitent le nombre de visiteurs quotidiens pour préserver les monuments.</p>
+            </div>
+
+            <!-- CONSEIL 3 : Guides -->
+            <div class="conseil-card">
+                <div class="conseil-icon">🗺️</div>
+                <!-- Emoji carte du monde -->
+                <h3>Guides Locaux</h3>
+                <p>Privilégiez les guides certifiés pour enrichir votre visite. Leur expertise révèle l'histoire fascinante et les secrets de chaque merveille.</p>
+            </div>
+
+            <!-- CONSEIL 4 : Photographie -->
+            <div class="conseil-card">
+                <div class="conseil-icon">📸</div>
+                <!-- emoji appareil photo -->
+                <h3>Photographie</h3>
+                <p>Respectez les règles de chaque site. Certains monuments interdisent les flashs ou les trépieds pour préserver les œuvres et assurer la sécurité.</p>
+            </div>
+
+            <!-- CONSEIL 5 : Documents -->
+            <div class="conseil-card">
+                <div class="conseil-icon">💼</div>
+                <!-- Emoji mallette -->
+                <h3>Documents</h3>
+                <p>Vérifiez les exigences de visa selon votre nationalité. Certains pays offrent des visas électroniques facilitant les démarches administratives.</p>
+            </div>
+
+            <!-- CONSEIL 6 : Santé -->
+            <div class="conseil-card">
+                <div class="conseil-icon">🏥</div>
+                <!-- Emoji hopital -->
+                <h3>Santé & Sécurité</h3>
+                <p>Consultez votre médecin avant le départ. Souscrivez une assurance voyage complète couvrant les frais médicaux et les imprévus.</p>
+            </div>
+        </div>
+    </section>
+
 
 	
  <!-- ========== JAVASCRIPT ========== -->
