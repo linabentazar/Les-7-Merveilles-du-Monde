@@ -884,6 +884,48 @@ details p {
             color: rgba(255,255,255,0.6);
             /* texte blanc à 60% d'opacité  */
         }
+
+	         /* ========== RESPONSIVE ========== */
+        
+        @media (max-width: 768px) {
+            /* Media query : s'applique uniquement sur écrans de 768px de large ou moins (tablettes/mobiles) */
+            
+            nav {
+                /* Navigation sur mobile */
+                flex-direction: column;
+                /* Empile logo et menu verticalement au lieu d'horizontalement */
+                gap: 1rem;
+                /* Espace entre logo et menu */
+            }
+
+            .nav-links {
+                /* Menu de navigation sur mobile */
+                flex-direction: column;
+                /* Empile les liens verticalement */
+                gap: 1rem;
+                /* Réduit l'espace entre liens */
+                text-align: center;
+                /* Centre les liens */
+            }
+
+            .hero-content h1 {
+                /* Titre hero sur mobile */
+                font-size: 2.5rem;
+                /* Réduit la taille (de 4rem à 2.5rem) pour éviter débordement */
+            }
+
+            .experiences-grid {
+                /* Grille d'expériences sur mobile */
+                grid-template-columns: 1fr;
+                /* Une seule colonne sur mobile au lieu de 2 - empile les cartes verticalement */
+            }
+
+            .merveilles-categories {
+                /* Boutons de catégories sur mobile */
+                flex-direction: column;
+                /* Empile les boutons verticalement au lieu d'horizontalement - plus lisible sur petit écran */
+            }
+        }
 	 
  </style>
 </head>
