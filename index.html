@@ -1612,13 +1612,20 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
         </div>
     </section>
 
-  <!-- ========= FOOTER (Pied de page) ========== -->
-    <footer>        
+  <!-- ========== FOOTER (Pied de page) ========== -->
+    <footer>
+        <!-- Élément sémantique <footer> pour le pied de page -->
+        
         <div class="footer-content">
+            <!-- Conteneur principal du footer en grille -->
             
             <!-- COLONNE 1 : À propos -->
             <div class="footer-section">
+                <!-- Section individuelle du footer -->
+                
                 <h4>7 Merveilles</h4>
+                <!-- Titre de la section (nom du site) -->
+                
                 <p style="color: rgba(255,255,255,0.8); line-height: 1.8;">Votre guide pour explorer les trésors les plus extraordinaires de notre planète, des monuments antiques aux merveilles naturelles.</p>
                 <!-- Description du site avec style inline pour couleur spécifique -->
             </div>
@@ -1626,8 +1633,10 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
             <!-- COLONNE 2 : Navigation -->
             <div class="footer-section">
                 <h4>Navigation</h4>
-				
+                <!-- Titre de section -->
+                
                 <ul>
+                    <!-- Liste de liens de navigation (duplique le menu header pour accessibilité) -->
                     <li><a href="#accueil">Accueil</a></li>
                     <li><a href="#merveilles">Merveilles</a></li>
                     <li><a href="#blog">Actualités</a></li>
@@ -1636,14 +1645,16 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
                 </ul>
             </div>
 
+
+
             <!-- COLONNE 3 : Destinations -->
             <div class="footer-section">
                 <h4>Destinations</h4>
-				
                 <ul>
-                    <li><a href="#">Merveilles Antiques</a></li>
-                    <li><a href="#">Merveilles Modernes</a></li>
-                    <li><a href="#">Merveilles Naturelles</a></li>
+                    <!-- Liens vers les différentes catégories de merveilles -->
+                    <li><a href="#antiques">Merveilles Antiques</a></li>
+                    <li><a href="#modernes">Merveilles Modernes</a></li>
+                    <li><a href="#naturelles">Merveilles Naturelles</a></li>
                     <li><a href="#experiences">Circuits Thématiques</a></li>
                 </ul>
             </div>
@@ -1652,13 +1663,17 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
             <div class="footer-section">
                 <h4>Contact</h4>
                 <ul>
+                    <!-- Liens institutionnels et légaux -->
                     <li><a href="#">À propos</a></li>
                     <li><a href="#">Nous contacter</a></li>
                     <li><a href="#">Mentions légales</a></li>
+                    <!-- Mentions légales obligatoires en France -->
                     <li><a href="#">Politique de confidentialité</a></li>
+                    <!-- Politique RGPD obligatoire -->
                 </ul>
             </div>
         </div>
+        <!-- Fin du contenu principal du footer -->
 
         <div class="footer-bottom">
             <!-- Section copyright en bas du footer -->
@@ -1666,6 +1681,7 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
             <!-- &copy; est l'entité HTML pour le symbole copyright © -->
         </div>
     </footer>
+
 
 		<!-- ========== MODAL (POP UP) ARTICLE ========== -->
 <div id="articleModal" class="modal">
@@ -1690,46 +1706,68 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
         </div>
     </div>
 </div>
-	
- <!-- ========== JAVASCRIPT ========== -->
-   <script>        
-    // ===== SMOOTH SCROLL (Défilement fluide) =====
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-            const target = document.querySelector(this.getAttribute('href'));
-            if (target) {
-                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        });
-    });
 
-    // ===== BOUTONS DE CATÉGORIES (Filtrage des merveilles) =====
-    const categoryBtns = document.querySelectorAll('.category-btn');
-    const merveilleCards = document.querySelectorAll('.merveille-card');  
-    
-    categoryBtns.forEach(btn => {
-        btn.addEventListener('click', function() {
-            // 1. Changer le bouton actif visuellement
-            categoryBtns.forEach(b => b.classList.remove('active'));
-            this.classList.add('active');
+
+
+    <!-- ========== JAVASCRIPT ========== -->
+    <script>
+        // Script JavaScript pour ajouter de l'interactivité au site
+        
+        // ===== SMOOTH SCROLL (Défilement fluide) =====
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            // querySelectorAll sélectionne TOUS les liens <a> dont l'attribut href commence par "#"
+            // [href^="#"] est un sélecteur CSS d'attribut : ^ signifie "commence par"
+            // forEach boucle sur chaque lien trouvé
             
-            // 2. Récupérer la catégorie sélectionnée
-            const selectedCategory = this.getAttribute('data-category');  
-            
-            // 3. Filtrer les cartes
-            merveilleCards.forEach(card => {  // ← BOUCLE MANQUANTE !
-                const cardCategory = card.getAttribute('data-category');
+            anchor.addEventListener('click', function (e) {
+                // addEventListener ajoute un écouteur d'événement "click" sur chaque lien
+                // La fonction anonyme se déclenche quand on clique
                 
-                if (cardCategory === selectedCategory) {
-                    card.style.display = 'block';  // Affiche si correspond
-                } else {
-                    card.style.display = 'none';   // Cache sinon
+                e.preventDefault();
+                // preventDefault() empêche le comportement par défaut du lien (saut instantané vers l'ancre)
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                // Récupère l'élément cible :
+                // - this.getAttribute('href') obtient la valeur du href (ex: "#merveilles")
+                // - document.querySelector() trouve l'élément avec cet ID
+                
+                if (target) {
+                    // Vérifie que la cible existe (sécurité)
+                    
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                    // scrollIntoView() fait défiler jusqu'à l'élément
+                    // behavior: 'smooth' crée une animation fluide au lieu d'un saut brutal
+                    // block: 'start' aligne le haut de l'élément avec le haut de la fenêtre
                 }
             });
         });
-    
-	
+
+        // ===== BOUTONS DE CATÉGORIES (Filtrage des merveilles) =====
+const categoryBtns = document.querySelectorAll('.category-btn');
+const merveilleCards = document.querySelectorAll('.merveille-card');
+
+categoryBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+        // 1. Changer le bouton actif visuellement
+        categoryBtns.forEach(b => b.classList.remove('active'));
+        this.classList.add('active');
+        
+        // 2. Récupérer la catégorie sélectionnée
+        const selectedCategory = this.getAttribute('data-category');
+        
+        // 3. Filtrer les cartes
+        merveilleCards.forEach(card => {
+            const cardCategory = card.getAttribute('data-category');
+            
+            if (cardCategory === selectedCategory) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+});
+		
 		// ===== MODAL OU POP UP ARTICLES =====
 
 // Contenu complet des articles
@@ -1868,9 +1906,10 @@ window.addEventListener('click', function(event) {
         document.body.style.overflow = 'auto';
     }
 });
+		
+		
+    </script>
 
-	   
-</script>
 </body>
 </html>
 
