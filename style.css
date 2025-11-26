@@ -928,7 +928,9 @@ details p {
             }
         }
 
-.legal-container {
+	         /* ========== SECTION MENTIONS LEGALES ========== */
+
+      .legal-container {
             max-width: 800px;
             margin: 0 auto;
             padding: 2rem;
