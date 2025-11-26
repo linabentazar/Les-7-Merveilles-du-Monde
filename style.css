@@ -715,7 +715,7 @@ details p {
             transition: transform 0.3s;
         }
 
-	 /* ========== IMAGES SPÉCIFIQUES POUR CHAQUE CIRCUIT ========== */
+/* ========== IMAGES SPÉCIFIQUES POUR CHAQUE CIRCUIT ========== */
         
         /*  1 */
         .experience-bg.circuit {
@@ -741,11 +741,11 @@ details p {
             background-image: url('https://images.unsplash.com/photo-1578637387939-43c525550085?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
         }
 		
-
+		
         .experience-card:hover .experience-bg {
-            /* modifie le fond au survol de la carte,  */
+            /* Au survol de la carte, modifie le fond */
             transform: scale(1.05);
-            /* effet d'agrandissement subtil */
+            /* Zoom de 5% - effet d'agrandissement subtil */
         }
 
         .experience-overlay {
@@ -753,22 +753,33 @@ details p {
             position: absolute;
             /* Positionné par rapport à .experience-card */
             bottom: 0;
+            /* Collé en bas */
             left: 0;
+            /* Collé à gauche */
             right: 0;
-            padding: 40px;
+            /* Collé à droite (prend toute la largeur) */
+            padding: 2.5rem;
+            /* Espacement interne généreux */
             background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+            /* Dégradé noir semi-transparent du bas vers le haut - rend le texte lisible */
             color: white;
+            /* Texte blanc sur fond sombre */
         }
 
         .experience-overlay h3 {
-            font-size: 28.8px;
-            margin-bottom: 8px;
+            /* Titre de l'expérience */
+            font-size: 1.8rem;
+            /* Grande taille */
+            margin-bottom: 0.5rem;
+            /* Petit espace avant la description */
         }
 
         .experience-overlay p {
-            font-size: 15.2px;
+            /* Description de l'expérience (durée, destinations) */
+            font-size: 0.95rem;
+            /* Taille normale */
             opacity: 0.9;
-            /* légèrement transparent (90% opaque) pour hiérarchie visuelle */
+            /* Légèrement transparent (90% opaque) pour hiérarchie visuelle */
         }
 
 /* ========== SECTION CONSEILS ========== */
