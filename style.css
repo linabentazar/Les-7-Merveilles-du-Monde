@@ -693,31 +693,27 @@ details p {
 
 /* ========== SECTION EXPÉRIENCES ========== */
         
-        .experiences-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            /* 2 colonnes de taille égale (1fr = 1 fraction) */
-            gap: 32px;
-        }
+.experience-card {
+    position: relative;
+    height: 400px;
+    overflow: hidden;
+    cursor: pointer;
+}
 
-        .experience-card {
-            position: relative;
-            /* pour positionner l'overlay en absolute */
-            height: 400px;
-            overflow: hidden;
-            /* Cache le débordement lors du zoom */
-            cursor: pointer;
-        }
+.experience-card a {
+    display: block;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+}
 
-        .experience-bg {
-            height: 100%;
-            background-color: #1a4d2e;
-            transition: transform 0.3s;
-			background-size: cover;
-    		background-position: center;
-   			background-repeat: no-repeat;
-        }
-
+.experience-bg {
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.3s;
+}
 /* ========== IMAGES SPÉCIFIQUES POUR CHAQUE CIRCUIT ========== */
         
         /*  1 */
