@@ -833,6 +833,7 @@ details p {
         
         footer {
             background-color: #1a4d2e;
+            align-items: center;
             color: white;
             padding: 64px 48px 32px;
         }
