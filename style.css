@@ -838,7 +838,12 @@ details p {
         }
 
         .footer-content {
-    grid-template-columns: repeat(3, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* ← 3 colonnes égales */
+    gap: 3rem;
+    margin-bottom: 2rem;
 }
 
 /* responsive sur tablette */
@@ -852,6 +857,7 @@ details p {
 @media (max-width: 768px) {
     .footer-content {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 }
 
