@@ -838,15 +838,22 @@ details p {
         }
 
         .footer-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            /* centre horizontalement */
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            /* colonnes adaptatives, minimum 250px */
-            gap: 48px;
-            margin-bottom: 32px;
-        }
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* responsive sur tablette */
+@media (max-width: 1024px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* responsive sur mobile */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
 
         .footer-section h4 {
             margin-bottom: 24px;
