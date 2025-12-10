@@ -33,7 +33,7 @@
 			
             <div class="logo">
     <a href="#accueil">
-        <img src="monlogo.png" alt="Logo 7 Merveilles du Monde">
+        <img src="monlogo.png" alt="Logo 7 Merveilles du Monde - Retour à l'accueil">
     </a>
 			</div>
     
@@ -61,7 +61,8 @@
             <!-- bouton pour inviter l'utilisateur à scroller vers les merveilles -->
         </div>
     </section>
-<!-- ========== SECTION VIDÉO YOUTUBE ========== -->
+	
+<!-- ========== SECTION VIDÉO YOUTUBE ACCESSIBLE========== -->
     <section class="section video-section" style="background-color: white;">
         <!-- Section vidéo avec fond blanc pour contraster avec les autres sections -->
         
@@ -86,6 +87,47 @@
         </div>
     </section>
 	
+	<!-- ========== SECTION VIDÉO ACCESSIBLE ========== -->
+<section class="section video-section" style="background-color: white;">
+    
+    <h2 class="section-title">Découvrez les Merveilles en Images</h2>
+    
+    <p class="section-subtitle">Plongez dans l'histoire et la beauté des sites les plus extraordinaires</p>
+    
+    <!-- Conteneur avec rôle pour les lecteurs d'écran -->
+    <div role="region" aria-labelledby="video-title">
+        
+        <!-- Titre accessible pour la région -->
+        <h3 id="video-title" class="sr-only">Documentaire vidéo</h3>
+        
+        <!-- IFRAME youtube vidéo avec tous les attributs d'accessibilité -->
+        <iframe 
+           width="560"
+           height="315"
+           src="https://www.youtube.com/embed/eEX4uEHinvg?si=a-2gkpS-Cs5ZiwA-"
+           title="Documentaire : Les 7 Merveilles du Monde Antique"
+           aria-label="Vidéo documentaire sur l'histoire des 7 Merveilles du Monde"
+           aria-describedby="video-desc" 
+           frameborder="0" 
+           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+           referrerpolicy="strict-origin-when-cross-origin" 
+           allowfullscreen>
+        </iframe>
+        
+        <!-- Description cachée pour les lecteurs d'écran -->
+        <p id="video-desc" class="sr-only">
+            Documentaire éducatif de 15 minutes présentant les 7 Merveilles du Monde Antique.
+            Contenu : histoire, construction, localisation et importance culturelle de chaque merveille.
+            Sous-titres disponibles en français.
+        </p>
+        
+        <!-- Indication visuelle -->
+        <p style="text-align: center; color: #666; margin-top: 1rem; font-size: 0.9rem;">
+            🎬 Documentaire sous-titré disponible
+        </p>
+        
+    </div>
+</section>
 
 	 <!-- ========== SECTION MERVEILLES ========== -->
     <section class="section" id="merveilles">
@@ -121,8 +163,14 @@
             <div class="merveille-card" data-category="antiques">
                 <!-- carte avec attribut data-category="antiques" pour le filtrage -->
                 
-                <div class="merveille-image pyramide"></div>
-                <!-- placeholder pour l'image, classe "pyramide" pour cibler cette carte spécifiquement en CSS -->
+				<!-- placeholder pour l'image, classe "pyramide" pour cibler cette carte spécifiquement en CSS -->
+                <div class="merveille-image pyramide"        
+
+					role="img" 
+					aria-label="Pyramide de Gizeh en Égypte, la plus ancienne des 7 merveilles">
+				<!-- alternative texte -->
+
+				</div>
                 
                 <div class="merveille-content">                    
                     <h3>Grande Pyramide de Gizeh</h3>                    
@@ -147,7 +195,12 @@
 
             <!-- CARTE 2 : Jardins suspendus -->
             <div class="merveille-card" data-category="antiques">
-                <div class="merveille-image jardins"></div>
+				
+                <div class="merveille-image jardins"
+					role="img"
+					aria-label="Représentation des Jardins suspendus de Babylone en Irak antique">
+				</div>
+					
                 <div class="merveille-content">
                     <h3>Jardins suspendus de Babylone</h3>
                     <p class="merveille-location">Irak (antique)</p>
@@ -170,7 +223,12 @@
 
             <!-- CARTE 3 : Statue de Zeus -->
             <div class="merveille-card" data-category="antiques">
-                <div class="merveille-image zeus"></div>
+				
+                <div class="merveille-image zeus"
+					role="img"
+					aria-label="Statue du Christ Rédempteur dominant Rio de Janeiro au Brésil">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Statue de Zeus à Olympie</h3>
                     <p class="merveille-location">Grèce</p>
@@ -191,7 +249,12 @@
 
             <!-- CARTE 4 : Temple d'Artémis -->
             <div class="merveille-card" data-category="antiques">
-                <div class="merveille-image artemis"></div>
+				
+                <div class="merveille-image artemis"
+					role="img"
+					aria-label="Le temple d'Artémis">				
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Temple d'Artémis à Éphèse</h3>
                     <p class="merveille-location">Turquie</p>
@@ -213,7 +276,12 @@
 
             <!-- CARTE 5 : Mausolée -->
             <div class="merveille-card" data-category="antiques">
-                <div class="merveille-image mausolee"></div>
+				
+                <div class="merveille-image mausolee"
+					role="img"
+					aria-label="Le Mausolée">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Mausolée d'Halicarnasse</h3>
                     <p class="merveille-location">Turquie</p>
@@ -235,7 +303,12 @@
 
             <!-- CARTE 6 : Colosse de Rhodes -->
             <div class="merveille-card" data-category="antiques">
-                <div class="merveille-image colosse"></div>
+				
+                <div class="merveille-image colosse"
+					role="img"
+					aria-label="Le Colosse de Rhodes">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Colosse de Rhodes</h3>
                     <p class="merveille-location">Grèce</p>
@@ -257,7 +330,12 @@
 
             <!-- CARTE 7 : Phare d'Alexandrie -->
             <div class="merveille-card" data-category="antiques">
-                <div class="merveille-image phare"></div>
+				
+                <div class="merveille-image phare"
+					role="img"
+					aria-label="Le phare de'Alexandrie">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Phare d'Alexandrie</h3>
                     <p class="merveille-location">Égypte</p>
@@ -281,7 +359,12 @@
             
             <!-- CARTE 8 : Grande Muraille -->
             <div class="merveille-card" data-category="modernes" style="display: none;">
-                <div class="merveille-image muraille"></div>
+				
+                <div class="merveille-image muraille"
+					role="img"
+					aria-label="La Grande muraille de Chine">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>La Grande Muraille de Chine</h3>
                     <p class="merveille-location">Chine</p>
@@ -303,7 +386,12 @@
 
             <!-- CARTE 9 : Pétra -->
             <div class="merveille-card" data-category="modernes" style="display: none;">
-                <div class="merveille-image petra"></div>
+				
+                <div class="merveille-image petra"
+					role="img"
+					aria-label="La citée Pétra en Jordanie">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Pétra</h3>
                     <p class="merveille-location">Jordanie</p>
@@ -325,7 +413,12 @@
 
             <!-- CARTE 10 : Christ Rédempteur -->
             <div class="merveille-card" data-category="modernes" style="display: none;">
-                <div class="merveille-image christ"></div>
+				
+                <div class="merveille-image christ"
+					role="img"
+					aria-label="Le Christ Rédempteur au Brésil">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Le Christ Rédempteur</h3>
                     <p class="merveille-location">Brésil</p>
@@ -348,7 +441,12 @@
 
             <!-- CARTE 11 : Machu Picchu -->
             <div class="merveille-card" data-category="modernes" style="display: none;">
-                <div class="merveille-image machu"></div>
+				
+                <div class="merveille-image machu"
+					role="img"
+					aria-label="Le Machu Picchu au Pérou">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Le Machu Picchu</h3>
                     <p class="merveille-location">Pérou</p>
@@ -370,7 +468,12 @@
 
             <!-- CARTE 12 : Chichén Itzá -->
             <div class="merveille-card" data-category="modernes" style="display: none;">
-                <div class="merveille-image chichen"></div>
+				
+                <div class="merveille-image chichen"
+					role="img"
+					aria-label="Le Chichén Itzà au Mexique">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Chichén Itzá</h3>
                     <p class="merveille-location">Mexique</p>
@@ -391,7 +494,12 @@
 
             <!-- CARTE 13 : Colisée -->
             <div class="merveille-card" data-category="modernes" style="display: none;">
-                <div class="merveille-image colisee"></div>
+				
+                <div class="merveille-image colisee"
+					role="img"
+					aria-label="Le Colisée en Italie">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Colisée de Rome</h3>
                     <p class="merveille-location">Italie</p>
@@ -414,7 +522,12 @@
 
             <!-- CARTE 14 : Taj Mahal -->
             <div class="merveille-card" data-category="modernes" style="display: none;">
-                <div class="merveille-image taj"></div>
+				
+                <div class="merveille-image taj"
+					role="img"
+					aria-label="Le Taj Mahal en Inde">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Le Taj Mahal </h3>
                     <p class="merveille-location">Inde</p>
@@ -441,7 +554,12 @@
             
             <!-- CARTE 15 : La forêt amazonienne -->
             <div class="merveille-card" data-category="naturelles" style="display: none;">
-                <div class="merveille-image amazonie"></div>
+				
+                <div class="merveille-image amazonie"
+					role="img"
+					aria-label="La forêt amazionenne">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>La Forêt Amazonienne</h3>
                     <p class="merveille-location">Amérique du Sud</p>
@@ -464,7 +582,12 @@
 
             <!-- CARTE 16 : La Table Mountain -->
             <div class="merveille-card" data-category="naturelles" style="display: none;">
-                <div class="merveille-image table"></div>
+				
+                <div class="merveille-image table"
+					role="img"
+					aria-label="La Table Mountain en Afrique du sud">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>La Table Mountain</h3>
                     <p class="merveille-location">Afrique du Sud</p>
@@ -486,7 +609,12 @@
 
             <!-- CARTE 17 : Les Chutes d’Iguazú -->
             <div class="merveille-card" data-category="naturelles" style="display: none;">
-                <div class="merveille-image iguazu"></div>
+				
+                <div class="merveille-image iguazu"
+					role="img"
+					aria-label="Les Chutes d'Iguazu en Argentine">					
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Les Chutes d’Iguazú</h3>
                     <p class="merveille-location">Brésil / Argentine </p>
@@ -509,7 +637,12 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
 
             <!-- CARTE 18 : Jeju island -->
             <div class="merveille-card" data-category="naturelles" style="display: none;">
-                <div class="merveille-image jeju"></div>
+				
+                <div class="merveille-image jeju"
+					role="img"
+					aria-label="L'île de Jeju en Corée du sud">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>L’île de Jeju</h3>
                     <p class="merveille-location">Corée du Sud</p>
@@ -532,7 +665,12 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
 
             <!-- CARTE 19 : Parc national komodo -->
             <div class="merveille-card" data-category="naturelles" style="display: none;">
-                <div class="merveille-image komodo"></div>
+				
+                <div class="merveille-image komodo"
+					role="img"
+					aria-label="Le parc national du Komodo">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Le Parc national de Komodo</h3>
                     <p class="merveille-location">Indonésie</p>
@@ -552,7 +690,12 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
 
             <!-- CARTE 20 : grand canyon -->
             <div class="merveille-card" data-category="naturelles" style="display: none;">
-                <div class="merveille-image canyon"></div>
+				
+                <div class="merveille-image canyon"
+					role="img"
+					aria-label="Le Grand Canyon">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Le Grand Canyon</h3>
                     <p class="merveille-location">États-Unis</p>
@@ -573,7 +716,12 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
 
             <!-- CARTE 21 : Puerto princesa -->
             <div class="merveille-card" data-category="naturelles" style="display: none;">
-                <div class="merveille-image puerto"></div>
+				
+                <div class="merveille-image puerto"
+					role="img"
+					aria-label="Le fleuve souterrain de Puerto Princesa">
+				</div>
+				
                 <div class="merveille-content">
                     <h3>Le fleuve souterrain de Puerto Princesa</h3>
                     <p class="merveille-location">Philippines</p>
@@ -611,9 +759,12 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
             <div class="blog-card" data-article="gizeh">
 
                 <!-- Carte d'article individuelle -->
-                
-                <div class="blog-image gizeh"></div>
-                <!-- Placeholder pour l'image d'illustration de l'article -->
+				
+                <!-- placeholder pour l'image qui illustre l'article -->
+                <div class="blog-image gizeh"
+					role="img"
+					aria-label="Archéologues travaillant sur le plateau de Gizeh en Égypte">
+				</div>
                 
                 <div class="blog-content">
                     <!-- Conteneur du contenu textuel -->
@@ -636,7 +787,11 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
             <!-- ARTICLE 2 -->
             <div class="blog-card" data-article="taj">
 
-                <div class="blog-image taj"></div>
+                <div class="blog-image taj"
+					role="img"
+					aria-label="Taj Mahal en Inde, monument de marbre blanc sous un ciel bleu">				
+				</div>
+				
                 <div class="blog-content">
                     <p class="blog-date">08 Octobre 2025</p>
                     <h3>Restauration du Taj Mahal : un chantier colossal</h3>
@@ -648,7 +803,11 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
             <!-- ARTICLE 3 -->
             <div class="blog-card" data-article="climat">
 
-                <div class="blog-image climat"></div>
+                <div class="blog-image climat"
+					role="img"
+					aria-label="Manifestation pour protéger les merveilles menacées par le climat">		
+				</div>
+				
                 <div class="blog-content">
                     <p class="blog-date">01 Octobre 2025</p>
                     <h3>Les merveilles naturelles menacées par le climat</h3>
@@ -674,7 +833,12 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
             <!-- EXPÉRIENCE 1 -->
             <div class="experience-card">  
 			<a href="circuits-antiques.html" style="text-decoration: none; color: inherit; display: block;">
-                <div class="experience-bg circuit"></div>                
+				
+                <div class="experience-bg circuit"
+					role="img"
+					aria-label="Paysage désertique avec ruines antiques en Égypte">
+				</div>      
+				
                 <div class="experience-overlay">
                     <!-- superposition sombre en bas contenant le texte -->
                     
@@ -688,7 +852,12 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
             <!-- EXPÉRIENCE 2 -->
             <div class="experience-card">
 			<a href="odyssee-modernes.html" style="text-decoration: none; color: inherit; display: block;">
-                <div class="experience-bg odyssee"></div>
+
+                <div class="experience-bg odyssee"
+					role="img"
+					aria-label="Statue du Christ Rédempteur sous un ciel orangé">
+				</div>
+				
                 <div class="experience-overlay">
                     <h3>Odyssée des Merveilles Modernes</h3>
                     <p>21 jours - Monde entier • Du Taj Mahal au Christ Rédempteur</p>
@@ -699,7 +868,12 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
             <!-- EXPÉRIENCE 3 -->
             <div class="experience-card">
 			<a href="splendeurs-naturelles.html" style="text-decoration: none; color: inherit; display: block;">
-                <div class="experience-bg splendeurs"></div>
+				
+                <div class="experience-bg splendeurs"
+					role="img"
+					aria-label="Chutes d'eau spectaculaires en Amérique du Sud">
+				</div>
+				
                 <div class="experience-overlay">
                     <h3>Splendeurs Naturelles</h3>
                     <p>18 jours - Amérique du Sud • Chutes d'Iguazú, Amazonie, Patagonie</p>
@@ -710,7 +884,12 @@ Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indo
             <!-- EXPÉRIENCE 4 -->
             <div class="experience-card">
 			<a href="voyage-photographique.html" style="text-decoration: none; color: inherit; display: block;">
-                <div class="experience-bg photo"></div>
+				
+                <div class="experience-bg photo"
+					role="img"
+					aria-label="Le Mont Fuji à l'aube">
+				</div>
+				
                 <div class="experience-overlay">
                     <h3>Voyage Photographique</h3>
                     <p>12 jours - Asie • Temples d'Angkor, Grande Muraille, Mont Fuji</p>
