@@ -1,1221 +1,1775 @@
 <!DOCTYPE html>
 <html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
     <!-- ========== MÉTADONNÉES COMPLÈTES ========== -->
     <!-- Titre -->
     <title>Les 7 Merveilles du Monde | Voyage & Découverte</title>
-    
+
     <!-- Description du site (important pour Google) -->
-    <meta name="description" content="Découvrez les 7 Merveilles du Monde antique et moderne. Guide complet sur les pyramides de Gizeh, le Taj Mahal, Pétra, le Machu Picchu et autres trésors du patrimoine mondial.">
-    
+    <meta
+      name="description"
+      content="Découvrez les 7 Merveilles du Monde antique et moderne. Guide complet sur les pyramides de Gizeh, le Taj Mahal, Pétra, le Machu Picchu et autres trésors du patrimoine mondial."
+    />
+
     <!-- Mots-clés (pour le référencement) -->
-    <meta name="keywords" content="7 merveilles du monde, pyramides de Gizeh, Taj Mahal, Machu Picchu, Pétra, Christ Rédempteur, Grande Muraille, Colisée, voyage, tourisme, patrimoine mondial, UNESCO">
-    
+    <meta
+      name="keywords"
+      content="7 merveilles du monde, pyramides de Gizeh, Taj Mahal, Machu Picchu, Pétra, Christ Rédempteur, Grande Muraille, Colisée, voyage, tourisme, patrimoine mondial, UNESCO"
+    />
+
     <!-- Auteur du site -->
-    <meta name="author" content="Lina Bouchelaghem">
-    
+    <meta name="author" content="Lina Bouchelaghem" />
+
     <!-- Autres métadonnées utiles -->
-    <meta name="robots" content="index, follow"> <!-- Dit à Google d'indexer la page -->
-    <meta name="language" content="French">
-    <meta name="copyright" content="© 2025 Les 7 Merveilles du Monde">
-    
-    <link rel="stylesheet" href="style.css">
-</head>   
-<body>
-	
- <!-- ========== SKIP LINK POUR ACCESSIBILITE ========== -->
-    <a href="#main-content" class="skip-link">
-        Aller directement au contenu
-    </a>
-	
+    <meta name="robots" content="index, follow" />
+    <!-- Dit à Google d'indexer la page -->
+    <meta name="language" content="French" />
+    <meta name="copyright" content="© 2025 Les 7 Merveilles du Monde" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ========== SKIP LINK POUR ACCESSIBILITE ========== -->
+    <a href="#main-content" class="skip-link"> Aller directement au contenu </a>
+
     <!-- ======== HEADER & NAVIGATION ======== -->
     <header>
-        <nav>
-			
-            <div class="logo">
-    <a href="#accueil">
-        <img src="monlogo.png" alt="Logo 7 Merveilles du Monde - Retour à l'accueil">
-    </a>
-			</div>
-    
-            <ul class="nav-links">
-                
-                <li><a href="#merveilles">Merveilles</a></li>
-                <li><a href="#blog">Actualités</a></li>
-                <li><a href="#experiences">Expériences</a></li>
-                <li><a href="#conseils">Conseils</a></li>
-				<li><a href="#glossaire">Glossaire</a></li>
-				<li><a href="site.html">Documentation</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <div class="logo">
+          <a href="#accueil">
+            <img
+              src="monlogo.png"
+              alt="Logo 7 Merveilles du Monde - Retour à l'accueil"
+            />
+          </a>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#merveilles">Merveilles</a></li>
+          <li><a href="#blog">Actualités</a></li>
+          <li><a href="#experiences">Expériences</a></li>
+          <li><a href="#conseils">Conseils</a></li>
+          <li><a href="#glossaire">Glossaire</a></li>
+          <li><a href="site.html">Documentation</a></li>
+        </ul>
+      </nav>
     </header>
-	
+
     <!-- CONTENU PRINCIPAL -->
     <main id="main-content">
-
-    <!-- ========== Bannière d'accueil (hero section) ========== -->
-    <section class="hero" id="accueil">
-        
+      <!-- ========== Bannière d'accueil (hero section) ========== -->
+      <section class="hero" id="accueil">
         <div class="hero-content">
-            
-            <h1>Les 7 Merveilles du Monde</h1>
-            <p>Découvrez les trésors les plus extraordinaires de notre planète</p>
-			
-            <a href="#merveilles" class="btn-primary">Commencer l'exploration</a>
-            <!-- bouton pour inviter l'utilisateur à scroller vers les merveilles -->
+          <h1>Les 7 Merveilles du Monde</h1>
+          <p>Découvrez les trésors les plus extraordinaires de notre planète</p>
+
+          <a href="#merveilles" class="btn-primary">Commencer l'exploration</a>
+          <!-- bouton pour inviter l'utilisateur à scroller vers les merveilles -->
         </div>
-    </section>
-       
-	
-	<!-- ========== SECTION VIDÉO ACCESSIBLE ========== -->
-<section class="section video-section" style="background-color: white;">
-    
-    <h2 class="section-title">Découvrez les Merveilles en Images</h2>
-    
-    <p class="section-subtitle">Plongez dans l'histoire et la beauté des sites les plus extraordinaires</p>
-    
-    <!-- Conteneur avec rôle pour les lecteurs d'écran -->
-    <div role="region" aria-labelledby="video-title">
-        
-        <!-- Titre accessible pour la région -->
-        <h3 id="video-title" class="sr-only">Documentaire vidéo</h3>
+      </section>
 
-		
-		<div style="text-align: center;">
-        <!-- IFRAME youtube vidéo avec tous les attributs d'accessibilité -->
-        <iframe 
-           width="560"
-           height="315"
-           src="https://www.youtube.com/embed/eEX4uEHinvg?si=a-2gkpS-Cs5ZiwA-"
-           title="Documentaire : Les 7 Merveilles du Monde Antique"
-           aria-label="Vidéo documentaire sur l'histoire des 7 Merveilles du Monde"
-           aria-describedby="video-desc" 
-           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-           referrerpolicy="strict-origin-when-cross-origin" 
-           allowfullscreen>
-        </iframe>
-        
-        <!-- Description cachée pour les lecteurs d'écran -->
-        <p id="video-desc" class="sr-only">
-            Documentaire éducatif de 15 minutes présentant les 7 Merveilles du Monde Antique.
-            Contenu : histoire, construction, localisation et importance culturelle de chaque merveille.
-            Sous-titres disponibles en français.
-        </p>
-        
-        <!-- Indication visuelle -->
-        <p style="text-align: center; color: #666; margin-top: 1rem; font-size: 0.9rem;">
-            🎬 Documentaire sous-titré disponible
-        </p>
-        
-    	</div>
-	</div>
-</section>
+      <!-- ========== SECTION VIDÉO ACCESSIBLE ========== -->
+      <section class="section video-section" style="background-color: white;">
+        <h2 class="section-title">Découvrez les Merveilles en Images</h2>
 
-	 <!-- ========== SECTION MERVEILLES ========== -->
-    <section class="section" id="merveilles">
+        <p class="section-subtitle">
+          Plongez dans l'histoire et la beauté des sites les plus
+          extraordinaires
+        </p>
+
+        <!-- Conteneur avec rôle pour les lecteurs d'écran -->
+        <div role="region" aria-labelledby="video-title">
+          <!-- Titre accessible pour la région -->
+          <h3 id="video-title" class="sr-only">Documentaire vidéo</h3>
+
+          <div style="text-align: center;">
+            <!-- IFRAME youtube vidéo avec tous les attributs d'accessibilité -->
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/eEX4uEHinvg?si=a-2gkpS-Cs5ZiwA-"
+              title="Documentaire : Les 7 Merveilles du Monde Antique"
+              aria-label="Vidéo documentaire sur l'histoire des 7 Merveilles du Monde"
+              aria-describedby="video-desc"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            >
+            </iframe>
+
+            <!-- Description cachée pour les lecteurs d'écran -->
+            <p id="video-desc" class="sr-only">
+              Documentaire éducatif de 15 minutes présentant les 7 Merveilles du
+              Monde Antique. Contenu : histoire, construction, localisation et
+              importance culturelle de chaque merveille. Sous-titres disponibles
+              en français.
+            </p>
+
+            <!-- Indication visuelle -->
+            <p
+              style="text-align: center; color: #666; margin-top: 1rem; font-size: 0.9rem;"
+            >
+              🎬 Documentaire sous-titré disponible
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ========== SECTION MERVEILLES ========== -->
+      <section class="section" id="merveilles">
         <!-- Section principale présentant les 7 merveilles, id="merveilles" pour navigation -->
-        
+
         <h2 class="section-title">Explorez les Merveilles</h2>
         <!-- <h2> titre de niveau 2, sous-titre de section (hiérarchie importante pour SEO et accessibilité) -->
-        
-        <p class="section-subtitle">Des monuments antiques aux splendeurs naturelles</p>
+
+        <p class="section-subtitle">
+          Des monuments antiques aux splendeurs naturelles
+        </p>
         <!-- Sous-titre descriptif de la section -->
-        
+
         <div class="merveilles-categories">
-            <!-- Conteneur des boutons de filtrage par catégorie -->
-            
-            <button class="category-btn active" data-category="antiques">Antiques</button>
-            <!-- <button> avec attribut data-category="antiques" pour identifier la catégorie à filtrer -->
-            
-            <button class="category-btn" data-category="modernes">Modernes</button>
-            <!-- Bouton pour filtrer les merveilles modernes -->
-            
-            <button class="category-btn" data-category="naturelles">Naturelles</button>
-            <!-- Bouton pour filtrer les merveilles naturelles -->
+          <!-- Conteneur des boutons de filtrage par catégorie -->
+
+          <button class="category-btn active" data-category="antiques">
+            Antiques
+          </button>
+          <!-- <button> avec attribut data-category="antiques" pour identifier la catégorie à filtrer -->
+
+          <button class="category-btn" data-category="modernes">
+            Modernes
+          </button>
+          <!-- Bouton pour filtrer les merveilles modernes -->
+
+          <button class="category-btn" data-category="naturelles">
+            Naturelles
+          </button>
+          <!-- Bouton pour filtrer les merveilles naturelles -->
         </div>
-	
 
-        <div class="merveilles-grid"> <!-- VERIFIER QUE JAI FERME LE DIV PLUS BAS-->
-		<!-- Conteneur Grid qui affiche les cartes de merveilles en grille responsive -->
-            
-        <!-- ========== MERVEILLES ANTIQUES ========== -->
-            
-            <!-- CARTE 1 : Grande Pyramide -->
-<div class="merveille-card" data-category="antiques">
-                <!-- carte avec attribut data-category="antiques" pour le filtrage -->
-                
-				<!-- placeholder pour l'image, classe "pyramide" pour cibler cette carte spécifiquement en CSS -->
-                <div class="merveille-image pyramide"        
+        <div class="merveilles-grid">
+          <!-- VERIFIER QUE JAI FERME LE DIV PLUS BAS-->
+          <!-- Conteneur Grid qui affiche les cartes de merveilles en grille responsive -->
 
-					role="img" 
-					aria-label="Pyramide de Gizeh en Égypte, la plus ancienne des 7 merveilles">
-				<!-- alternative texte -->
-				</div>
-	
-				<!-- légende de l'image avec la source -->
-	        	<p class="image-legend">Pyramide de Khéops à Gizeh, Égypte<br>
-          		<small>Source : Architectural Digest</small>
-        		</p>
+          <!-- ========== MERVEILLES ANTIQUES ========== -->
 
-                
-    <div class="merveille-content">                    
-                    <h3>Grande Pyramide de Gizeh</h3>                    
-                    <p class="merveille-location">Égypte</p>                    
-        
-        <p>Chef d'œuvre éternel, la Grande Pyramide de Gizeh fut construite aux alentours de 2500 et 2800 av. J.-C sous le règne du Pharaon Khéops.</p>
-        <!-- Texte court visible par défaut -->
-        
-        <details>
-            <!-- Balise <details> crée un élément déroulant/cachable -->
-            <summary>Voir plus</summary>
-            <!-- <summary> est le texte cliquable qui affiche/cache le contenu -->
-            
-            <p>C'est la plus ancienne merveille mais également la seule survivante des 7 merveilles antiques. Située sur la rive ouest du Nil, elle mesurait à l'origine 146 m de haut (environ 138 m aujourd'hui) et fut la plus haute construction humaine pendant près de 4 000 ans.</p>
-            
-            <p>Composée de plus de 2,3 millions de blocs de calcaire et de granit, certains pesant jusqu'à 15 tonnes, elle impressionne toujours par sa précision mathématique et son alignement parfait avec les étoiles. Son rôle principal : abriter la tombe du pharaon et assurer son passage vers l'éternité.</p>
-            
-            <p>Aujourd'hui encore, la pyramide de Gizeh reste un symbole universel de mystère, de pouvoir et d'immortalité.</p>
-        </details>
-    </div>
-</div>
+          <!-- CARTE 1 : Grande Pyramide -->
+          <div class="merveille-card" data-category="antiques">
+            <!-- carte avec attribut data-category="antiques" pour le filtrage -->
 
-            <!-- CARTE 2 : Jardins suspendus -->
-            <div class="merveille-card" data-category="antiques">
-				
-                <div class="merveille-image jardins"
-					role="img"
-					aria-label="Représentation des Jardins suspendus de Babylone en Irak antique">
-				</div>
-
-        		<p class="image-legend">Jardins suspendus de Babylone (reconstitution)<br>
-           		<small>Source : Kunstkopie - Représentation artistique</small>
-        		</p>		
-				
-                <div class="merveille-content">
-                    <h3>Jardins suspendus de Babylone</h3>
-                    <p class="merveille-location">Irak (antique)</p>
-                    <p>Jardins légendaires construits au VIe siècle av. J.-C., symbole d'une prouesse architecturale et botanique exceptionnelle de l'antiquité.</p>
-                
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Les jardins suspendus de Babylone se trouvaient à 50 km au sud de Bagdad, sur la rive de l'Euphrate. Ils auraient été construits en 600 av J-C. Cependant aucun historien grec n'en a trouvé des traces. Il s'agit en fait de récits et d'histoires racontées par les soldats à l’époque. Selon la légende, le roi Nabuchodonosor II (VIᵉ siècle av. J.-C.) aurait fait ériger ces jardins luxuriants pour consoler son épouse, Amytis de Médie, nostalgique des montagnes verdoyantes de son pays natal (Iran actuel). 
- </p>
-            <p>Ces jardins étaient composés de plusieurs étages en terrasses, soutenus par des voûtes et des piliers de brique. Et chaque étage avait une surface d'environ cent-vingt mètres carrés. Un immense escalier de marbre reliait ces terrasses, où l'eau était amenée depuis l'Euphrate par un ingénieux système de vis hydrauliques. Cette merveille était un véritable jardin botanique où l'on cultivait les plantes et les arbres de Mésopotamie ainsi que ceux des montagnes de Médie. 
-  </p>
-			<p>Quoi qu’il en soit, ils symbolisent l’harmonie entre la nature et l’ingénierie humaine, un véritable paradis au cœur du désert.
-  </p>
-            
-       			</details>
-				
-				</div>
+            <!-- placeholder pour l'image, classe "pyramide" pour cibler cette carte spécifiquement en CSS -->
+            <div
+              class="merveille-image pyramide"
+              role="img"
+              aria-label="Pyramide de Gizeh en Égypte, la plus ancienne des 7 merveilles"
+            >
+              <!-- alternative texte -->
             </div>
 
-            <!-- CARTE 3 : Statue de Zeus -->
-            <div class="merveille-card" data-category="antiques">
-				
-                <div class="merveille-image zeus"
-					role="img"
-					aria-label="Statue du Christ Rédempteur dominant Rio de Janeiro au Brésil">
-				</div>
+            <!-- légende de l'image avec la source -->
+            <p class="image-legend">
+              Pyramide de Khéops à Gizeh, Égypte<br />
+              <small>Source : Architectural Digest</small>
+            </p>
 
-        		<p class="image-legend">Statue chryséléphantine de Zeus à Olympie<br>
-           		<small>Source : Kunstkopie - Domaine public</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Statue de Zeus à Olympie</h3>
-                    <p class="merveille-location">Grèce</p>
-                    <p>Chef-d'œuvre sculpté par Phidias vers 436 av. J.-C., cette statue <a href="#terme-chryselephantine" class="terme-lien">chryséléphantine</a> représentait le roi des dieux grecs dans toute sa majesté.</p>
-               
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Réalisée par le sculpteur Phidias vers 435 av. J.-C., la statue de Zeus se situait sur la côte ouest de la Grèce dans la Grand Temple d’Olympie. Haute de plus de 12 mètres, la statue était composée de matériaux nobles tels que l'or et l'ivoire. Quant au trône de Zeus, sur lequel la statue était assise, celui-ci était décoré avec des pierres précieuses, de l'ivoire, de l'ébène et de l'or. Zeus, en position assis, tient dans sa main droite la déesse de la Victoire, Niké. Dans sa main gauche, il tient un sceptre surmonté d'un aigle. 
- </p>
-            <p> L’expression majestueuse de Zeus inspirait à la fois respect et crainte. Selon les écrits anciens, la statue semblait presque vivante. Elle fut détruite plusieurs siècles plus tard, probablement lors d’un incendie à Constantinople. Cette œuvre monumentale témoignait de la foi grecque dans la beauté divine et l’harmonie entre l’art et la religion.
-</p>
-            
-       			</details>
-				
-				</div>
+            <div class="merveille-content">
+              <h3>Grande Pyramide de Gizeh</h3>
+              <p class="merveille-location">Égypte</p>
+
+              <p>
+                Chef d'œuvre éternel, la Grande Pyramide de Gizeh fut construite
+                aux alentours de 2500 et 2800 av. J.-C sous le règne du Pharaon
+                Khéops.
+              </p>
+              <!-- Texte court visible par défaut -->
+
+              <details>
+                <!-- Balise <details> crée un élément déroulant/cachable -->
+                <summary>Voir plus</summary>
+                <!-- <summary> est le texte cliquable qui affiche/cache le contenu -->
+
+                <p>
+                  C'est la plus ancienne merveille mais également la seule
+                  survivante des 7 merveilles antiques. Située sur la rive ouest
+                  du Nil, elle mesurait à l'origine 146 m de haut (environ 138 m
+                  aujourd'hui) et fut la plus haute construction humaine pendant
+                  près de 4 000 ans.
+                </p>
+
+                <p>
+                  Composée de plus de 2,3 millions de blocs de calcaire et de
+                  granit, certains pesant jusqu'à 15 tonnes, elle impressionne
+                  toujours par sa précision mathématique et son alignement
+                  parfait avec les étoiles. Son rôle principal : abriter la
+                  tombe du pharaon et assurer son passage vers l'éternité.
+                </p>
+
+                <p>
+                  Aujourd'hui encore, la pyramide de Gizeh reste un symbole
+                  universel de mystère, de pouvoir et d'immortalité.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 4 : Temple d'Artémis -->
-            <div class="merveille-card" data-category="antiques">
-				
-                <div class="merveille-image artemis"
-					role="img"
-					aria-label="Le temple d'Artémis">				
-				</div>
+          <!-- CARTE 2 : Jardins suspendus -->
+          <div class="merveille-card" data-category="antiques">
+            <div
+              class="merveille-image jardins"
+              role="img"
+              aria-label="Représentation des Jardins suspendus de Babylone en Irak antique"
+            ></div>
 
- 				<p class="image-legend">Temple d'Artémis à Éphèse<br>
-           		<small>Source : Domaine public</small>
-        		</p>	
-				
-                <div class="merveille-content">
-                    <h3>Temple d'Artémis à Éphèse</h3>
-                    <p class="merveille-location">Turquie</p>
-                    <p>Sanctuaire dédié à la déesse Artémis, ce temple grec fut reconstruit trois fois et considéré comme l'un des plus grands de l'Antiquité.</p>
-               
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p> Le temple d'Artémis se situait en Turquie, dans l'ancienne ville d'Ephèse qui s'appelle aujourd'hui Selcuk, et qui est située à 50 km au sud d'Izmir. Construit vers 550 av. J.-C. à Éphèse (aujourd’hui en Turquie), il était dédié à Artémis, déesse grecque de la chasse, de la nature et de la fécondité. Ce temple a été construit, il était si magnifique qu'il a poussé le scientifique et ingénieur grec, Philon de Byzance à dire :
-</p>
-            <blockquote>« J'ai vu les murs et les jardins suspendus de l'ancienne Babylone, la statue de l'Olympien Zeus, le Colosse de Rhodes, le puissant travail des hautes pyramides et le tombeau de Mausolus. Mais quand j'ai vu le temple d'Éphèse s'élever vers les nuages, toutes ces autres merveilles ont été mises à l'ombre. » </blockquote>
- 
-            <p>Mesurant plus de 100 m de long et soutenu par 127 colonnes de marbre de 18 m chacune, il combinait beauté architecturale et richesse artistique. Détruit puis reconstruit plusieurs fois, il fut finalement ruiné au IVᵉ siècle après J.-C.
- </p>
-       			</details>
-				
-				</div>
+            <p class="image-legend">
+              Jardins suspendus de Babylone (reconstitution)<br />
+              <small>Source : Kunstkopie - Représentation artistique</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Jardins suspendus de Babylone</h3>
+              <p class="merveille-location">Irak (antique)</p>
+              <p>
+                Jardins légendaires construits au VIe siècle av. J.-C., symbole
+                d'une prouesse architecturale et botanique exceptionnelle de
+                l'antiquité.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Les jardins suspendus de Babylone se trouvaient à 50 km au sud
+                  de Bagdad, sur la rive de l'Euphrate. Ils auraient été
+                  construits en 600 av J-C. Cependant aucun historien grec n'en
+                  a trouvé des traces. Il s'agit en fait de récits et
+                  d'histoires racontées par les soldats à l’époque. Selon la
+                  légende, le roi Nabuchodonosor II (VIᵉ siècle av. J.-C.)
+                  aurait fait ériger ces jardins luxuriants pour consoler son
+                  épouse, Amytis de Médie, nostalgique des montagnes verdoyantes
+                  de son pays natal (Iran actuel).
+                </p>
+                <p>
+                  Ces jardins étaient composés de plusieurs étages en terrasses,
+                  soutenus par des voûtes et des piliers de brique. Et chaque
+                  étage avait une surface d'environ cent-vingt mètres carrés. Un
+                  immense escalier de marbre reliait ces terrasses, où l'eau
+                  était amenée depuis l'Euphrate par un ingénieux système de vis
+                  hydrauliques. Cette merveille était un véritable jardin
+                  botanique où l'on cultivait les plantes et les arbres de
+                  Mésopotamie ainsi que ceux des montagnes de Médie.
+                </p>
+                <p>
+                  Quoi qu’il en soit, ils symbolisent l’harmonie entre la nature
+                  et l’ingénierie humaine, un véritable paradis au cœur du
+                  désert.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 5 : Mausolée -->
-            <div class="merveille-card" data-category="antiques">
-				
-                <div class="merveille-image mausolee"
-					role="img"
-					aria-label="Le Mausolée">
-				</div>
+          <!-- CARTE 3 : Statue de Zeus -->
+          <div class="merveille-card" data-category="antiques">
+            <div
+              class="merveille-image zeus"
+              role="img"
+              aria-label="Statue du Christ Rédempteur dominant Rio de Janeiro au Brésil"
+            ></div>
 
-				<p class="image-legend">Mausolée d'Halicarnasse (reconstitution)<br>
-           		<small>Source : Domaine public</small>
-        		</p>				
-				
-                <div class="merveille-content">
-                    <h3>Mausolée d'Halicarnasse</h3>
-                    <p class="merveille-location">Turquie</p>
-                    <p>Monument funéraire édifié entre 353 et 350 av. J.-C., célèbre pour sa taille monumentale et ses sculptures exceptionnelles.</p>
-              
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p> Édifié entre 353 et 350 av. J.-C. à Halicarnasse (aujourd’hui Bodrum), le <a href="#terme-mausolee" class="terme-lien">Mausolée</a> était un tombeau monumental et il fut construit pour le roi Mausole, gouverneur de Carie, par sa sœur et épouse Artémise II, à sa mort, en 353 av. J.-C., pour lui rendre hommage. 
-</p>
-            <p>Le monument mesurait environ 45 m de haut et combinait les styles grec, égyptien et lycien. Son architecture à étages, ornée de sculptures raffinées, symbolisait la gloire du roi défunt. Sa beauté était telle que le mot mausolée désigne désormais tout tombeau monumental.
- </p>
-            <p>Ce monument fut détruit en partie, par un séisme, vers le XIVe siècle. Peu de temps après, les chevaliers de l'ordre de Malte décidèrent de construire une forteresse non loin de là. Ils utilisèrent les pierres du mausolée et en 1522, il n'en resta plus aucune. De nos jours, nous pouvons encore observer cette forteresse à Bodrum. D’autres fragments du monument sont conservés actuellement au British Museum à Londres.
- </p>
-       		</details>
-				
-				</div>
+            <p class="image-legend">
+              Statue chryséléphantine de Zeus à Olympie<br />
+              <small>Source : Kunstkopie - Domaine public</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Statue de Zeus à Olympie</h3>
+              <p class="merveille-location">Grèce</p>
+              <p>
+                Chef-d'œuvre sculpté par Phidias vers 436 av. J.-C., cette
+                statue
+                <a href="#terme-chryselephantine" class="terme-lien"
+                  >chryséléphantine</a
+                >
+                représentait le roi des dieux grecs dans toute sa majesté.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Réalisée par le sculpteur Phidias vers 435 av. J.-C., la
+                  statue de Zeus se situait sur la côte ouest de la Grèce dans
+                  la Grand Temple d’Olympie. Haute de plus de 12 mètres, la
+                  statue était composée de matériaux nobles tels que l'or et
+                  l'ivoire. Quant au trône de Zeus, sur lequel la statue était
+                  assise, celui-ci était décoré avec des pierres précieuses, de
+                  l'ivoire, de l'ébène et de l'or. Zeus, en position assis,
+                  tient dans sa main droite la déesse de la Victoire, Niké. Dans
+                  sa main gauche, il tient un sceptre surmonté d'un aigle.
+                </p>
+                <p>
+                  L’expression majestueuse de Zeus inspirait à la fois respect
+                  et crainte. Selon les écrits anciens, la statue semblait
+                  presque vivante. Elle fut détruite plusieurs siècles plus
+                  tard, probablement lors d’un incendie à Constantinople. Cette
+                  œuvre monumentale témoignait de la foi grecque dans la beauté
+                  divine et l’harmonie entre l’art et la religion.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 6 : Colosse de Rhodes -->
-            <div class="merveille-card" data-category="antiques">
-				
-                <div class="merveille-image colosse"
-					role="img"
-					aria-label="Le Colosse de Rhodes">
-				</div>
-				
-				<p class="image-legend">Colosse de Rhodes (représentation artistique)<br>
-           		<small>Source : Freepik Premium</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Colosse de Rhodes</h3>
-                    <p class="merveille-location">Grèce</p>
-                    <p>Statue gigantesque du dieu Hélios, haute de 30 mètres, érigée entre 292 et 280 av. J.-C. pour célébrer la victoire de Rhodes.</p>
-               
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Le Colosse de Rhodes était une statue de bronze gigantesque érigée entre 292 et 280 av. J.-C. pour célébrer la victoire de la cité de Rhodes sur l’armée de Démétrios. Haute de 33 m, elle représentait le dieu du Soleil, Hélios, et dominait fièrement le port de la ville.
- </p>
-            <p>Sa construction fut une prouesse technique : les artisans utilisèrent des plaques de bronze montées sur une structure de fer et de pierre. Malheureusement, la statue s’effondra lors d’un tremblement de terre seulement 56 ans après son achèvement.
- </p>
-            <p>Le Colosse de Rhodes reste dans l’imaginaire collectif comme un symbole de liberté et de grandeur humaine.
- </p>
-       		</details>
-				
-				</div>
+          <!-- CARTE 4 : Temple d'Artémis -->
+          <div class="merveille-card" data-category="antiques">
+            <div
+              class="merveille-image artemis"
+              role="img"
+              aria-label="Le temple d'Artémis"
+            ></div>
+
+            <p class="image-legend">
+              Temple d'Artémis à Éphèse<br />
+              <small>Source : Domaine public</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Temple d'Artémis à Éphèse</h3>
+              <p class="merveille-location">Turquie</p>
+              <p>
+                Sanctuaire dédié à la déesse Artémis, ce temple grec fut
+                reconstruit trois fois et considéré comme l'un des plus grands
+                de l'Antiquité.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Le temple d'Artémis se situait en Turquie, dans l'ancienne
+                  ville d'Ephèse qui s'appelle aujourd'hui Selcuk, et qui est
+                  située à 50 km au sud d'Izmir. Construit vers 550 av. J.-C. à
+                  Éphèse (aujourd’hui en Turquie), il était dédié à Artémis,
+                  déesse grecque de la chasse, de la nature et de la fécondité.
+                  Ce temple a été construit, il était si magnifique qu'il a
+                  poussé le scientifique et ingénieur grec, Philon de Byzance à
+                  dire :
+                </p>
+                <blockquote>
+                  « J'ai vu les murs et les jardins suspendus de l'ancienne
+                  Babylone, la statue de l'Olympien Zeus, le Colosse de Rhodes,
+                  le puissant travail des hautes pyramides et le tombeau de
+                  Mausolus. Mais quand j'ai vu le temple d'Éphèse s'élever vers
+                  les nuages, toutes ces autres merveilles ont été mises à
+                  l'ombre. »
+                </blockquote>
+
+                <p>
+                  Mesurant plus de 100 m de long et soutenu par 127 colonnes de
+                  marbre de 18 m chacune, il combinait beauté architecturale et
+                  richesse artistique. Détruit puis reconstruit plusieurs fois,
+                  il fut finalement ruiné au IVᵉ siècle après J.-C.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 7 : Phare d'Alexandrie -->
-            <div class="merveille-card" data-category="antiques">
-				
-                <div class="merveille-image phare"
-					role="img"
-					aria-label="Le phare de'Alexandrie">
-				</div>
-				
-				<p class="image-legend">Phare d'Alexandrie (reconstitution)<br>
-           		<small>Source : legypteantique.com - Usage éducatif</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Phare d'Alexandrie</h3>
-                    <p class="merveille-location">Égypte</p>
-                    <p>Tour construite au IIIe siècle av. J.-C., haute de 135 mètres, guidant les marins vers le port d'Alexandrie pendant près de 1500 ans.</p>
-               
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Situé sur l’île de Pharos, près du port d’Alexandrie, ce phare monumental fut achevé vers 280 av. J.-C. sous le règne de <a href="#terme-ptolemee" class="terme-lien">Ptolémée</a> II. Haut d’environ 120 m, il servait à guider les navires grâce à un feu et un système de miroirs réfléchissants, visibles à plusieurs kilomètres.
- </p>
-            <p>Le phare d'Alexandrie comptait trois étages: le premier était carré, le second octogonal et le troisième cylindrique. L'ensemble en marbre blanc d'où l'on voyait les navires à 27 miles nautiques soit 50 kilomètres en mer. Il résista pendant des siècles avant d’être détruit par plusieurs tremblements de terre au XIVᵉ siècle. Ses ruines ont été découvertes sous la mer en 1994 par des archéologues.
- </p>
-            <p>Le phare d’Alexandrie fut l’un des symboles les plus forts du savoir scientifique et maritime de l’Antiquité. Cet édifice est le symbole de la prouesse technique dont ont fait preuve les égyptiens. De plus, c'était l'un des premiers phares. 
- </p>
-       		</details>
-				
-				</div>
+          <!-- CARTE 5 : Mausolée -->
+          <div class="merveille-card" data-category="antiques">
+            <div
+              class="merveille-image mausolee"
+              role="img"
+              aria-label="Le Mausolée"
+            ></div>
+
+            <p class="image-legend">
+              Mausolée d'Halicarnasse (reconstitution)<br />
+              <small>Source : Domaine public</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Mausolée d'Halicarnasse</h3>
+              <p class="merveille-location">Turquie</p>
+              <p>
+                Monument funéraire édifié entre 353 et 350 av. J.-C., célèbre
+                pour sa taille monumentale et ses sculptures exceptionnelles.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Édifié entre 353 et 350 av. J.-C. à Halicarnasse (aujourd’hui
+                  Bodrum), le
+                  <a href="#terme-mausolee" class="terme-lien">Mausolée</a>
+                  était un tombeau monumental et il fut construit pour le roi
+                  Mausole, gouverneur de Carie, par sa sœur et épouse Artémise
+                  II, à sa mort, en 353 av. J.-C., pour lui rendre hommage.
+                </p>
+                <p>
+                  Le monument mesurait environ 45 m de haut et combinait les
+                  styles grec, égyptien et lycien. Son architecture à étages,
+                  ornée de sculptures raffinées, symbolisait la gloire du roi
+                  défunt. Sa beauté était telle que le mot mausolée désigne
+                  désormais tout tombeau monumental.
+                </p>
+                <p>
+                  Ce monument fut détruit en partie, par un séisme, vers le XIVe
+                  siècle. Peu de temps après, les chevaliers de l'ordre de Malte
+                  décidèrent de construire une forteresse non loin de là. Ils
+                  utilisèrent les pierres du mausolée et en 1522, il n'en resta
+                  plus aucune. De nos jours, nous pouvons encore observer cette
+                  forteresse à Bodrum. D’autres fragments du monument sont
+                  conservés actuellement au British Museum à Londres.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- ========== MERVEILLES MODERNES ========== -->
-            
-            <!-- CARTE 8 : Grande Muraille -->
-            <div class="merveille-card" data-category="modernes" style="display: none;">
-				
-                <div class="merveille-image muraille"
-					role="img"
-					aria-label="La Grande muraille de Chine">
-				</div>
-				
-				<p class="image-legend">Grande Muraille de Chine<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>La Grande Muraille de Chine</h3>
-                    <p class="merveille-location">Chine</p>
-                    <p>La Grande Muraille de Chine est l’une des plus gigantesques entreprises jamais réalisées par l’humanité. Construite sur plus de 21 000 kilomètres, elle s’étend des déserts de Gobi aux montagnes verdoyantes du nord-est chinois.
-</p>
-               
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Sa construction débuta au IIIᵉ siècle av. J.-C. sous l’empereur Qin Shi Huangdi, premier unificateur de la Chine. Elle fut ensuite consolidée et agrandie par plusieurs dynasties, notamment celle des Ming, entre le XIVᵉ et le XVIIᵉ siècle. Elle servait à protéger la Chine des invasions venues du nord, des Hsiung Nu, un peuple envahisseur redoutablement agressif, mais également pour contrôler les échanges commerciaux sur la Route de la Soie 
- </p>
-            <p>Faite de pierre, de terre et de briques, la Muraille serpente à travers montagnes et déserts, offrant aujourd’hui un panorama spectaculaire. Plus qu’un simple mur défensif, elle est le symbole de la persévérance et de la grandeur du peuple chinois. Elle symbolise la force, la discipline et la capacité d’un peuple à bâtir l’impossible. Aujourd’hui, elle attire des millions de visiteurs chaque année, fascinés par son immensité et la beauté de ses paysages.
- </p>
-            
-       		</details>
-				
-				</div>
+          <!-- CARTE 6 : Colosse de Rhodes -->
+          <div class="merveille-card" data-category="antiques">
+            <div
+              class="merveille-image colosse"
+              role="img"
+              aria-label="Le Colosse de Rhodes"
+            ></div>
+
+            <p class="image-legend">
+              Colosse de Rhodes (représentation artistique)<br />
+              <small>Source : Freepik Premium</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Colosse de Rhodes</h3>
+              <p class="merveille-location">Grèce</p>
+              <p>
+                Statue gigantesque du dieu Hélios, haute de 30 mètres, érigée
+                entre 292 et 280 av. J.-C. pour célébrer la victoire de Rhodes.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Le Colosse de Rhodes était une statue de bronze gigantesque
+                  érigée entre 292 et 280 av. J.-C. pour célébrer la victoire de
+                  la cité de Rhodes sur l’armée de Démétrios. Haute de 33 m,
+                  elle représentait le dieu du Soleil, Hélios, et dominait
+                  fièrement le port de la ville.
+                </p>
+                <p>
+                  Sa construction fut une prouesse technique : les artisans
+                  utilisèrent des plaques de bronze montées sur une structure de
+                  fer et de pierre. Malheureusement, la statue s’effondra lors
+                  d’un tremblement de terre seulement 56 ans après son
+                  achèvement.
+                </p>
+                <p>
+                  Le Colosse de Rhodes reste dans l’imaginaire collectif comme
+                  un symbole de liberté et de grandeur humaine.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 9 : Pétra -->
-            <div class="merveille-card" data-category="modernes" style="display: none;">
-				
-                <div class="merveille-image petra"
-					role="img"
-					aria-label="La citée Pétra en Jordanie">
-				</div>
-				
-				<p class="image-legend">Le Trésor (Al-Khazneh) à Pétra, Jordanie<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Pétra</h3>
-                    <p class="merveille-location">Jordanie</p>
-                    <p>Située au cœur du désert jordanien, Pétra est l’une des cités les plus fascinantes du monde antique. Fondée par les <a href="#terme-nabateens" class="terme-lien">Nabathéens</a> au VIᵉ siècle av. J.-C., elle fut un carrefour commercial majeur entre l’Arabie, l’Égypte et la Méditerranée.
-</p>
-               
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Surnommée la cité rose, Pétra impressionne par ses façades monumentales sculptées directement dans la roche. En suivant le Siq, un étroit canyon de 1,2 km, on découvre soudain le chef-d’œuvre de la cité : le Trésor (Al-Khazneh), un mausolée d’une beauté saisissante.
- </p>
-            <p>Pétra témoigne du génie de ses bâtisseurs, capables d’allier nature, art et ingénierie dans un environnement désertique. Aujourd’hui, elle est inscrite au patrimoine mondial de l’UNESCO et considérée comme un trésor de l’humanité.
- </p>
-            
-       		</details>
-				
-				</div>
+          <!-- CARTE 7 : Phare d'Alexandrie -->
+          <div class="merveille-card" data-category="antiques">
+            <div
+              class="merveille-image phare"
+              role="img"
+              aria-label="Le phare de'Alexandrie"
+            ></div>
+
+            <p class="image-legend">
+              Phare d'Alexandrie (reconstitution)<br />
+              <small>Source : legypteantique.com - Usage éducatif</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Phare d'Alexandrie</h3>
+              <p class="merveille-location">Égypte</p>
+              <p>
+                Tour construite au IIIe siècle av. J.-C., haute de 135 mètres,
+                guidant les marins vers le port d'Alexandrie pendant près de
+                1500 ans.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Situé sur l’île de Pharos, près du port d’Alexandrie, ce phare
+                  monumental fut achevé vers 280 av. J.-C. sous le règne de
+                  <a href="#terme-ptolemee" class="terme-lien">Ptolémée</a> II.
+                  Haut d’environ 120 m, il servait à guider les navires grâce à
+                  un feu et un système de miroirs réfléchissants, visibles à
+                  plusieurs kilomètres.
+                </p>
+                <p>
+                  Le phare d'Alexandrie comptait trois étages: le premier était
+                  carré, le second octogonal et le troisième cylindrique.
+                  L'ensemble en marbre blanc d'où l'on voyait les navires à 27
+                  miles nautiques soit 50 kilomètres en mer. Il résista pendant
+                  des siècles avant d’être détruit par plusieurs tremblements de
+                  terre au XIVᵉ siècle. Ses ruines ont été découvertes sous la
+                  mer en 1994 par des archéologues.
+                </p>
+                <p>
+                  Le phare d’Alexandrie fut l’un des symboles les plus forts du
+                  savoir scientifique et maritime de l’Antiquité. Cet édifice
+                  est le symbole de la prouesse technique dont ont fait preuve
+                  les égyptiens. De plus, c'était l'un des premiers phares.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 10 : Christ Rédempteur -->
-            <div class="merveille-card" data-category="modernes" style="display: none;">
-				
-                <div class="merveille-image christ"
-					role="img"
-					aria-label="Le Christ Rédempteur au Brésil">
-				</div>
+          <!-- ========== MERVEILLES MODERNES ========== -->
 
-				<p class="image-legend">Christ Rédempteur à Rio de Janeiro, Brésil<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Le Christ Rédempteur</h3>
-                    <p class="merveille-location">Brésil</p>
-                    <p>Surplombant la baie de Rio de Janeiro du haut du mont Corcovado, le Christ Rédempteur est un symbole universel de paix et d’accueil.
-</p>
-               
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Érigée entre 1926 et 1931, cette statue monumentale mesure 38 mètres de haut et pèse plus de 1 100 tonnes. Conçue par l’ingénieur brésilien Heitor da Silva Costa et sculptée par le Français Paul Landowski, elle fut inaugurée le 12 octobre 1931.
- </p>
-            <p>Le Christ, bras ouverts, semble bénir la ville entière. Son revêtement en stéatite, pierre claire et douce au toucher, reflète la lumière du soleil et donne à la statue une aura presque céleste. </p>
-            <p>Classée au patrimoine mondial de l’UNESCO, elle attire chaque année des millions de pèlerins et de touristes venus admirer la vue à 360° sur Rio, la baie de Guanabara et les plages mythiques de Copacabana et d’Ipanema.
- </p>
-            
-       		</details>
-				
-				</div>
+          <!-- CARTE 8 : Grande Muraille -->
+          <div
+            class="merveille-card"
+            data-category="modernes"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image muraille"
+              role="img"
+              aria-label="La Grande muraille de Chine"
+            ></div>
+
+            <p class="image-legend">
+              Grande Muraille de Chine<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>La Grande Muraille de Chine</h3>
+              <p class="merveille-location">Chine</p>
+              <p>
+                La Grande Muraille de Chine est l’une des plus gigantesques
+                entreprises jamais réalisées par l’humanité. Construite sur plus
+                de 21 000 kilomètres, elle s’étend des déserts de Gobi aux
+                montagnes verdoyantes du nord-est chinois.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Sa construction débuta au IIIᵉ siècle av. J.-C. sous
+                  l’empereur Qin Shi Huangdi, premier unificateur de la Chine.
+                  Elle fut ensuite consolidée et agrandie par plusieurs
+                  dynasties, notamment celle des Ming, entre le XIVᵉ et le XVIIᵉ
+                  siècle. Elle servait à protéger la Chine des invasions venues
+                  du nord, des Hsiung Nu, un peuple envahisseur redoutablement
+                  agressif, mais également pour contrôler les échanges
+                  commerciaux sur la Route de la Soie
+                </p>
+                <p>
+                  Faite de pierre, de terre et de briques, la Muraille serpente
+                  à travers montagnes et déserts, offrant aujourd’hui un
+                  panorama spectaculaire. Plus qu’un simple mur défensif, elle
+                  est le symbole de la persévérance et de la grandeur du peuple
+                  chinois. Elle symbolise la force, la discipline et la capacité
+                  d’un peuple à bâtir l’impossible. Aujourd’hui, elle attire des
+                  millions de visiteurs chaque année, fascinés par son immensité
+                  et la beauté de ses paysages.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 11 : Machu Picchu -->
-            <div class="merveille-card" data-category="modernes" style="display: none;">
-				
-                <div class="merveille-image machu"
-					role="img"
-					aria-label="Le Machu Picchu au Pérou">
-				</div>
+          <!-- CARTE 9 : Pétra -->
+          <div
+            class="merveille-card"
+            data-category="modernes"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image petra"
+              role="img"
+              aria-label="La citée Pétra en Jordanie"
+            ></div>
 
-				<p class="image-legend">Machu Picchu, Pérou<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Le Machu Picchu</h3>
-                    <p class="merveille-location">Pérou</p>
-                    <p>Le Machu Picchu, perché à 2 430 mètres d’altitude, est une merveille suspendue entre ciel et terre. Construite au XVe siècle sous l’empereur inca Pachacútec, cette cité sacrée fut redécouverte en 1911 par l’explorateur Hiram Bingham.
-</p>
-                
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Entourée de sommets verdoyants et de nuages flottants, la cité combine harmonieusement architecture et nature. Ses temples, ses escaliers taillés dans la pierre et ses terrasses agricoles témoignent du savoir-faire exceptionnel des Incas, capables de bâtir sans mortier tout en résistant aux séismes.
- </p>
-            <p>Le Machu Picchu aurait été à la fois un lieu de culte solaire et une résidence royale. Aujourd’hui, il symbolise l’union entre spiritualité, science et respect de la nature.
- </p>
-            
-       		</details>
-				
-				</div>
+            <p class="image-legend">
+              Le Trésor (Al-Khazneh) à Pétra, Jordanie<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Pétra</h3>
+              <p class="merveille-location">Jordanie</p>
+              <p>
+                Située au cœur du désert jordanien, Pétra est l’une des cités
+                les plus fascinantes du monde antique. Fondée par les
+                <a href="#terme-nabateens" class="terme-lien">Nabathéens</a> au
+                VIᵉ siècle av. J.-C., elle fut un carrefour commercial majeur
+                entre l’Arabie, l’Égypte et la Méditerranée.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Surnommée la cité rose, Pétra impressionne par ses façades
+                  monumentales sculptées directement dans la roche. En suivant
+                  le Siq, un étroit canyon de 1,2 km, on découvre soudain le
+                  chef-d’œuvre de la cité : le Trésor (Al-Khazneh), un mausolée
+                  d’une beauté saisissante.
+                </p>
+                <p>
+                  Pétra témoigne du génie de ses bâtisseurs, capables d’allier
+                  nature, art et ingénierie dans un environnement désertique.
+                  Aujourd’hui, elle est inscrite au patrimoine mondial de
+                  l’UNESCO et considérée comme un trésor de l’humanité.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 12 : Chichén Itzá -->
-            <div class="merveille-card" data-category="modernes" style="display: none;">
-				
-                <div class="merveille-image chichen"
-					role="img"
-					aria-label="Le Chichén Itzà au Mexique">
-				</div>
+          <!-- CARTE 10 : Christ Rédempteur -->
+          <div
+            class="merveille-card"
+            data-category="modernes"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image christ"
+              role="img"
+              aria-label="Le Christ Rédempteur au Brésil"
+            ></div>
 
-				<p class="image-legend">Pyramide de Kukulkán à Chichén Itzá, Mexique<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Chichén Itzá</h3>
-                    <p class="merveille-location">Mexique</p>
-                    <p>Au cœur de la péninsule du Yucatán, Chichén Itzá était une métropole florissante du peuple maya entre le Xe et le XIIIe siècle. Elle fut à la fois un centre religieux, politique et astronomique.</p>
-              
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Son monument le plus célèbre, El Castillo ou la pyramide de Kukulkán, est dédié au dieu serpent à plumes. Ce temple à neuf terrasses est conçu avec une précision mathématique : chaque année, lors des équinoxes, un jeu d’ombres crée l’illusion d’un serpent descendant les marches du temple.
- </p>
-            <p>Chichén Itzá abrite également le plus grand terrain de jeu de balle mésoaméricain et plusieurs temples consacrés à la guerre et à l’astronomie. C’est une leçon fascinante sur la science et la spiritualité d’une civilisation disparue.
- </p>
-            
-       		</details>
-				
-				</div>
+            <p class="image-legend">
+              Christ Rédempteur à Rio de Janeiro, Brésil<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Le Christ Rédempteur</h3>
+              <p class="merveille-location">Brésil</p>
+              <p>
+                Surplombant la baie de Rio de Janeiro du haut du mont Corcovado,
+                le Christ Rédempteur est un symbole universel de paix et
+                d’accueil.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Érigée entre 1926 et 1931, cette statue monumentale mesure 38
+                  mètres de haut et pèse plus de 1 100 tonnes. Conçue par
+                  l’ingénieur brésilien Heitor da Silva Costa et sculptée par le
+                  Français Paul Landowski, elle fut inaugurée le 12 octobre
+                  1931.
+                </p>
+                <p>
+                  Le Christ, bras ouverts, semble bénir la ville entière. Son
+                  revêtement en stéatite, pierre claire et douce au toucher,
+                  reflète la lumière du soleil et donne à la statue une aura
+                  presque céleste.
+                </p>
+                <p>
+                  Classée au patrimoine mondial de l’UNESCO, elle attire chaque
+                  année des millions de pèlerins et de touristes venus admirer
+                  la vue à 360° sur Rio, la baie de Guanabara et les plages
+                  mythiques de Copacabana et d’Ipanema.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 13 : Colisée -->
-            <div class="merveille-card" data-category="modernes" style="display: none;">
-				
-                <div class="merveille-image colisee"
-					role="img"
-					aria-label="Le Colisée en Italie">
-				</div>
+          <!-- CARTE 11 : Machu Picchu -->
+          <div
+            class="merveille-card"
+            data-category="modernes"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image machu"
+              role="img"
+              aria-label="Le Machu Picchu au Pérou"
+            ></div>
 
-				<p class="image-legend">Colisée de Rome, Italie<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Colisée de Rome</h3>
-                    <p class="merveille-location">Italie</p>
-                    <p>Construit sous l’empereur Vespasien et inauguré en l’an 80 apr. J.-C., le Colisée de Rome  ou amphithéâtre Flavien pouvait accueillir jusqu’à 50 000 spectateurs. Il était le cœur battant de la capitale de l’Empire romain.
-</p>
-              
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Les Romains y assistaient à des combats de gladiateurs, à des chasses d’animaux exotiques et à des spectacles grandioses, souvent financés par les empereurs pour gagner la faveur du peuple.
- </p>
-            <p>L’édifice, en pierre et béton, fut une prouesse architecturale avec son système d’arènes souterraines et son toit rétractable de toile, le velarium. </p>
-            <p>Malgré les siècles, les tremblements de terre et les pillages, le Colisée reste debout comme un symbole de la puissance de Rome et de la démesure de son histoire.
- </p>
-            
-       		</details>
-				
-				</div>
+            <p class="image-legend">
+              Machu Picchu, Pérou<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Le Machu Picchu</h3>
+              <p class="merveille-location">Pérou</p>
+              <p>
+                Le Machu Picchu, perché à 2 430 mètres d’altitude, est une
+                merveille suspendue entre ciel et terre. Construite au XVe
+                siècle sous l’empereur inca Pachacútec, cette cité sacrée fut
+                redécouverte en 1911 par l’explorateur Hiram Bingham.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Entourée de sommets verdoyants et de nuages flottants, la cité
+                  combine harmonieusement architecture et nature. Ses temples,
+                  ses escaliers taillés dans la pierre et ses terrasses
+                  agricoles témoignent du savoir-faire exceptionnel des Incas,
+                  capables de bâtir sans mortier tout en résistant aux séismes.
+                </p>
+                <p>
+                  Le Machu Picchu aurait été à la fois un lieu de culte solaire
+                  et une résidence royale. Aujourd’hui, il symbolise l’union
+                  entre spiritualité, science et respect de la nature.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 14 : Taj Mahal -->
-            <div class="merveille-card" data-category="modernes" style="display: none;">
-				
-                <div class="merveille-image taj"
-					role="img"
-					aria-label="Le Taj Mahal en Inde">
-				</div>
+          <!-- CARTE 12 : Chichén Itzá -->
+          <div
+            class="merveille-card"
+            data-category="modernes"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image chichen"
+              role="img"
+              aria-label="Le Chichén Itzà au Mexique"
+            ></div>
 
-				<p class="image-legend">Taj Mahal à Agra, Inde<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Le Taj Mahal </h3>
-                    <p class="merveille-location">Inde</p>
-                    <p>Le Taj Mahal, situé à Agra, est sans doute le monument le plus romantique jamais construit. 
-</p>
-              
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>L’<a href="#terme-moghol" class="terme-lien">Empereur Moghol</a> Shah Jahan le fit ériger entre 1631 et 1648 pour honorer la mémoire de son épouse bien-aimée, Mumtaz Mahal, morte en couches.
- </p>
-            <p>Chef-d’œuvre de l’architecture moghole, il mêle les styles persan, islamique et indien. Réalisé en marbre blanc incrusté de pierres précieuses, il change de couleur selon la lumière du jour : rosé à l’aube, blanc éclatant à midi, doré au coucher du soleil.
- </p>
-            <p>Le mausolée est entouré de jardins symétriques symbolisant le paradis éternel. Son reflet parfait dans le bassin central en fait un lieu d’une beauté presque irréelle. Le Taj Mahal n’est pas seulement un tombeau : c’est une déclaration d’amour immortelle.
- </p>
+            <p class="image-legend">
+              Pyramide de Kukulkán à Chichén Itzá, Mexique<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
 
-            
-       		</details>
-				
-				</div>
+            <div class="merveille-content">
+              <h3>Chichén Itzá</h3>
+              <p class="merveille-location">Mexique</p>
+              <p>
+                Au cœur de la péninsule du Yucatán, Chichén Itzá était une
+                métropole florissante du peuple maya entre le Xe et le XIIIe
+                siècle. Elle fut à la fois un centre religieux, politique et
+                astronomique.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Son monument le plus célèbre, El Castillo ou la pyramide de
+                  Kukulkán, est dédié au dieu serpent à plumes. Ce temple à neuf
+                  terrasses est conçu avec une précision mathématique : chaque
+                  année, lors des équinoxes, un jeu d’ombres crée l’illusion
+                  d’un serpent descendant les marches du temple.
+                </p>
+                <p>
+                  Chichén Itzá abrite également le plus grand terrain de jeu de
+                  balle mésoaméricain et plusieurs temples consacrés à la guerre
+                  et à l’astronomie. C’est une leçon fascinante sur la science
+                  et la spiritualité d’une civilisation disparue.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- ========== MERVEILLES NATURELLES ========== -->
-            
-            <!-- CARTE 15 : La forêt amazonienne -->
-            <div class="merveille-card" data-category="naturelles" style="display: none;">
-				
-                <div class="merveille-image amazonie"
-					role="img"
-					aria-label="La forêt amazionenne">
-				</div>
+          <!-- CARTE 13 : Colisée -->
+          <div
+            class="merveille-card"
+            data-category="modernes"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image colisee"
+              role="img"
+              aria-label="Le Colisée en Italie"
+            ></div>
 
-				<p class="image-legend">Forêt amazonienne, Brésil<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>La Forêt Amazonienne</h3>
-                    <p class="merveille-location">Amérique du Sud</p>
-					<p>Étendue sur 9 pays de l'Amérique du Sud, la forêt amazonienne est la plus vaste forêt tropicale du monde entier. 
-</p>
-						
-							<details>
-            <summary>Voir plus</summary>
-            
-            <p>La forêt amazonienne est l'une des trois plus importantes forêts primaires du monde, elle abrite environ 13 % des arbres de la planète ! Elle couvre plus de 5,5 millions de km² et abrite environ 10 % des espèces vivantes connues. Des jaguars aux aras, des anacondas aux grenouilles multicolores, l’Amazonie est un royaume de <a href="#terme-biodiversite" class="terme-lien">biodiversité</a> inégalé. On la nomme "poumon de la Terre" car c'est le plus grand réservoir de biodiversité au monde.
- </p>
-            <p>La forêt joue aussi un rôle crucial dans la régulation du climat mondial, en absorbant une immense quantité de dioxyde de carbone.
- </p>
-            <p>Traversée par le légendaire fleuve Amazone, elle fascine les scientifiques, les explorateurs et les amoureux de la nature depuis des siècles. Mais ce joyau naturel est aujourd’hui menacé par la déforestation: 20 % de la forêt originelle ont disparu ces 50 dernières années, ce qui en fait un symbole fort de la protection de la planète.
- </p>
-            
-       		</details>
-				</div>
+            <p class="image-legend">
+              Colisée de Rome, Italie<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Colisée de Rome</h3>
+              <p class="merveille-location">Italie</p>
+              <p>
+                Construit sous l’empereur Vespasien et inauguré en l’an 80 apr.
+                J.-C., le Colisée de Rome ou amphithéâtre Flavien pouvait
+                accueillir jusqu’à 50 000 spectateurs. Il était le cœur battant
+                de la capitale de l’Empire romain.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Les Romains y assistaient à des combats de gladiateurs, à des
+                  chasses d’animaux exotiques et à des spectacles grandioses,
+                  souvent financés par les empereurs pour gagner la faveur du
+                  peuple.
+                </p>
+                <p>
+                  L’édifice, en pierre et béton, fut une prouesse architecturale
+                  avec son système d’arènes souterraines et son toit rétractable
+                  de toile, le velarium.
+                </p>
+                <p>
+                  Malgré les siècles, les tremblements de terre et les pillages,
+                  le Colisée reste debout comme un symbole de la puissance de
+                  Rome et de la démesure de son histoire.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 16 : La Table Mountain -->
-            <div class="merveille-card" data-category="naturelles" style="display: none;">
-				
-                <div class="merveille-image table"
-					role="img"
-					aria-label="La Table Mountain en Afrique du sud">
-				</div>
+          <!-- CARTE 14 : Taj Mahal -->
+          <div
+            class="merveille-card"
+            data-category="modernes"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image taj"
+              role="img"
+              aria-label="Le Taj Mahal en Inde"
+            ></div>
 
-				<p class="image-legend">Table Mountain, Le Cap, Afrique du Sud<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>La Table Mountain</h3>
-                    <p class="merveille-location">Afrique du Sud</p>
-                    <p>Dominant la ville du Cap, la Table Mountain est une montagne emblématique connue pour son sommet plat, souvent coiffée d'une nappe de nuages.
-</p>
-							
-						<details>
-            <summary>Voir plus</summary>
-            
-            <p>Vieux de plus de 260 millions d’années, ce massif est l’un des plus anciens au monde. Ses pentes abritent une flore unique : plus de 2 000 espèces de plantes, dont certaines ne poussent nulle part ailleurs sur Terre.
- </p>
-            <p>Les visiteurs peuvent atteindre son sommet par téléphérique ou par les sentiers de randonnée qui offrent des panoramas spectaculaires sur la ville et l’océan Atlantique.
- </p>
-            <p>Symbole de liberté et de nature sauvage, la Table Mountain est un véritable sanctuaire pour les Sud-Africains. </p>
-            
-       		</details>
-                </div>
+            <p class="image-legend">
+              Taj Mahal à Agra, Inde<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Le Taj Mahal</h3>
+              <p class="merveille-location">Inde</p>
+              <p>
+                Le Taj Mahal, situé à Agra, est sans doute le monument le plus
+                romantique jamais construit.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  L’<a href="#terme-moghol" class="terme-lien"
+                    >Empereur Moghol</a
+                  >
+                  Shah Jahan le fit ériger entre 1631 et 1648 pour honorer la
+                  mémoire de son épouse bien-aimée, Mumtaz Mahal, morte en
+                  couches.
+                </p>
+                <p>
+                  Chef-d’œuvre de l’architecture moghole, il mêle les styles
+                  persan, islamique et indien. Réalisé en marbre blanc incrusté
+                  de pierres précieuses, il change de couleur selon la lumière
+                  du jour : rosé à l’aube, blanc éclatant à midi, doré au
+                  coucher du soleil.
+                </p>
+                <p>
+                  Le mausolée est entouré de jardins symétriques symbolisant le
+                  paradis éternel. Son reflet parfait dans le bassin central en
+                  fait un lieu d’une beauté presque irréelle. Le Taj Mahal n’est
+                  pas seulement un tombeau : c’est une déclaration d’amour
+                  immortelle.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 17 : Les Chutes d’Iguazú -->
-            <div class="merveille-card" data-category="naturelles" style="display: none;">
-				
-                <div class="merveille-image iguazu"
-					role="img"
-					aria-label="Les Chutes d'Iguazu en Argentine">					
-				</div>
+          <!-- ========== MERVEILLES NATURELLES ========== -->
 
-				<p class="image-legend">Chutes d'Iguazú, Brésil/Argentine<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Les Chutes d’Iguazú</h3>
-                    <p class="merveille-location">Brésil / Argentine </p>
-                    <p>À la frontière du Brésil et de l’Argentine, les chutes d’Iguazú comptent parmi les cascades les plus impressionnantes de la planète.</p>
-						
-						<details>
-            <summary>Voir plus</summary>
-            
-            <p>Les chutes d'Iguazú sont situées à 80 % sur le territoire argentin et à 20 % sur le territoire brésilien. Elles se composent de 275 chutes d’eau réparties sur près de 3 kilomètres, avec un débit pouvant atteindre 6 500 m³ par seconde.
- </p>
-            <p>La plus spectaculaire, la Gorge du Diable, s’élève à plus de 80 mètres de haut. Le grondement des eaux, visible et audible à des kilomètres, crée une atmosphère presque surnaturelle.
- </p>
-            <p>Autour, la forêt tropicale luxuriante abrite des toucans, des papillons géants et des coatis.
-Les chutes d’Iguazú sont un symbole de puissance naturelle et de beauté indomptable.
- </p>
-            
-       		</details>
-                </div>
+          <!-- CARTE 15 : La forêt amazonienne -->
+          <div
+            class="merveille-card"
+            data-category="naturelles"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image amazonie"
+              role="img"
+              aria-label="La forêt amazionenne"
+            ></div>
+
+            <p class="image-legend">
+              Forêt amazonienne, Brésil<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>La Forêt Amazonienne</h3>
+              <p class="merveille-location">Amérique du Sud</p>
+              <p>
+                Étendue sur 9 pays de l'Amérique du Sud, la forêt amazonienne
+                est la plus vaste forêt tropicale du monde entier.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  La forêt amazonienne est l'une des trois plus importantes
+                  forêts primaires du monde, elle abrite environ 13 % des arbres
+                  de la planète ! Elle couvre plus de 5,5 millions de km² et
+                  abrite environ 10 % des espèces vivantes connues. Des jaguars
+                  aux aras, des anacondas aux grenouilles multicolores,
+                  l’Amazonie est un royaume de
+                  <a href="#terme-biodiversite" class="terme-lien"
+                    >biodiversité</a
+                  >
+                  inégalé. On la nomme "poumon de la Terre" car c'est le plus
+                  grand réservoir de biodiversité au monde.
+                </p>
+                <p>
+                  La forêt joue aussi un rôle crucial dans la régulation du
+                  climat mondial, en absorbant une immense quantité de dioxyde
+                  de carbone.
+                </p>
+                <p>
+                  Traversée par le légendaire fleuve Amazone, elle fascine les
+                  scientifiques, les explorateurs et les amoureux de la nature
+                  depuis des siècles. Mais ce joyau naturel est aujourd’hui
+                  menacé par la déforestation: 20 % de la forêt originelle ont
+                  disparu ces 50 dernières années, ce qui en fait un symbole
+                  fort de la protection de la planète.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 18 : Jeju island -->
-            <div class="merveille-card" data-category="naturelles" style="display: none;">
-				
-                <div class="merveille-image jeju"
-					role="img"
-					aria-label="L'île de Jeju en Corée du sud">
-				</div>
+          <!-- CARTE 16 : La Table Mountain -->
+          <div
+            class="merveille-card"
+            data-category="naturelles"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image table"
+              role="img"
+              aria-label="La Table Mountain en Afrique du sud"
+            ></div>
 
-				<p class="image-legend">Île volcanique de Jeju, Corée du Sud<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>L’île de Jeju</h3>
-                    <p class="merveille-location">Corée du Sud</p>
-                    <p>Située au sud de la péninsule coréenne, Jeju est une île volcanique formée par des éruptions survenues il y a plus de 2 millions d’années.
-</p>
-              
+            <p class="image-legend">
+              Table Mountain, Le Cap, Afrique du Sud<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
 
-					<details>
-            <summary>Voir plus</summary>
-            
-            <p>Elle est dominée par le mont Hallasan, un volcan endormi de 1 950 mètres, le plus haut sommet de Corée du Sud.
- </p>
-            <p>Jeju est célèbre pour ses tunnels de lave, ses falaises basaltiques et ses plages spectaculaires. C’est aussi une île riche en culture, peuplée autrefois de femmes plongeuses, les haenyeo, qui récoltaient les coquillages en apnée.
-</p>
-            <p>Entre traditions ancestrales et paysages à couper le souffle, Jeju incarne l’équilibre entre l’homme et la nature. L'UNESCO a classé "l’Île volcanique et les tunnels de lave de Jeju" car l'île abrite le plus remarquable réseau de tunnels creusés par les laves du Monde !</p>
-            
-       		</details>
-				</div>
+            <div class="merveille-content">
+              <h3>La Table Mountain</h3>
+              <p class="merveille-location">Afrique du Sud</p>
+              <p>
+                Dominant la ville du Cap, la Table Mountain est une montagne
+                emblématique connue pour son sommet plat, souvent coiffée d'une
+                nappe de nuages.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Vieux de plus de 260 millions d’années, ce massif est l’un des
+                  plus anciens au monde. Ses pentes abritent une flore unique :
+                  plus de 2 000 espèces de plantes, dont certaines ne poussent
+                  nulle part ailleurs sur Terre.
+                </p>
+                <p>
+                  Les visiteurs peuvent atteindre son sommet par téléphérique ou
+                  par les sentiers de randonnée qui offrent des panoramas
+                  spectaculaires sur la ville et l’océan Atlantique.
+                </p>
+                <p>
+                  Symbole de liberté et de nature sauvage, la Table Mountain est
+                  un véritable sanctuaire pour les Sud-Africains.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 19 : Parc national komodo -->
-            <div class="merveille-card" data-category="naturelles" style="display: none;">
-				
-                <div class="merveille-image komodo"
-					role="img"
-					aria-label="Le parc national du Komodo">
-				</div>
+          <!-- CARTE 17 : Les Chutes d’Iguazú -->
+          <div
+            class="merveille-card"
+            data-category="naturelles"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image iguazu"
+              role="img"
+              aria-label="Les Chutes d'Iguazu en Argentine"
+            ></div>
 
-				<p class="image-legend">Parc national de Komodo, Indonésie<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Le Parc national de Komodo</h3>
-                    <p class="merveille-location">Indonésie</p>
-                    <p>Créé en 1980, le Parc national de Komodo est célèbre pour abriter le plus grand lézard du monde : le dragon de Komodo.</p>
-               
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Ce reptile préhistorique, pouvant atteindre 3 mètres de long, vit sur les îles de Komodo, Rinca et Padar. Ces îles volcaniques d’Indonésie sont habitées par près de 6000 lézards géants que l'on nomme les « dragons de Komodo ». Cette espèce n'existe nulle part ailleurs et évolue dans un paysage unique en son genre, composé de collines rocailleuses couvertes d'une savane sèche et de plages de sable blanc. </p>
-            <p>Outre sa faune terrestre exceptionnelle, le parc abrite des fonds marins parmi les plus riches de la planète, peuplés de coraux, de tortues et de raies manta. </p>
-            <p>Inscrit au patrimoine mondial de l’UNESCO, Komodo est un lieu fascinant où la nature semble encore à l’état sauvage.</p>
-            
-       		</details>
-				
-				</div>
+            <p class="image-legend">
+              Chutes d'Iguazú, Brésil/Argentine<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Les Chutes d’Iguazú</h3>
+              <p class="merveille-location">Brésil / Argentine</p>
+              <p>
+                À la frontière du Brésil et de l’Argentine, les chutes d’Iguazú
+                comptent parmi les cascades les plus impressionnantes de la
+                planète.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Les chutes d'Iguazú sont situées à 80 % sur le territoire
+                  argentin et à 20 % sur le territoire brésilien. Elles se
+                  composent de 275 chutes d’eau réparties sur près de 3
+                  kilomètres, avec un débit pouvant atteindre 6 500 m³ par
+                  seconde.
+                </p>
+                <p>
+                  La plus spectaculaire, la Gorge du Diable, s’élève à plus de
+                  80 mètres de haut. Le grondement des eaux, visible et audible
+                  à des kilomètres, crée une atmosphère presque surnaturelle.
+                </p>
+                <p>
+                  Autour, la forêt tropicale luxuriante abrite des toucans, des
+                  papillons géants et des coatis. Les chutes d’Iguazú sont un
+                  symbole de puissance naturelle et de beauté indomptable.
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 20 : grand canyon -->
-            <div class="merveille-card" data-category="naturelles" style="display: none;">
-				
-                <div class="merveille-image canyon"
-					role="img"
-					aria-label="Le Grand Canyon">
-				</div>
+          <!-- CARTE 18 : Jeju island -->
+          <div
+            class="merveille-card"
+            data-category="naturelles"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image jeju"
+              role="img"
+              aria-label="L'île de Jeju en Corée du sud"
+            ></div>
 
-				<p class="image-legend">Grand Canyon, Arizona, États-Unis<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Le Grand Canyon</h3>
-                    <p class="merveille-location">États-Unis</p>
-                    <p>Sculpté par le fleuve Colorado pendant des millions d’années, le Grand Canyon est une immense faille de 446 km de long et jusqu’à 1 800 mètres de profondeur. Ses falaises rougeoyantes révèlent près de deux milliards d’années d’histoire géologique.</p>
-               
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Ce paysage vertigineux, considéré comme sacré par les peuples autochtones Hopis et Navajos, inspire le respect et l’humilité.
- </p>
-            <p>Au lever ou au coucher du soleil, la lumière transforme les roches en une palette de couleurs allant de l’or au pourpre. </p>
-            <p>C’est un lieu où la nature raconte l’histoire du temps lui-même.
-</p>
-       		</details>
-				
-				</div>
+            <p class="image-legend">
+              Île volcanique de Jeju, Corée du Sud<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>L’île de Jeju</h3>
+              <p class="merveille-location">Corée du Sud</p>
+              <p>
+                Située au sud de la péninsule coréenne, Jeju est une île
+                volcanique formée par des éruptions survenues il y a plus de 2
+                millions d’années.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Elle est dominée par le mont Hallasan, un volcan endormi de 1
+                  950 mètres, le plus haut sommet de Corée du Sud.
+                </p>
+                <p>
+                  Jeju est célèbre pour ses tunnels de lave, ses falaises
+                  basaltiques et ses plages spectaculaires. C’est aussi une île
+                  riche en culture, peuplée autrefois de femmes plongeuses, les
+                  haenyeo, qui récoltaient les coquillages en apnée.
+                </p>
+                <p>
+                  Entre traditions ancestrales et paysages à couper le souffle,
+                  Jeju incarne l’équilibre entre l’homme et la nature. L'UNESCO
+                  a classé "l’Île volcanique et les tunnels de lave de Jeju" car
+                  l'île abrite le plus remarquable réseau de tunnels creusés par
+                  les laves du Monde !
+                </p>
+              </details>
             </div>
+          </div>
 
-            <!-- CARTE 21 : Puerto princesa -->
-            <div class="merveille-card" data-category="naturelles" style="display: none;">
-				
-                <div class="merveille-image puerto"
-					role="img"
-					aria-label="Le fleuve souterrain de Puerto Princesa">
-				</div>
+          <!-- CARTE 19 : Parc national komodo -->
+          <div
+            class="merveille-card"
+            data-category="naturelles"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image komodo"
+              role="img"
+              aria-label="Le parc national du Komodo"
+            ></div>
 
-				<p class="image-legend">Rivière souterraine de Puerto Princesa, Philippines<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="merveille-content">
-                    <h3>Le fleuve souterrain de Puerto Princesa</h3>
-                    <p class="merveille-location">Philippines</p>
-                    <p>Le fleuve souterrain de Puerto Princesa, situé sur l’île de Palawan, est l’un des plus longs du monde avec ses 8,2 km. Il s’écoule directement sous une montagne avant de se jeter dans la mer de Chine méridionale.
-</p>
-               
-				<details>
-            <summary>Voir plus</summary>
-            
-            <p>Ce site unique allie paysages <a href="#terme-karstique" class="terme-lien">karstiques</a>, stalactites et stalagmites majestueuses, et une faune riche comprenant chauves-souris, oiseaux et poissons rares. À l’intérieur de la grotte où circule la rivière, on peut observer des formations rocheuses aussi remarquables qu’esthétiques. Il abrite des forêts parmi les plus significatives de l'Asie. Le parc est inscrit sur la liste du patrimoine mondial de l'UNESCO. </p>
-            <p>Le fleuve peut être exploré en bateau, offrant une expérience mystique dans un silence presque total. C’est une merveille cachée où le monde souterrain révèle toute sa beauté.
-</p>
-            
-       		</details>
-				
-				</div>
+            <p class="image-legend">
+              Parc national de Komodo, Indonésie<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Le Parc national de Komodo</h3>
+              <p class="merveille-location">Indonésie</p>
+              <p>
+                Créé en 1980, le Parc national de Komodo est célèbre pour
+                abriter le plus grand lézard du monde : le dragon de Komodo.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Ce reptile préhistorique, pouvant atteindre 3 mètres de long,
+                  vit sur les îles de Komodo, Rinca et Padar. Ces îles
+                  volcaniques d’Indonésie sont habitées par près de 6000 lézards
+                  géants que l'on nomme les « dragons de Komodo ». Cette espèce
+                  n'existe nulle part ailleurs et évolue dans un paysage unique
+                  en son genre, composé de collines rocailleuses couvertes d'une
+                  savane sèche et de plages de sable blanc.
+                </p>
+                <p>
+                  Outre sa faune terrestre exceptionnelle, le parc abrite des
+                  fonds marins parmi les plus riches de la planète, peuplés de
+                  coraux, de tortues et de raies manta.
+                </p>
+                <p>
+                  Inscrit au patrimoine mondial de l’UNESCO, Komodo est un lieu
+                  fascinant où la nature semble encore à l’état sauvage.
+                </p>
+              </details>
             </div>
+          </div>
+
+          <!-- CARTE 20 : grand canyon -->
+          <div
+            class="merveille-card"
+            data-category="naturelles"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image canyon"
+              role="img"
+              aria-label="Le Grand Canyon"
+            ></div>
+
+            <p class="image-legend">
+              Grand Canyon, Arizona, États-Unis<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Le Grand Canyon</h3>
+              <p class="merveille-location">États-Unis</p>
+              <p>
+                Sculpté par le fleuve Colorado pendant des millions d’années, le
+                Grand Canyon est une immense faille de 446 km de long et jusqu’à
+                1 800 mètres de profondeur. Ses falaises rougeoyantes révèlent
+                près de deux milliards d’années d’histoire géologique.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Ce paysage vertigineux, considéré comme sacré par les peuples
+                  autochtones Hopis et Navajos, inspire le respect et
+                  l’humilité.
+                </p>
+                <p>
+                  Au lever ou au coucher du soleil, la lumière transforme les
+                  roches en une palette de couleurs allant de l’or au pourpre.
+                </p>
+                <p>
+                  C’est un lieu où la nature raconte l’histoire du temps
+                  lui-même.
+                </p>
+              </details>
+            </div>
+          </div>
+
+          <!-- CARTE 21 : Puerto princesa -->
+          <div
+            class="merveille-card"
+            data-category="naturelles"
+            style="display: none;"
+          >
+            <div
+              class="merveille-image puerto"
+              role="img"
+              aria-label="Le fleuve souterrain de Puerto Princesa"
+            ></div>
+
+            <p class="image-legend">
+              Rivière souterraine de Puerto Princesa, Philippines<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="merveille-content">
+              <h3>Le fleuve souterrain de Puerto Princesa</h3>
+              <p class="merveille-location">Philippines</p>
+              <p>
+                Le fleuve souterrain de Puerto Princesa, situé sur l’île de
+                Palawan, est l’un des plus longs du monde avec ses 8,2 km. Il
+                s’écoule directement sous une montagne avant de se jeter dans la
+                mer de Chine méridionale.
+              </p>
+
+              <details>
+                <summary>Voir plus</summary>
+
+                <p>
+                  Ce site unique allie paysages
+                  <a href="#terme-karstique" class="terme-lien">karstiques</a>,
+                  stalactites et stalagmites majestueuses, et une faune riche
+                  comprenant chauves-souris, oiseaux et poissons rares. À
+                  l’intérieur de la grotte où circule la rivière, on peut
+                  observer des formations rocheuses aussi remarquables
+                  qu’esthétiques. Il abrite des forêts parmi les plus
+                  significatives de l'Asie. Le parc est inscrit sur la liste du
+                  patrimoine mondial de l'UNESCO.
+                </p>
+                <p>
+                  Le fleuve peut être exploré en bateau, offrant une expérience
+                  mystique dans un silence presque total. C’est une merveille
+                  cachée où le monde souterrain révèle toute sa beauté.
+                </p>
+              </details>
+            </div>
+          </div>
         </div>
-    </section>
-	
- <!-- ========== SECTION BLOG / ACTUALITÉS ========== -->
-    <section class="section" id="blog" style="background-color: white;">
+      </section>
+
+      <!-- ========== SECTION BLOG / ACTUALITÉS ========== -->
+      <section class="section" id="blog" style="background-color: white;">
         <!-- Section blog avec fond blanc inline pour alterner avec le fond beige des autres sections -->
-        
+
         <h2 class="section-title">Actualités & Découvertes</h2>
         <!-- Titre de la section blog -->
-        
-        <p class="section-subtitle">Les dernières nouvelles du patrimoine mondial</p>
+
+        <p class="section-subtitle">
+          Les dernières nouvelles du patrimoine mondial
+        </p>
         <!-- Sous-titre descriptif -->
-        
+
         <div class="blog-grid">
-            <!-- Conteneur Grid pour les articles de blog -->
-            
-            <!-- ARTICLE 1 -->
-            <div class="blog-card" data-article="gizeh">
+          <!-- Conteneur Grid pour les articles de blog -->
 
-                <!-- Carte d'article individuelle -->
-				
-                <!-- placeholder pour l'image qui illustre l'article -->
-                <div class="blog-image gizeh"
-					role="img"
-					aria-label="Archéologues travaillant sur le plateau de Gizeh en Égypte">
-				</div>
+          <!-- ARTICLE 1 -->
+          <div class="blog-card" data-article="gizeh">
+            <!-- Carte d'article individuelle -->
 
-				<p class="image-legend">Fouilles archéologiques à Gizeh<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-                
-                <div class="blog-content">
-                    <!-- Conteneur du contenu textuel -->
-                    
-                    <p class="blog-date">15 Octobre 2025</p>
-                    <!-- Date de publication stylisée en doré -->
-                    
-                    <h3>Nouvelle découverte archéologique à Gizeh</h3>
-                    <!-- Titre de l'article -->
-                    
-                    <p>Des archéologues ont mis au jour une chambre cachée dans la Grande Pyramide grâce aux technologies de détection par muons.</p>
-                    <!-- Extrait/résumé de l'article -->
-                    
-                    <a href="#" class="btn-secondary open-modal">Lire la suite →</a>
-        			<!-- Ajoute la classe "open-modal" -->
-                    <!-- Lien vers l'article complet avec flèche Unicode (→) pour indiquer l'action -->
-                </div>
+            <!-- placeholder pour l'image qui illustre l'article -->
+            <div
+              class="blog-image gizeh"
+              role="img"
+              aria-label="Archéologues travaillant sur le plateau de Gizeh en Égypte"
+            ></div>
+
+            <p class="image-legend">
+              Fouilles archéologiques à Gizeh<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
+
+            <div class="blog-content">
+              <!-- Conteneur du contenu textuel -->
+
+              <p class="blog-date">15 Octobre 2025</p>
+              <!-- Date de publication stylisée en doré -->
+
+              <h3>Nouvelle découverte archéologique à Gizeh</h3>
+              <!-- Titre de l'article -->
+
+              <p>
+                Des archéologues ont mis au jour une chambre cachée dans la
+                Grande Pyramide grâce aux technologies de détection par muons.
+              </p>
+              <!-- Extrait/résumé de l'article -->
+
+              <a href="#" class="btn-secondary open-modal">Lire la suite →</a>
+              <!-- Ajoute la classe "open-modal" -->
+              <!-- Lien vers l'article complet avec flèche Unicode (→) pour indiquer l'action -->
             </div>
+          </div>
 
-            <!-- ARTICLE 2 -->
-            <div class="blog-card" data-article="taj">
+          <!-- ARTICLE 2 -->
+          <div class="blog-card" data-article="taj">
+            <div
+              class="blog-image taj"
+              role="img"
+              aria-label="Taj Mahal en Inde, monument de marbre blanc sous un ciel bleu"
+            ></div>
 
-                <div class="blog-image taj"
-					role="img"
-					aria-label="Taj Mahal en Inde, monument de marbre blanc sous un ciel bleu">				
-				</div>
+            <p class="image-legend">
+              Taj Mahal au lever du soleil<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
 
-				<p class="image-legend">Taj Mahal au lever du soleil<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="blog-content">
-                    <p class="blog-date">08 Octobre 2025</p>
-                    <h3>Restauration du Taj Mahal : un chantier colossal</h3>
-                    <p>Les travaux de préservation du monument emblématique indien mobilisent des experts du monde entier pour sauvegarder ce joyau architectural.</p>
-                    <a href="#" class="btn-secondary open-modal">Lire la suite →</a>
-                </div>
+            <div class="blog-content">
+              <p class="blog-date">08 Octobre 2025</p>
+              <h3>Restauration du Taj Mahal : un chantier colossal</h3>
+              <p>
+                Les travaux de préservation du monument emblématique indien
+                mobilisent des experts du monde entier pour sauvegarder ce joyau
+                architectural.
+              </p>
+              <a href="#" class="btn-secondary open-modal">Lire la suite →</a>
             </div>
+          </div>
 
-            <!-- ARTICLE 3 -->
-            <div class="blog-card" data-article="climat">
+          <!-- ARTICLE 3 -->
+          <div class="blog-card" data-article="climat">
+            <div
+              class="blog-image climat"
+              role="img"
+              aria-label="Paysage naturel menacé par le changement climatique"
+            ></div>
 
-                <div class="blog-image climat"
-					role="img"
-					aria-label="Paysage naturel menacé par le changement climatique">		
-				</div>
+            <p class="image-legend">
+              Écosystème menacé par le réchauffement<br />
+              <small>© Unsplash - Licence libre</small>
+            </p>
 
-				<p class="image-legend">Écosystème menacé par le réchauffement<br>
-           		<small>© Unsplash - Licence libre</small>
-        		</p>
-				
-                <div class="blog-content">
-                    <p class="blog-date">01 Octobre 2025</p>
-                    <h3>Les merveilles naturelles menacées par le climat</h3>
-                    <p>Un rapport scientifique alerte sur les impacts du changement climatique sur les sites naturels exceptionnels de notre planète.</p>
-                    <a href="#" class="btn-secondary open-modal">Lire la suite →</a>
-                </div>
+            <div class="blog-content">
+              <p class="blog-date">01 Octobre 2025</p>
+              <h3>Les merveilles naturelles menacées par le climat</h3>
+              <p>
+                Un rapport scientifique alerte sur les impacts du changement
+                climatique sur les sites naturels exceptionnels de notre
+                planète.
+              </p>
+              <a href="#" class="btn-secondary open-modal">Lire la suite →</a>
             </div>
+          </div>
         </div>
         <!-- Fin de la grille blog -->
-    </section>
+      </section>
 
-<!-- ========== SECTION EXPÉRIENCES & VOYAGES ========== -->
-    <section class="section" id="experiences">
+      <!-- ========== SECTION EXPÉRIENCES & VOYAGES ========== -->
+      <section class="section" id="experiences">
         <!-- section présentant les itinéraires de voyage thématiques -->
-        
+
         <h2 class="section-title">Expériences & Voyages</h2>
-        
+
         <p class="section-subtitle">Itinéraires thématiques sur mesure</p>
-        
+
         <div class="experiences-grid">
-            <!-- colonnes pour les cartes d'expérience -->
-            
-            <!-- EXPÉRIENCE 1 -->
-            <div class="experience-card">  
-			<a href="circuits-antiques.html" style="text-decoration: none; color: inherit; display: block;">
-				
-                <div class="experience-bg circuit"
-					role="img"
-					aria-label="Paysage désertique avec ruines antiques">
-				</div>      
+          <!-- colonnes pour les cartes d'expérience -->
 
-				 <p class="image-legend" style="position: absolute; bottom: 15px; right: 20px; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">
-                Site archéologique en Égypte<br>
+          <!-- EXPÉRIENCE 1 -->
+          <div class="experience-card">
+            <a
+              href="circuits-antiques.html"
+              style="text-decoration: none; color: inherit; display: block;"
+            >
+              <div
+                class="experience-bg circuit"
+                role="img"
+                aria-label="Paysage désertique avec ruines antiques"
+              ></div>
+
+              <p
+                class="image-legend"
+                style="position: absolute; bottom: 15px; right: 20px; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);"
+              >
+                Site archéologique en Égypte<br />
                 <small style="opacity: 0.8;">© Unsplash</small>
-            	</p>
-				
-                <div class="experience-overlay">
-                    <!-- superposition sombre en bas contenant le texte -->
-                    
-                    <h3>Circuit des Merveilles Antiques</h3>
-                    
-                    <p>15 jours - Égypte, Grèce, Turquie • Sur les traces des civilisations anciennes</p>
-                </div>
-			</a>
-            </div>
+              </p>
 
-            <!-- EXPÉRIENCE 2 -->
-            <div class="experience-card">
-			<a href="odyssee-modernes.html" style="text-decoration: none; color: inherit; display: block;">
+              <div class="experience-overlay">
+                <!-- superposition sombre en bas contenant le texte -->
 
-                <div class="experience-bg odyssee"
-					role="img"
-					aria-label="Statue du Christ Rédempteur de dos sous un ciel orangé">
-				</div>
+                <h3>Circuit des Merveilles Antiques</h3>
 
-				<p class="image-legend" style="position: absolute; bottom: 15px; right: 20px; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">
-                Statue du Christ Rédempteur<br>
+                <p>
+                  15 jours - Égypte, Grèce, Turquie • Sur les traces des
+                  civilisations anciennes
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <!-- EXPÉRIENCE 2 -->
+          <div class="experience-card">
+            <a
+              href="odyssee-modernes.html"
+              style="text-decoration: none; color: inherit; display: block;"
+            >
+              <div
+                class="experience-bg odyssee"
+                role="img"
+                aria-label="Statue du Christ Rédempteur de dos sous un ciel orangé"
+              ></div>
+
+              <p
+                class="image-legend"
+                style="position: absolute; bottom: 15px; right: 20px; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);"
+              >
+                Statue du Christ Rédempteur<br />
                 <small style="opacity: 0.8;">© Unsplash</small>
-            	</p>
-				
-                <div class="experience-overlay">
-                    <h3>Odyssée des Merveilles Modernes</h3>
-                    <p>21 jours - Monde entier • Du Taj Mahal au Christ Rédempteur</p>
-                </div>
-			</a>
-            </div>
+              </p>
 
-            <!-- EXPÉRIENCE 3 -->
-            <div class="experience-card">
-			<a href="splendeurs-naturelles.html" style="text-decoration: none; color: inherit; display: block;">
-				
-                <div class="experience-bg splendeurs"
-					role="img"
-					aria-label="Chutes d'eau spectaculaires en Amérique du Sud">
-				</div>
+              <div class="experience-overlay">
+                <h3>Odyssée des Merveilles Modernes</h3>
+                <p>
+                  21 jours - Monde entier • Du Taj Mahal au Christ Rédempteur
+                </p>
+              </div>
+            </a>
+          </div>
 
-				<p class="image-legend" style="position: absolute; bottom: 15px; right: 20px; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">
-                Chutes d'eau en Amérique du Sud<br>
+          <!-- EXPÉRIENCE 3 -->
+          <div class="experience-card">
+            <a
+              href="splendeurs-naturelles.html"
+              style="text-decoration: none; color: inherit; display: block;"
+            >
+              <div
+                class="experience-bg splendeurs"
+                role="img"
+                aria-label="Chutes d'eau spectaculaires en Amérique du Sud"
+              ></div>
+
+              <p
+                class="image-legend"
+                style="position: absolute; bottom: 15px; right: 20px; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);"
+              >
+                Chutes d'eau en Amérique du Sud<br />
                 <small style="opacity: 0.8;">© Unsplash</small>
-            	</p>
-				
-                <div class="experience-overlay">
-                    <h3>Splendeurs Naturelles</h3>
-                    <p>18 jours - Amérique du Sud • Chutes d'Iguazú, Amazonie, Patagonie</p>
-                </div>
-			</a>
-            </div>
+              </p>
 
-            <!-- EXPÉRIENCE 4 -->
-            <div class="experience-card">
-			<a href="voyage-photographique.html" style="text-decoration: none; color: inherit; display: block;">
-				
-                <div class="experience-bg photo"
-					role="img"
-					aria-label="Photo Mont Fuji à l'aube">
-				</div>
+              <div class="experience-overlay">
+                <h3>Splendeurs Naturelles</h3>
+                <p>
+                  18 jours - Amérique du Sud • Chutes d'Iguazú, Amazonie,
+                  Patagonie
+                </p>
+              </div>
+            </a>
+          </div>
 
-				<p class="image-legend" style="position: absolute; bottom: 15px; right: 20px; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);">
-                Voyage photographique au Japon au Mont Fuji<br>
+          <!-- EXPÉRIENCE 4 -->
+          <div class="experience-card">
+            <a
+              href="voyage-photographique.html"
+              style="text-decoration: none; color: inherit; display: block;"
+            >
+              <div
+                class="experience-bg photo"
+                role="img"
+                aria-label="Photo Mont Fuji à l'aube"
+              ></div>
+
+              <p
+                class="image-legend"
+                style="position: absolute; bottom: 15px; right: 20px; color: white; text-shadow: 1px 1px 3px rgba(0,0,0,0.7);"
+              >
+                Voyage photographique au Japon au Mont Fuji<br />
                 <small style="opacity: 0.8;">© Unsplash</small>
-            	</p>
-				
-                <div class="experience-overlay">
-                    <h3>Voyage Photographique</h3>
-                    <p>12 jours - Asie • Temples d'Angkor, Grande Muraille, Mont Fuji</p>
-                </div>
-			</a>
-            </div>
+              </p>
+
+              <div class="experience-overlay">
+                <h3>Voyage Photographique</h3>
+                <p>
+                  12 jours - Asie • Temples d'Angkor, Grande Muraille, Mont Fuji
+                </p>
+              </div>
+            </a>
+          </div>
         </div>
-    </section>
+      </section>
 
-<!-- ========== SECTION CONSEILS  ========= -->
-    <section class="section" id="conseils" style="background-color: white;">
-        
+      <!-- ========== SECTION CONSEILS  ========= -->
+      <section class="section" id="conseils" style="background-color: white;">
         <h2 class="section-title">Conseils Pratiques</h2>
-        
+
         <p class="section-subtitle">Préparez votre voyage en toute sérénité</p>
-        
+
         <div class="conseils-grid">
-            
-            <!-- CONSEIL 1 : Période -->
-            <div class="conseil-card">
-                
-                <div class="conseil-icon">📅</div>
-                <!-- cercle doré avec un emoji calendrier -->
-                <h3>Meilleure Période</h3>
-                <p>Chaque merveille a sa saison idéale. Consultez nos guides par destination pour éviter les foules et profiter des meilleures conditions climatiques.</p>
-            </div>
+          <!-- CONSEIL 1 : Période -->
+          <div class="conseil-card">
+            <div class="conseil-icon">📅</div>
+            <!-- cercle doré avec un emoji calendrier -->
+            <h3>Meilleure Période</h3>
+            <p>
+              Chaque merveille a sa saison idéale. Consultez nos guides par
+              destination pour éviter les foules et profiter des meilleures
+              conditions climatiques.
+            </p>
+          </div>
 
-            <!-- CONSEIL 2 : Réservations -->
-            <div class="conseil-card">
-                <div class="conseil-icon">🎫</div>
-                <!-- c'est l'emoji ticket -->
-                <h3>Réservations</h3>
-                <p>Réservez vos billets en ligne plusieurs semaines à l'avance. Certains sites limitent le nombre de visiteurs quotidiens pour préserver les monuments.</p>
-            </div>
+          <!-- CONSEIL 2 : Réservations -->
+          <div class="conseil-card">
+            <div class="conseil-icon">🎫</div>
+            <!-- c'est l'emoji ticket -->
+            <h3>Réservations</h3>
+            <p>
+              Réservez vos billets en ligne plusieurs semaines à l'avance.
+              Certains sites limitent le nombre de visiteurs quotidiens pour
+              préserver les monuments.
+            </p>
+          </div>
 
-            <!-- CONSEIL 3 : Guides -->
-            <div class="conseil-card">
-                <div class="conseil-icon">🗺️</div>
-                <!-- Emoji carte du monde -->
-                <h3>Guides Locaux</h3>
-                <p>Privilégiez les guides certifiés pour enrichir votre visite. Leur expertise révèle l'histoire fascinante et les secrets de chaque merveille.</p>
-            </div>
+          <!-- CONSEIL 3 : Guides -->
+          <div class="conseil-card">
+            <div class="conseil-icon">🗺️</div>
+            <!-- Emoji carte du monde -->
+            <h3>Guides Locaux</h3>
+            <p>
+              Privilégiez les guides certifiés pour enrichir votre visite. Leur
+              expertise révèle l'histoire fascinante et les secrets de chaque
+              merveille.
+            </p>
+          </div>
 
-            <!-- CONSEIL 4 : Photographie -->
-            <div class="conseil-card">
-                <div class="conseil-icon">📸</div>
-                <!-- emoji appareil photo -->
-                <h3>Photographie</h3>
-                <p>Respectez les règles de chaque site. Certains monuments interdisent les flashs ou les trépieds pour préserver les œuvres et assurer la sécurité.</p>
-            </div>
+          <!-- CONSEIL 4 : Photographie -->
+          <div class="conseil-card">
+            <div class="conseil-icon">📸</div>
+            <!-- emoji appareil photo -->
+            <h3>Photographie</h3>
+            <p>
+              Respectez les règles de chaque site. Certains monuments
+              interdisent les flashs ou les trépieds pour préserver les œuvres
+              et assurer la sécurité.
+            </p>
+          </div>
 
-            <!-- CONSEIL 5 : Documents -->
-            <div class="conseil-card">
-                <div class="conseil-icon">💼</div>
-                <!-- Emoji mallette -->
-                <h3>Documents</h3>
-                <p>Vérifiez les exigences de visa selon votre nationalité. Certains pays offrent des visas électroniques facilitant les démarches administratives.</p>
-            </div>
+          <!-- CONSEIL 5 : Documents -->
+          <div class="conseil-card">
+            <div class="conseil-icon">💼</div>
+            <!-- Emoji mallette -->
+            <h3>Documents</h3>
+            <p>
+              Vérifiez les exigences de visa selon votre nationalité. Certains
+              pays offrent des visas électroniques facilitant les démarches
+              administratives.
+            </p>
+          </div>
 
-            <!-- CONSEIL 6 : Santé -->
-            <div class="conseil-card">
-                <div class="conseil-icon">🏥</div>
-                <!-- Emoji hopital -->
-                <h3>Santé & Sécurité</h3>
-                <p>Consultez votre médecin avant le départ. Souscrivez une assurance voyage complète couvrant les frais médicaux et les imprévus.</p>
-            </div>
+          <!-- CONSEIL 6 : Santé -->
+          <div class="conseil-card">
+            <div class="conseil-icon">🏥</div>
+            <!-- Emoji hopital -->
+            <h3>Santé & Sécurité</h3>
+            <p>
+              Consultez votre médecin avant le départ. Souscrivez une assurance
+              voyage complète couvrant les frais médicaux et les imprévus.
+            </p>
+          </div>
         </div>
-    </section>
-	
-	<!-- ========== GLOSSAIRE INTERACTIF ========== -->
-<section class="section" id="glossaire">
-    
-    <h2 class="section-title">Glossaire des Merveilles</h2>
-    <p class="section-subtitle">Quelques éclairages sur les termes employés.</p>
-    
-    <div class="glossaire-content">
-        
-        <!-- Catégorie Architecture -->
-        <div class="glossaire-category">
-            <h3 style="color: #1a4d2e; margin-bottom: 2rem; border-left: 4px solid #d4a574; padding-left: 1rem;">🏛️ Architecture & Construction</h3>
-            
+      </section>
+
+      <!-- ========== GLOSSAIRE INTERACTIF ========== -->
+      <section class="section" id="glossaire">
+        <h2 class="section-title">Glossaire des Merveilles</h2>
+        <p class="section-subtitle">
+          Quelques éclairages sur les termes employés.
+        </p>
+
+        <div class="glossaire-content">
+          <!-- Catégorie Architecture -->
+          <div class="glossaire-category">
+            <h3
+              style="color: #1a4d2e; margin-bottom: 2rem; border-left: 4px solid #d4a574; padding-left: 1rem;"
+            >
+              🏛️ Architecture & Construction
+            </h3>
+
             <!-- Chaque terme a une ancre unique -->
-            
+          	<!-- TERME 1 -->
             <div class="terme-item" id="terme-chryselephantine">
-                <h4 style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;">Chryséléphantine</h4>
-                <p style="color: #666; line-height: 1.6;">Technique de sculpture utilisant l'or (chrysos) et l'ivoire (elephantinos), employée pour la statue de Zeus à Olympie.</p>
+              <h4
+                style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;"
+              >
+                Chryséléphantine
+              </h4>
+              <p style="color: #666; line-height: 1.6;">
+                Technique de sculpture utilisant l'or (chrysos) et l'ivoire
+                (elephantinos), employée pour la statue de Zeus à Olympie.
+              </p>
             </div>
-            
+			  
+          	<!-- TERME 2 -->
             <div class="terme-item" id="terme-mausolee">
-                <h4 style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;">Mausolée</h4>
-                <p style="color: #666; line-height: 1.6;">Monument funéraire de grande dimension, nommé d'après le Mausolée d'Halicarnasse construit pour le roi Mausole.</p>
+              <h4
+                style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;"
+              >
+                Mausolée
+              </h4>
+              <p style="color: #666; line-height: 1.6;">
+                Monument funéraire de grande dimension, nommé d'après le
+                Mausolée d'Halicarnasse construit pour le roi Mausole.
+              </p>
             </div>
-        </div>
+          </div>
 
-        <!-- Catégorie Civilisations -->
-        <div class="glossaire-category" style="margin-top: 3rem;">
-            <h3 style="color: #1a4d2e; margin-bottom: 2rem; border-left: 4px solid #d4a574; padding-left: 1rem;">👑 Civilisations & Empires</h3>
-            
+          <!-- Catégorie Civilisations -->
+          <div class="glossaire-category" style="margin-top: 3rem;">
+            <h3
+              style="color: #1a4d2e; margin-bottom: 2rem; border-left: 4px solid #d4a574; padding-left: 1rem;"
+            >
+              👑 Civilisations & Empires
+            </h3>
+			  
+          	<!-- TERME 3 -->
             <div class="terme-item" id="terme-nabateens">
-                <h4 style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;">Nabathéens</h4>
-                <p style="color: #666; line-height: 1.6;">Peuple arabe antique qui a construit Pétra et dominé le commerce caravanier au Moyen-Orient.</p>
+              <h4
+                style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;"
+              >
+                Nabathéens
+              </h4>
+              <p style="color: #666; line-height: 1.6;">
+                Peuple arabe antique qui a construit Pétra et dominé le commerce
+                caravanier au Moyen-Orient.
+              </p>
             </div>
-            
+			  
+          	<!-- TERME 4 -->
             <div class="terme-item" id="terme-moghol">
-                <h4 style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;">Empire Moghol</h4>
-                <p style="color: #666; line-height: 1.6;">Empire musulman qui a régné sur l'Inde du XVIe au XIXe siècle et construit le Taj Mahal.</p>
+              <h4
+                style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;"
+              >
+                Empire Moghol
+              </h4>
+              <p style="color: #666; line-height: 1.6;">
+                Empire musulman qui a régné sur l'Inde du XVIe au XIXe siècle et
+                construit le Taj Mahal.
+              </p>
             </div>
-            
+			  
+          	<!-- TERME 5 -->
             <div class="terme-item" id="terme-ptolemee">
-                <h4 style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;">Ptolémée</h4>
-                <p style="color: #666; line-height: 1.6;">Claude Ptolémée (100 - 170 de notre ère), était un mathématicien, astronome et géographe originaire d'Alexandrie. Il fait partie de la Dynastie grecque qui a gouverné l'Égypte après Alexandre le Grand et construit le Phare d'Alexandrie.</p>
+              <h4
+                style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;"
+              >
+                Ptolémée
+              </h4>
+              <p style="color: #666; line-height: 1.6;">
+                Claude Ptolémée (100 - 170 de notre ère), était un
+                mathématicien, astronome et géographe originaire d'Alexandrie.
+                Il fait partie de la Dynastie grecque qui a gouverné l'Égypte
+                après Alexandre le Grand et construit le Phare d'Alexandrie.
+              </p>
             </div>
-        </div>
-		
-		 <!-- Catégorie Nature -->
-        <div class="glossaire-section" style="margin-top: 3rem;">
-            <h3 style="color: #1a4d2e; margin-bottom: 2rem; border-left: 4px solid #d4a574; padding-left: 1rem;">🌍 Géographie & Nature</h3>
-            
-			 <div class="terme-item" id="terme-biodiversite">
-                <h4 style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;">Biodiversité</h4>
-                <p style="color: #666; line-height: 1.6;">Variété des espèces vivantes dans un écosystème, particulièrement riche en Amazonie.</p>
+          </div>
+
+          <!-- Catégorie Nature -->
+          <div class="glossaire-section" style="margin-top: 3rem;">
+            <h3
+              style="color: #1a4d2e; margin-bottom: 2rem; border-left: 4px solid #d4a574; padding-left: 1rem;"
+            >
+              🌍 Géographie & Nature
+            </h3>
+			  
+          	<!-- TERME 6 -->
+            <div class="terme-item" id="terme-biodiversite">
+              <h4
+                style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;"
+              >
+                Biodiversité
+              </h4>
+              <p style="color: #666; line-height: 1.6;">
+                Variété des espèces vivantes dans un écosystème,
+                particulièrement riche en Amazonie.
+              </p>
             </div>
-            
+			  
+          	<!-- TERME 7 -->
             <div class="terme-item" id="terme-karstique">
-                <h4 style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;">Formation Karstique</h4>
-                <p style="color: #666; line-height: 1.6;">Relief formé par l'érosion des roches calcaires, comme à Puerto Princesa.</p>
+              <h4
+                style="color: #d4a574; font-size: 1.1rem; margin-bottom: 0.5rem;"
+              >
+                Formation Karstique
+              </h4>
+              <p style="color: #666; line-height: 1.6;">
+                Relief formé par l'érosion des roches calcaires, comme à Puerto
+                Princesa.
+              </p>
             </div>
-            
+          </div>
         </div>
-    </div>
-</section>
-		
-  <!-- ========== fin du contenu principal ========== -->
+      </section>
+
+      <!-- ========== fin du contenu principal ========== -->
     </main>
-	
-  <!-- ========== FOOTER (Pied de page) ========== -->
+
+    <!-- ========== FOOTER (Pied de page) ========== -->
     <footer>
-        <!-- Élément sémantique <footer> pour le pied de page -->
-        
-        <div class="footer-content">
-	 
-            <!-- Conteneur principal du footer en grille -->
-            
-            <!-- COLONNE 1 : À propos -->
-            <div class="footer-section">
-                <!-- Section individuelle du footer -->
-                
-                <h4>7 Merveilles</h4>
-                <!-- Titre de la section (nom du site) -->
-                
-                <p style="color: rgba(255,255,255,0.8); line-height: 1.8;">Votre guide pour explorer les trésors les plus extraordinaires de notre planète, des monuments antiques aux merveilles naturelles.</p>
-                <!-- Description du site avec style inline pour couleur spécifique -->
-            </div>
+      <!-- Élément sémantique <footer> pour le pied de page -->
 
-            <!-- COLONNE 2 : Navigation -->
-            <div class="footer-section">
-                <h4>Navigation</h4>
-                <!-- Titre de section -->
-                
-                <ul>
-                    <!-- Liste de liens de navigation (duplique le menu header pour accessibilité) -->
-                    <li><a href="#merveilles">Merveilles</a></li>
-                    <li><a href="#blog">Actualités</a></li>
-                    <li><a href="#experiences">Expériences</a></li>
-                    <li><a href="#conseils">Conseils</a></li>
-                    <li><a href="#glossaire">Glossaire</a></li>
-					<li><a href="site.html">Documentation</a></li>
-                </ul>
-            </div>
+      <div class="footer-content">
+        <!-- Conteneur principal du footer en grille -->
 
+        <!-- COLONNE 1 : À propos -->
+        <div class="footer-section">
+          <!-- Section individuelle du footer -->
 
+          <h4>7 Merveilles</h4>
+          <!-- Titre de la section (nom du site) -->
 
-			<!-- Colonne 3 : LÉGAL & CONTACT -->
-<div class="footer-section">
-    <h4>Légal & Contact</h4>
-    <ul>
-        <!-- Lien vers mentions légales -->
-        <li><a href="mentions-legales.html">Mentions légales</a></li>
-        
-        <!-- Lien vers la section contact de mentions-legales.html -->
-        <li><a href="mentions-legales.html#contact">📧 Contact</a></li>
-    </ul>
-	</div>
-</div>
-        <!-- Fin du contenu principal du footer -->
-
-        <div class="footer-bottom">
-            <!-- Section copyright en bas du footer -->
-            <p>&copy; 2025 Les 7 Merveilles du Monde. Tous droits réservés.</p>
-            <!-- &copy; est l'entité HTML pour le symbole copyright © -->
+          <p style="color: rgba(255,255,255,0.8); line-height: 1.8;">
+            Votre guide pour explorer les trésors les plus extraordinaires de
+            notre planète, des monuments antiques aux merveilles naturelles.
+          </p>
+          <!-- Description du site avec style inline pour couleur spécifique -->
         </div>
+
+        <!-- COLONNE 2 : Navigation -->
+        <div class="footer-section">
+          <h4>Navigation</h4>
+          <!-- Titre de section -->
+
+          <ul>
+            <!-- Liste de liens de navigation (duplique le menu header pour accessibilité) -->
+            <li><a href="#merveilles">Merveilles</a></li>
+            <li><a href="#blog">Actualités</a></li>
+            <li><a href="#experiences">Expériences</a></li>
+            <li><a href="#conseils">Conseils</a></li>
+            <li><a href="#glossaire">Glossaire</a></li>
+            <li><a href="site.html">Documentation</a></li>
+          </ul>
+        </div>
+
+        <!-- Colonne 3 : LÉGAL & CONTACT -->
+        <div class="footer-section">
+          <h4>Légal & Contact</h4>
+          <ul>
+            <!-- Lien vers mentions légales -->
+            <li><a href="mentions-legales.html">Mentions légales</a></li>
+
+            <!-- Lien vers la section contact de mentions-legales.html -->
+            <li><a href="mentions-legales.html#contact">📧 Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- Fin du contenu principal du footer -->
+
+      <div class="footer-bottom">
+        <!-- Section copyright en bas du footer -->
+        <p>&copy; 2025 Les 7 Merveilles du Monde. Tous droits réservés.</p>
+        <!-- &copy; est l'entité HTML pour le symbole copyright © -->
+      </div>
     </footer>
 
-
-		<!-- ========== MODAL (POP UP) ARTICLE ========== -->
-<div id="articleModal" class="modal">
-    <!-- Fenêtre modale cachée par défaut -->
-    <div class="modal-content">
+    <!-- ========== MODAL (POP UP) ARTICLE ========== -->
+    <div id="articleModal" class="modal">
+      <!-- Fenêtre modale cachée par défaut -->
+      <div class="modal-content">
         <!-- Conteneur blanc de l'article -->
-        
+
         <div class="modal-header" id="modalHeaderImg">
-            <!-- En-tête avec image de fond (défini dynamiquement en JS) -->
-            <span class="close">&times;</span>
-            <!-- Bouton X pour fermer (&times; = symbole ×) -->
-            <h2 class="modal-title" id="modalTitle">Article détaillé</h2>
-            <!-- Titre de l'article (rempli dynamiquement) -->
+          <!-- En-tête avec image de fond (défini dynamiquement en JS) -->
+          <span class="close">&times;</span>
+          <!-- Bouton X pour fermer (&times; = symbole ×) -->
+          <h2 class="modal-title" id="modalTitle">Article détaillé</h2>
+          <!-- Titre de l'article (rempli dynamiquement) -->
         </div>
-        
+
         <div class="modal-body">
-            <!-- Corps de l'article -->
-            <p class="modal-date" id="modalDate"></p>
-            <!-- Date (remplie dynamiquement) -->
-            <div id="modalContent"></div>
-            <!-- Contenu complet de l'article (rempli dynamiquement) -->
+          <!-- Corps de l'article -->
+          <p class="modal-date" id="modalDate"></p>
+          <!-- Date (remplie dynamiquement) -->
+          <div id="modalContent"></div>
+          <!-- Contenu complet de l'article (rempli dynamiquement) -->
         </div>
+      </div>
     </div>
-</div>
 
-<!-- ========== JAVASCRIPT ========== -->
-<script src="script.js"></script>
-	
-</body>
+    <!-- ========== JAVASCRIPT ========== -->
+    <script src="script.js"></script>
+  </body>
 </html>
-
-
-
-
