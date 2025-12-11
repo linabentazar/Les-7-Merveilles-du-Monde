@@ -209,6 +209,13 @@
 
         }
 
+      /* ========== IFRAME VIDEO YOUTUBE ========== */
+
+/* Désactive la bordure par défaut des iframe (remplace frameborder="0") */
+.iframe {
+    border: none;
+}
+
       /* ========== ACCESSIBILITE VIDEO YOUTUBE ========== */
 
 /* Classe pour cacher visuellement toute la description mais laisser accessible aux lecteurs d'écran */
