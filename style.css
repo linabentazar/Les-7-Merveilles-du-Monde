@@ -493,6 +493,9 @@ details p {
         .blog-image {
             height: 250px;
             background-color: #1a4d2e;
+			background-size: cover;
+    		background-position: center;
+    		background-repeat: no-repeat;
         }
  /* ========== IMAGES SPÉCIFIQUES POUR CHAQUE ARTICLE ========== */
         
