@@ -293,6 +293,9 @@
             /* Couleur de fond vert (placeholder en attendant vraies images) */
             position: relative;
             overflow: hidden;
+			background-size: cover;      /* L'image couvre toute la zone */
+    		background-position: center; /* Centre l'image */
+    		background-repeat: no-repeat; /* Pas de répétition */
         }
 
         .merveille-image::after {
