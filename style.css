@@ -798,6 +798,9 @@ details p {
     background-position: center;
     background-repeat: no-repeat;
     transition: transform 0.3s;
+	background-size: cover;      
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 /* ========== IMAGES SPÉCIFIQUES POUR CHAQUE CIRCUIT ========== */
         
