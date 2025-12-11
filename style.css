@@ -97,6 +97,46 @@
             color: #d4a574; /* Couleur au survol */
         }
 
+		/* ========== LÉGENDES D'IMAGES ========== */
+.image-legend {
+    text-align: center;
+    color: #666;
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+    line-height: 1.4;
+    font-style: italic;
+}
+
+.image-legend small {
+    color: #888;
+    font-size: 0.75rem;
+    display: block;
+    margin-top: 0.2rem;
+}
+
+/* Containers pour images avec légendes */
+.merveille-image-container,
+.blog-image-container,
+.experience-bg-container {
+    position: relative;
+}
+
+/* Pour les images de fond des expériences */
+.experience-bg-container .image-legend {
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    color: white;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+    text-align: left;
+    margin: 0;
+}
+
+.experience-bg-container .image-legend small {
+    opacity: 0.8;
+    color: rgba(255,255,255,0.9);
+}
+
      /* ========= Bannière principale (hero section) ========== */
         
         .hero {
@@ -267,6 +307,9 @@
             height: 100%;
             background: linear-gradient(to top, rgba(0,0,0,0.6), transparent);
         }
+
+
+
 
  /* ========== IMAGES SPÉCIFIQUES POUR CHAQUE MERVEILLE ========== */
         /* Ajoute ici l'URL de l'image pour chaque merveille */
