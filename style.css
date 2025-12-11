@@ -48,6 +48,9 @@
             background-color: #fff; /* Couleur du header */
             padding: 20px 40px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+			position: sticky; /* rend le header collant */
+    		top: 0;          /* le colle en haut de la page */
+    		z-index: 1000;   /* Garde au-dessus du contenu */
         }
 
         nav {
