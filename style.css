@@ -50,8 +50,23 @@
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 			position: sticky; /* rend le header collant */
     		top: 0;          /* le colle en haut de la page */
-    		z-index: 1000;   /* Garde au-dessus du contenu */
+    		z-index: 1000; /* Garde au-dessus du contenu */
+			width: 100%;
+    		transition: all 0.3s ease;
         }
+
+		/* Version mobile */
+	@media (max-width: 768px) {
+    		header {
+        		padding: 15px 20px;
+        		position: fixed; /* Plus fiable sur mobile */
+    			}
+    
+    		/* Compense le header fixe sur mobile */
+    		body {
+        		padding-top: 70px;
+    			}
+		}
 
         nav {
             display: flex;
