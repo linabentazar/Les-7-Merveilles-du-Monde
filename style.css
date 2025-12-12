@@ -91,23 +91,48 @@ nav {
 }
 
 /* Navigation */
-
 .nav-links {
     display: flex;
-    gap: 20px;
     list-style: none;
+    gap: 15px; /* Réduire l'espace entre les liens */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
+    justify-content: center; /* Centre les liens */
 }
 
 .nav-links a {
-    padding: 5px 10px;
     text-decoration: none;
-    font-weight: 500;
     color: #333;
+    font-weight: 500;
+    padding: 5px 8px; /* Réduire le padding */
+    font-size: 0.9rem; /* Réduire la taille de police */
+    white-space: nowrap; /* Empêche la coupure de texte */
     transition: color 0.3s;
 }
 
 .nav-links a:hover {
     color: #d4a574; /* Couleur au survol */
+}
+
+/* Pour mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 10px; /* Encore moins d'espace sur mobile */
+        padding: 10px 0;
+    }
+    
+    .nav-links a {
+        font-size: 0.85rem;
+        padding: 4px 6px;
+    }
+}
+
+/* Pour très petits écrans */
+@media (max-width: 480px) {
+    .nav-links {
+        flex-direction: column; /* Passe en colonne sur très petit écran */
+        gap: 8px;
+        width: 100%;
+    }
 }
 
 /* ========== LÉGENDES D'IMAGES ========== */
