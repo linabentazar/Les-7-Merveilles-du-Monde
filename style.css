@@ -94,7 +94,7 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 15px; /* Réduire l'espace entre les liens */
+    gap: 10px; /* Réduire l'espace entre les liens */
     flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
     justify-content: center; /* Centre les liens */
 }
@@ -103,8 +103,8 @@ nav {
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    padding: 5px 8px; /* Réduire le padding */
-    font-size: 0.9rem; /* Réduire la taille de police */
+    padding: 5px 6px; /* Réduire le padding */
+    font-size: 0.85rem; /* Réduire la taille de police */
     white-space: nowrap; /* Empêche la coupure de texte */
     transition: color 0.3s;
 }
