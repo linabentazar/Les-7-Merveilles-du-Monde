@@ -94,7 +94,7 @@ nav {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 10px; /* Réduire l'espace entre les liens */
+    gap: 8px; /* Réduire l'espace entre les liens */
     flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire */
     justify-content: center; /* Centre les liens */
 }
