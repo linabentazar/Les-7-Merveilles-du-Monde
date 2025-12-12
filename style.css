@@ -944,50 +944,81 @@ details p {
 
 
 /* ==========  PAGE DOCUMENTATION  ========== */
-        /* Styles spécifiques à la page bibliographie */
-        .csl-bib-body {
+         /* Styles spécifiques pour la bibliographie APA */
+        .apa-bibliography {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 2rem auto;
             background: white;
             padding: 2rem;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            font-family: 'Times New Roman', Times, serif;
+            line-height: 1.8;
+        }
+        
+        .apa-bibliography h1 {
+            color: #1a4d2e;
+            text-align: center;
+            margin-bottom: 2rem;
+            border-bottom: 2px solid #d4a574;
+            padding-bottom: 1rem;
         }
         
         .csl-entry {
             margin-bottom: 1.5rem;
-            padding-bottom: 1.5rem;
-            border-bottom: 1px solid #eee;
+            padding-left: 2em;
+            text-indent: -2em;
+            page-break-inside: avoid;
         }
         
-        .csl-entry:last-child {
-            border-bottom: none;
-        }
-        
-        .Z3988 {
-            display: none;
-        }
-        
-        .back-link {
-            display: block;
-            margin-top: 2rem;
-            text-align: center;
-        }
-        
-        /* Style pour les citations */
-        .citation-title {
+        .csl-entry a {
             color: #1a4d2e;
-            font-weight: bold;
+            text-decoration: none;
+            word-break: break-all;
         }
         
-        .citation-source {
-            color: #666;
+        .csl-entry a:hover {
+            color: #d4a574;
+            text-decoration: underline;
+        }
+        
+        /* Styles APA spécifiques */
+        .apa-italic {
             font-style: italic;
         }
         
-        .citation-link {
-            color: #d4a574;
-            word-break: break-all;
+        .apa-retrieved {
+            font-style: italic;
+        }
+        
+        /* Masquer les métadonnées Zotero mais les conserver */
+        .Z3988 {
+            display: none;
+            visibility: hidden;
+        }
+        
+        .zotero-info {
+            font-size: 0.9rem;
+            color: #666;
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #eee;
+        }
+        
+        /* Bouton retour */
+        .back-button {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #d4a574;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        
+        .back-button:hover {
+            background-color: #b8874e;
         }
 
 
