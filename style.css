@@ -942,6 +942,55 @@ details p {
             line-height: 1.8;
         }
 
+
+/* ==========  PAGE DOCUMENTATION  ========== */
+        /* Styles spécifiques à la page bibliographie */
+        .csl-bib-body {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .csl-entry {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .csl-entry:last-child {
+            border-bottom: none;
+        }
+        
+        .Z3988 {
+            display: none;
+        }
+        
+        .back-link {
+            display: block;
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        /* Style pour les citations */
+        .citation-title {
+            color: #1a4d2e;
+            font-weight: bold;
+        }
+        
+        .citation-source {
+            color: #666;
+            font-style: italic;
+        }
+        
+        .citation-link {
+            color: #d4a574;
+            word-break: break-all;
+        }
+
+
 /* ========== FOOTER ========== */
         
         footer {
