@@ -1012,105 +1012,224 @@ details p {
     color: #666;
 }
 
-/* ==========================================================================
-   7. MEDIA QUERIES (RESPONSIVE)
+/* ==========================================================================\n
+   3. ADAPTATION MOBILE (MOBILE FIRST) & VIDÉO
+   (Styles par défaut pour petits écrans - moins de 768px)
    ========================================================================== */
 
-/* Version mobile - Styles généraux (768px et moins) */
+/* HEADER & NAVIGATION (Mobile) */
+header {
+    /* Règle conservée de votre CSS */
+    position: fixed;
+    /* Plus fiable sur mobile */
+    padding: 15px 20px;
+}
 
-@media (max-width: 768px) {
-    /* Mise en page générale */
-    .section {
-        padding: 4rem 1.5rem;
-    }
+/* Compense le header fixe sur mobile (règle conservée) */
+body {
+    padding-top: 70px;
+}
 
-    /* Header */
+/* Organisation en colonne par défaut pour la navigation */
+nav {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center; /* Centre le logo et le menu */
+}
+
+.nav-links {
+    /* Style de liste verticale pour le menu mobile */
+    flex-direction: column;
+    gap: 1rem;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.nav-links a {
+    font-size: 0.85rem;
+    padding: 4px 6px;
+}
+
+/* Hero */
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+/* Grilles par défaut : 1 colonne */
+.merveilles-grid,
+.blog-grid,
+.experiences-grid,
+.conseils-grid {
+    grid-template-columns: 1fr;
+}
+
+/* Catégories de merveilles : une par ligne */
+.merveilles-categories {
+    flex-direction: column;
+}
+
+/* Footer : 1 colonne */
+.footer-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* Modal : plus large sur mobile */
+.modal-content {
+    width: 95%;
+    margin: 10% auto;
+}
+
+.modal-header {
+    height: 200px;
+}
+
+.modal-title {
+    /* Positionnement conservé de votre CSS */
+    right: 20px;
+    bottom: 20px;
+    left: 20px;
+    font-size: 24px;
+}
+
+/* Gestion de la Vidéo (rendue adaptative) */
+/* Conteneur pour maintenir le ratio 16:9 de la vidéo */
+.video-section div[role="region"] > div {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* Ratio 16:9 (9 / 16) */
+    height: 0;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.video-section iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+
+/* ==========================================================================
+   4. MEDIA QUERIES (Ajustements pour tablettes et desktop)
+   ========================================================================== */
+
+/* --- TABLETTE (à partir de 768px - Écran plus grand que mobile) --- */
+@media (min-width: 768px) {
+
+    /* HEADER & NAVIGATION */
     header {
-        position: fixed;
-        /* Plus fiable sur mobile */
-        padding: 15px 20px;
+        position: relative; /* Moins agressif que 'fixed' sur tablette/desktop */
+        padding: 15px 40px;
     }
 
-    /* Compense le header fixe sur mobile */
     body {
-        padding-top: 70px;
+        padding-top: 0; /* Plus besoin de compenser le header si il n'est plus fixed */
     }
 
     nav {
-        flex-direction: column;
-        gap: 1rem;
+        flex-direction: row; /* Repasser en ligne */
+        justify-content: space-between;
     }
 
-    /* Navigation */
+    /* Afficher le menu de navigation complet horizontalement */
     .nav-links {
-        flex-direction: column;
-        gap: 1rem;
-        padding: 10px 0;
-        text-align: center;
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        padding: 0;
+        text-align: left;
     }
 
     .nav-links a {
-        font-size: 0.85rem;
-        padding: 4px 6px;
+        font-size: 1rem; /* Taille standard */
     }
 
-    /* Hero */
+    /* HERO */
     .hero-content h1 {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
     }
 
-    /* Sections flexibles/grilles */
-    .experiences-grid {
-        grid-template-columns: 1fr;
+    /* GRILLES : Passage à 2 colonnes */
+    .merveilles-grid,
+    .blog-grid,
+    .experiences-grid,
+    .conseils-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        max-width: 1200px;
+        margin: 0 auto;
     }
-
+    
+    /* Les boutons de catégorie peuvent être sur une seule ligne */
     .merveilles-categories {
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    /* Footer */
+    /* PIED DE PAGE */
     .footer-content {
-        grid-template-columns: 1fr;
-        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour le pied de page */
+        text-align: left;
     }
 
-    /* Modal */
+    /* MODAL */
     .modal-content {
-        width: 95%;
-        margin: 10% auto;
+        width: 80%;
+        margin: 5% auto;
     }
 
     .modal-header {
-        height: 200px;
-    }
-
-    .modal-title {
-        right: 20px;
-        bottom: 20px;
-        left: 20px;
-        font-size: 24px;
-    }
-
-    .modal-body {
-        padding: 25px;
+        height: 300px;
     }
 }
 
-/* Version tablette - Navigation (1024px et moins) */
+/* --- DESKTOP (à partir de 1200px - Grand écran) --- */
+@media (min-width: 1200px) {
 
-@media (max-width: 1024px) {
-    .footer-content {
-        grid-template-columns: repeat(2, 1fr);
+    /* Ajustement des marges/padding */
+    .section {
+        padding: 80px 40px;
     }
-}
+    
+    /* HERO */
+    .hero-content h1 {
+        font-size: 4.5rem;
+    }
 
-/* Version très petits écrans (480px et moins) */
+    /* GRILLES PLUS FINES : 3 ou 4 colonnes */
+    .merveilles-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour les Merveilles */
+    }
 
-@media (max-width: 480px) {
-    .nav-links {
-        flex-direction: column;
-        /* Passe en colonne sur très petit écran */
-        gap: 8px;
-        width: 100%;
+    .blog-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour le Blog */
+    }
+
+    .experiences-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 colonnes pour les Expériences */
+    }
+
+    .conseils-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 colonnes pour les Conseils */
+    }
+
+    /* GLOSSAIRE : Affichage en colonnes pour une meilleure lisibilité */
+    .glossaire-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour les catégories de glossaire */
+        gap: 30px;
+        text-align: left;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* MODAL */
+    .modal-content {
+        max-width: 900px;
     }
 }
