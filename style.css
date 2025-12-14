@@ -42,10 +42,10 @@ body {
     outline-offset: 2px;
 }
 
-/* ========== BOUTON HAMBURGER (Menu mobile) ========== */
+/* ========== BOUTON HAMBURGER (menu mobile) ========== */
 
 .menu-toggle {
-    display: none; /* Caché par défaut, on l'affichera seulement dans la section 3 */
+    display: none; /* caché par défaut, on l'affiche seulement dans la section 3 */
     background: none;
     border: none;
     cursor: pointer;
@@ -59,12 +59,12 @@ body {
     width: 25px;
     height: 3px;
     margin: 5px 0;
-    background-color: #d4a574; /* Couleur secondaire pour les barres */
+    background-color: #d4a574; /* couleur secondaire pour les barres */
     transition: all 0.3s ease;
     border-radius: 2px;
 }
 
-/* Styles pour l'animation du X de fermeture (classe ajoutée par JS) */
+/* les styles pour l'animation du X de fermeture (classe ajoutée par js) */
 .menu-toggle.is-open .icon-bar:nth-child(2) {
     opacity: 0; 
 }
@@ -221,7 +221,7 @@ body {
 
 /* ========== IFRAME VIDEO YOUTUBE ========== */
 
-/* Désactive la bordure par défaut des iframe (remplace frameborder="0") */
+/* Désactive la bordure par défaut des iframe (remplace frameborder="0" qui était dans le html) */
 
 .iframe {
     border: none;
@@ -291,7 +291,6 @@ nav {
     color: #333;
     font-weight: 500;
     padding: 5px 6px;
-    /* Réduire le padding */
     font-size: 0.85rem;
     /* Réduire la taille de police */
     white-space: nowrap;
@@ -458,8 +457,6 @@ footer {
 }
 
 /* ========== IMAGES SPÉCIFIQUES POUR CHAQUE MERVEILLE ========== */
-
-/* Ajoute ici l'URL de l'image pour chaque merveille */
 
 /* MERVEILLES ANTIQUES */
 
@@ -811,7 +808,7 @@ details p {
 
 .modal {
     /* Au-dessus de tout (header est à 1000) */
-    /* Fond noir semi-transparent (70% opacité) - assombrit la page derrière */
+    /* Fond noir semi-transparent (70% opacité), assombrit la page derrière */
     /* Permet de scroller si contenu trop long */
     display: none;
     z-index: 2000;
@@ -959,7 +956,7 @@ details p {
     color: #1a4d2e;
 }
 
-/* ========== PAGE DOCUMENTATION (BIBLIOGRAPHIE) ========== */
+/* ========== PAGE DOCUMENTATION (BIBLIOGRAPHIE & SITOGRAPHIE) ========== */
 
 /* Styles spécifiques pour la bibliographie APA */
 
@@ -1190,10 +1187,10 @@ nav {
         align-items: center; 
     }
 
-    /* Afficher le menu de navigation complet horizontalement */
+    /* Afficher le menu de navigation complet */
     .nav-links {
-        display: flex !important; /* IMPORTANT: Force l'affichage du menu sur desktop */
-        position: static; /* Le menu reprend sa place normale dans le flux */
+        display: flex !important; /* IMPORTANT: force l'affichage du menu sur desktop */
+        position: static; /* le menu reprend sa place normale dans le flux */
         flex-direction: row;
         gap: 20px;
         padding: 0;
@@ -1205,7 +1202,7 @@ nav {
 
     /* Retrouver la couleur originale du lien sur desktop */
     .nav-links a {
-        color: #1a4d2e; /* (Utilisez la couleur de vos liens par défaut ici) */
+        color: #1a4d2e; 
     }
 
     /* HERO */
