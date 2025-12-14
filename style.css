@@ -1211,15 +1211,6 @@ nav {
         grid-template-columns: repeat(4, 1fr); /* 4 colonnes pour les Conseils */
     }
 
-    /* GLOSSAIRE : Affichage en colonnes pour une meilleure lisibilité */
-    .glossaire-content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3 colonnes pour les catégories de glossaire */
-        gap: 30px;
-        text-align: left;
-        max-width: 1200px;
-        margin: 0 auto;
-    }
 
     /* MODAL */
     .modal-content {
