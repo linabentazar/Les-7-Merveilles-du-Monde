@@ -1125,16 +1125,6 @@ nav {
     display: block;
 }
 
-.video-caption {
-    /* Style de la légende */
-    display: block;
-    text-align: center;
-    margin-top: 10px;
-    font-style: italic;
-    color: #6a6a6a;
-    font-size: 0.9rem;
-}
-
 /* --- AJUSTEMENT POUR MOBILE (Écran inférieur à 560px) --- */
 @media (max-width: 560px) {
     .video-wrapper-fixed {
