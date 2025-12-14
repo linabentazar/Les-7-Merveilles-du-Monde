@@ -7,21 +7,33 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- Header -->
+    <!-- ======== HEADER & NAVIGATION ======== -->
     <header>
       <nav>
         <div class="logo">
-          <a href="index.html">
-            <img src="monlogo.png" alt="Logo 7 Merveilles du Monde" />
+          <a href="#accueil">
+            <img
+              src="monlogo.png"
+              alt="Logo 7 Merveilles du Monde - Retour à l'accueil"
+            />
           </a>
         </div>
-        <ul class="nav-links">
-          <li><a href="index.html#merveilles">Merveilles</a></li>
-          <li><a href="index.html#blog">Actualités</a></li>
-          <li><a href="index.html#experiences">Expériences</a></li>
-          <li><a href="index.html#conseils">Conseils</a></li>
-          <li><a href="index.html#glossaire">Glossaire</a></li>
-          <li><a href="site.html">Documentation</a></li>
+        
+    <!-- Menu hamburger pour version mobile -->
+		  <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu de navigation">
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+			  <span class="icon-bar"></span>
+		  </button>
+        
+    <!-- navigation -->
+        <ul class="nav-links" id="main-nav">
+          <li><a href="index.html#merveilles" aria-label="Explorer les 7 Merveilles du Monde">Merveilles</a></li>
+          <li><a href="index.html#blog" aria-label="Lire les derniers articles de blog">Actualités</a></li>
+          <li><a href="index.html#experiences" aria-label="Découvrir les expériences de voyage">Expériences</a></li>
+          <li><a href="index.html#conseils" aria-label="Lire nos conseils de voyage">Conseils</a></li>
+          <li><a href="index.html#glossaire" aria-label="Comprendre les termes historiques">Glossaire</a></li>
+          <li><a href="site.html" aria-label="Consulter la bibliographie">Documentation</a></li>
         </ul>
       </nav>
     </header>
