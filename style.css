@@ -1019,16 +1019,13 @@ details p {
 
 /* HEADER & NAVIGATION (Mobile) */
 header {
-    /* Règle conservée de votre CSS */
-    position: fixed;
-    /* Plus fiable sur mobile */
+    /* Règle  pour le responsive */
+    position: sticky; /* Utiliser sticky au lieu de fixed */
+    top: 0;          /* Reste collé au sommet */
     padding: 15px 20px;
+    z-index: 50;     /* Assurez-vous qu'il est au-dessus du reste du contenu */
 }
 
-/* Compense le header fixe sur mobile (règle conservée) */
-body {
-    padding-top: 70px;
-}
 
 /* Organisation en colonne par défaut pour la navigation */
 nav {
@@ -1122,12 +1119,8 @@ nav {
 
     /* HEADER & NAVIGATION */
     header {
-        position: relative; /* Moins agressif que 'fixed' sur tablette/desktop */
+        position: sticky; 
         padding: 15px 40px;
-    }
-
-    body {
-        padding-top: 0; /* Plus besoin de compenser le header si il n'est plus fixed */
     }
 
     nav {
