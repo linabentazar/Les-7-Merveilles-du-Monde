@@ -1139,6 +1139,34 @@ nav {
         height: auto; 
         aspect-ratio: 16 / 9; /* Maintient le ratio 16:9 en flexibilité */
     }
+   
+}
+/* ========== IMAGE MAP RESPONSIVE (Circuit) ========== */
+
+.map-circuit-wrapper {
+    /* Styles pour DESKTOP (par défaut) */
+    display: block;
+    max-width: 800px; /* Taille maximale fixe sur les grands écrans (à ajuster si besoin) */
+    margin: 2rem auto; /* Centrage et marge verticale (remplace le style inline) */
+    text-align: center; /* Assure que le contenu reste centré si plus petit que 800px */
+}
+
+/* Règle essentielle : la carte s'adapte à la largeur de son conteneur */
+.responsive-map-image {
+    width: 100%;
+    height: auto; /* Maintient le ratio d'aspect */
+    display: block; /* Supprime les espaces inutiles sous l'image */
+}
+
+/* --- AJUSTEMENT MOBILE (Optionnel mais recommandé) --- */
+@media (max-width: 800px) {
+    .map-circuit-wrapper {
+        /* Quand l'écran est plus petit que l'image, retire la marge auto */
+        max-width: 100%; 
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0 15px; /* Ajout d'une marge latérale pour l'esthétique sur les bords du téléphone */
+    }
 }
 
 /* Grilles par défaut : 1 colonne */
