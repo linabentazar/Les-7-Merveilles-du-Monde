@@ -1061,25 +1061,46 @@ header {
     z-index: 50;     /* Assurez-vous qu'il est au-dessus du reste du contenu */
 }
 
-
-/* Organisation en colonne par défaut pour la navigation */
+/* Organisation de la navigation sur mobile */
 nav {
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center; /* Centre le logo et le menu */
+    display: flex; /* Pour aligner le logo et le bouton */
+    flex-direction: row; 
+    justify-content: space-between; /* Pour séparer le logo et le bouton */
+    gap: 0; 
+    align-items: center; 
 }
 
+/* NOUVEAU: Le bouton hamburger est visible sur les petits écrans */
+.menu-toggle {
+    display: block;
+}
+
+/* Le menu est masqué par défaut sur mobile */
 .nav-links {
-    /* Style de liste verticale pour le menu mobile */
+    display: none; 
+    /* Positionnement du menu lorsqu'il est ouvert */
+    position: absolute;
+    top: 70px; /* Commence juste sous le header collant */
+    left: 0;
+    width: 100%;
+    background-color: #1a4d2e; /* Couleur de fond pour le menu ouvert */
     flex-direction: column;
     gap: 1rem;
-    padding: 10px 0;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+}
+
+/* classe ajoutée par JS pour afficher le menu */
+.nav-links.is-open {
+    display: flex;
 }
 
 .nav-links a {
-    font-size: 0.85rem;
-    padding: 4px 6px;
+    color: white; /* Les liens sont blancs sur le fond sombre du menu */
+    font-size: 1rem;
+    padding: 8px 0;
 }
 
 /* Hero */
@@ -1158,22 +1179,33 @@ nav {
         padding: 15px 40px;
     }
 
+/* Le bouton hamburger est masqué sur les grands écrans */
+    .menu-toggle {
+        display: none;
+    }
+
     nav {
-        flex-direction: row; /* Repasser en ligne */
+        flex-direction: row; 
         justify-content: space-between;
+        align-items: center; 
     }
 
     /* Afficher le menu de navigation complet horizontalement */
     .nav-links {
-        display: flex;
+        display: flex !important; /* IMPORTANT: Force l'affichage du menu sur desktop */
+        position: static; /* Le menu reprend sa place normale dans le flux */
         flex-direction: row;
         gap: 20px;
         padding: 0;
         text-align: left;
+        background-color: transparent; /* Retirer la couleur de fond mobile */
+        box-shadow: none;
+        width: auto;
     }
 
+    /* Retrouver la couleur originale du lien sur desktop */
     .nav-links a {
-        font-size: 1rem; /* Taille standard */
+        color: #1a4d2e; /* (Utilisez la couleur de vos liens par défaut ici) */
     }
 
     /* HERO */
