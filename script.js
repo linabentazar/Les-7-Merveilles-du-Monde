@@ -2,6 +2,29 @@
 
 // Script JavaScript pour ajouter de l'interactivité au site
 
+// ===============================================
+// LOGIQUE MENU HAMBURGER RESPONSIVE
+// ===============================================
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('main-nav');
+    
+    // Vérifie que les deux éléments existent (pour éviter des erreurs)
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            // 1. Basculer la classe 'is-open' pour l'animation X du bouton
+            menuToggle.classList.toggle('is-open');
+            
+            // 2. Basculer la classe 'is-open' pour afficher/masquer le menu (via CSS)
+            navLinks.classList.toggle('is-open');
+            
+            // 3. Mettre à jour l'attribut ARIA pour l'accessibilité
+            const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !isExpanded);
+        });
+    }
+});
+
 // ===== SMOOTH SCROLL (Défilement fluide) =====
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     // querySelectorAll sélectionne TOUS les liens <a> dont l'attribut href commence par "#"
