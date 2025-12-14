@@ -47,12 +47,14 @@
           </a>
         </div>
 		  
+    	<!-- menu hamburger pour version mobile -->
 		  <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="main-nav" aria-label="Ouvrir le menu de navigation">
 			  <span class="icon-bar"></span>
 			  <span class="icon-bar"></span>
 			  <span class="icon-bar"></span>
 		  </button>
-
+		  
+    	<!-- navigation -->
         <ul class="nav-links" id="main-nav">
           <li><a href="#merveilles" aria-label="Explorer les 7 Merveilles du Monde">Merveilles</a></li>
           <li><a href="#blog" aria-label="Lire les derniers articles de blog">Actualités</a></li>
@@ -156,8 +158,7 @@
         </div>
 
         <div class="merveilles-grid">
-          <!-- VERIFIER QUE JAI FERME LE DIV PLUS BAS-->
-          <!-- Conteneur Grid qui affiche les cartes de merveilles en grille responsive -->
+          <!-- conteneur Grid qui affiche les cartes de merveilles en grille responsive -->
 
           <!-- ========== MERVEILLES ANTIQUES ========== -->
 
@@ -192,7 +193,7 @@
               <!-- Texte court visible par défaut -->
 
               <details>
-                <!-- Balise <details> crée un élément déroulant/cachable -->
+                <!-- Balise <details> pour créer un élément déroulant -->
                 <summary>Voir plus</summary>
                 <!-- <summary> est le texte cliquable qui affiche/cache le contenu -->
 
@@ -1242,22 +1243,22 @@
 
       <!-- ========== SECTION BLOG / ACTUALITÉS ========== -->
       <section class="section" id="blog" style="background-color: white;">
-        <!-- Section blog avec fond blanc inline pour alterner avec le fond beige des autres sections -->
+        <!-- section blog avec fond blanc pour alterner avec le fond beige des autres sections -->
 
         <h2 class="section-title">Actualités & Découvertes</h2>
-        <!-- Titre de la section blog -->
+        <!-- titre de la section blog -->
 
         <p class="section-subtitle">
           Les dernières nouvelles du patrimoine mondial
         </p>
-        <!-- Sous-titre descriptif -->
+        <!-- sous-titre descriptif -->
 
         <div class="blog-grid">
           <!-- Conteneur Grid pour les articles de blog -->
 
           <!-- ARTICLE 1 -->
           <div class="blog-card" data-article="gizeh">
-            <!-- Carte d'article individuelle -->
+            <!-- carte d'article individuelle -->
 
             <!-- placeholder pour l'image qui illustre l'article -->
             <div
@@ -1275,10 +1276,10 @@
               <!-- Conteneur du contenu textuel -->
 
               <p class="blog-date">15 Octobre 2025</p>
-              <!-- Date de publication stylisée en doré -->
+              <!-- date de publication en doré -->
 
               <h3>Nouvelle découverte archéologique à Gizeh</h3>
-              <!-- Titre de l'article -->
+              <!-- titre de l'article -->
 
               <p>
                 Des archéologues ont mis au jour une chambre cachée dans la
@@ -1287,8 +1288,8 @@
               <!-- Extrait/résumé de l'article -->
 
               <a href="#" class="btn-secondary open-modal">Lire la suite →</a>
-              <!-- Ajoute la classe "open-modal" -->
-              <!-- Lien vers l'article complet avec flèche Unicode (→) pour indiquer l'action -->
+              <!-- ajoute la classe "open-modal" -->
+              <!-- Lien vers l'article complet avec flèche (→) pour indiquer l'action -->
             </div>
           </div>
 
@@ -1342,7 +1343,7 @@
             </div>
           </div>
         </div>
-        <!-- Fin de la grille blog -->
+        <!-- fin de la grille blog -->
       </section>
 
       <!-- ========== SECTION EXPÉRIENCES & VOYAGES ========== -->
@@ -1567,7 +1568,7 @@
         </p>
 
         <div class="glossaire-content">
-          <!-- Catégorie Architecture -->
+          <!-- catégorie Architecture -->
           <div class="glossaire-category">
             <h3
               style="color: #1a4d2e; margin-bottom: 2rem; border-left: 4px solid #d4a574; padding-left: 1rem;"
@@ -1575,7 +1576,7 @@
               🏛️ Architecture & Construction
             </h3>
 
-            <!-- Chaque terme a une ancre unique -->
+            <!-- chaque terme a une ancre unique -->
           	<!-- TERME 1 -->
             <div class="terme-item" id="terme-chryselephantine">
               <h4
@@ -1653,7 +1654,7 @@
             </div>
           </div>
 
-          <!-- Catégorie Nature -->
+          <!-- catégorie Nature -->
           <div class="glossaire-section" style="margin-top: 3rem;">
             <h3
               style="color: #1a4d2e; margin-bottom: 2rem; border-left: 4px solid #d4a574; padding-left: 1rem;"
@@ -1695,32 +1696,31 @@
 
     <!-- ========== FOOTER (Pied de page) ========== -->
     <footer>
-      <!-- Élément sémantique <footer> pour le pied de page -->
-
+	
       <div class="footer-content">
-        <!-- Conteneur principal du footer en grille -->
+        <!-- conteneur principal du footer en grille -->
 
         <!-- COLONNE 1 : À propos -->
         <div class="footer-section">
           <!-- Section individuelle du footer -->
 
           <h4>7 Merveilles</h4>
-          <!-- Titre de la section (nom du site) -->
+          <!-- nom du site -->
 
           <p style="color: rgba(255,255,255,0.8); line-height: 1.8;">
             Votre guide pour explorer les trésors les plus extraordinaires de
             notre planète, des monuments antiques aux merveilles naturelles.
           </p>
-          <!-- Description du site avec style inline pour couleur spécifique -->
+          <!-- description du site avec style inline pour couleur spécifique -->
         </div>
 
         <!-- COLONNE 2 : Navigation -->
         <div class="footer-section">
           <h4>Navigation</h4>
-          <!-- Titre de section -->
+          <!-- titre de section -->
 
           <ul>
-            <!-- Liste de liens de navigation (duplique le menu header pour accessibilité) -->
+            <!-- Liste de liens de navigation -->
             <li><a href="#merveilles">Merveilles</a></li>
             <li><a href="#blog">Actualités</a></li>
             <li><a href="#experiences">Expériences</a></li>
@@ -1753,7 +1753,7 @@
 
     <!-- ========== MODAL (POP UP) ARTICLE ========== -->
     <div id="articleModal" class="modal">
-      <!-- Fenêtre modale cachée par défaut -->
+      <!-- fenêtre modale cachée par défaut -->
       <div class="modal-content">
         <!-- Conteneur blanc de l'article -->
 
@@ -1762,7 +1762,7 @@
           <span class="close">&times;</span>
           <!-- Bouton X pour fermer (&times; = symbole ×) -->
           <h2 class="modal-title" id="modalTitle">Article détaillé</h2>
-          <!-- Titre de l'article (rempli dynamiquement) -->
+          <!-- Titre de l'article -->
         </div>
 
         <div class="modal-body">
