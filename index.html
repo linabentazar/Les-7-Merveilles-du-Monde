@@ -88,25 +88,30 @@
           extraordinaires
         </p>
 
+		  
         <!-- Conteneur avec rôle pour les lecteurs d'écran -->
-        <div role="region" aria-labelledby="video-title">
-          <!-- Titre accessible pour la région -->
-          <h3 id="video-title" class="sr-only">Documentaire vidéo</h3>
-
-          <div style="text-align: center;">
+	<!-- Titre accessible pour la région -->
+		<div role="region" aria-labelledby="video-title">
+			<h3 id="video-title" class="sr-only">Documentaire vidéo</h3>
+			<p id="video-desc" class="sr-only">
+				Documentaire éducatif de 15 minutes...
+			</p>
             <!-- IFRAME youtube vidéo avec tous les attributs d'accessibilité -->
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/eEX4uEHinvg?si=a-2gkpS-Cs5ZiwA-"
-              title="Documentaire : Les 7 Merveilles du Monde Antique"
-              aria-label="Vidéo documentaire sur l'histoire des 7 Merveilles du Monde"
-              aria-describedby="video-desc"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
+			<figure class="video-wrapper-fixed">
+				<iframe
+					width="560" 
+					height="315"
+					src="https://www.youtube.com/embed/eEX4uEHinvg?si=a-2gkpS-Cs5ZiwA-"
+					title="Documentaire : Les 7 Merveilles du Monde Antique"
+					aria-label="Vidéo documentaire sur l'histoire des 7 Merveilles du Monde"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+					referrerpolicy="strict-origin-when-cross-origin"
+					allowfullscreen
+					></iframe>
+				<figcaption class="video-caption">
+					Documentaire sous-titré disponible
+				</figcaption>
+			</figure>
 
             <!-- Description cachée pour les lecteurs d'écran -->
             <p id="video-desc" class="sr-only">
@@ -123,7 +128,6 @@
               🎬 Documentaire sous-titré disponible
             </p>
           </div>
-        </div>
       </section>
 
       <!-- ========== SECTION MERVEILLES ========== -->
